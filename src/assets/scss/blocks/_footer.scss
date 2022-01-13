@@ -159,7 +159,7 @@
 			margin-bottom: 20px;
 		}
 	}
-	
+
 }
 
 @include media-max(890px) {
@@ -167,6 +167,7 @@
 		display: block;
 	}
 
+	
 	.left-box__item-top + .left-box__item-top {
 		margin: 0;
 		margin-top: 20px;
