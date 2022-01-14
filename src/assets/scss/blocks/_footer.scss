@@ -1,5 +1,5 @@
 .footer {
-	margin-top: 100px;
+	margin-top: 120px;
 }
 
 .footer .container {
@@ -84,7 +84,12 @@
 	&--display {
 		display: none;
 		margin-bottom: 20px;
+
+		&-2{
+			display: none;
+		}
 	}
+	
 }
 
 .left-box__item-bottom + .left-box__item-bottom {
@@ -107,6 +112,7 @@
 }
 
 @include media-max(1390px) {
+
 	.left-box__item-top + .left-box__item-top {
 		margin-left: 40px;
 	}
@@ -159,22 +165,22 @@
 			margin-bottom: 20px;
 		}
 	}
-	
+
 }
 
 @include media-max(890px) {
 	.left-box__list-top {
 		display: block;
 	}
-
+	
 	.left-box__item-top + .left-box__item-top {
 		margin: 0;
 		margin-top: 20px;
 		width: 100%;
-		padding: 10px;
 		border-bottom: 3px solid #5a8cae;
 		border-radius: 3px;
 	}
+	
 
 	.footer .logo-box{
 		margin-bottom: 40px;
