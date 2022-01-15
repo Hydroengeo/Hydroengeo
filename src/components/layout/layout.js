@@ -49,6 +49,16 @@ const Layout = ({ children }) => {
               )}
             </button>
 
+            <div
+              className={!hamOpen ? "lang-wrapper" : "lang-wrapper lang-wrapper--active"}
+            >
+              <ul className="lang-mobile">
+                <li className="lang-mobile-item">РУ</li>
+                <li className="lang-mobile-item">Uz</li>
+                <li className="lang-mobile-item">EN</li>
+              </ul>
+            </div>
+
             <Link href="/">
               <a className="header__logo">
                 <Image

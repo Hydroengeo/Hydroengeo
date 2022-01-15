@@ -1,6 +1,7 @@
 #header {
   margin-top: 30px;
-  margin-bottom: 150px;
+  padding-bottom: 30px;
+  margin-bottom: 100px;
 
   .container .header__top {
     position: relative;
@@ -231,6 +232,50 @@
     display: block;
   }
 
+  .lang-wrapper {
+    display: none;
+  }
+
+  .lang-wrapper--active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 50;
+    display: block;
+    height: 100%;
+  }
+
+  .lang-mobile {
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  .lang-mobile-item {
+    padding: 23px 20px;
+    background: #f4f7fb;
+    border-radius: 10px;
+    font-family: "Mazzard", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    color: #8d8d8d;
+  }
+
+  .lang-mobile-item:first-child {
+    color: #5a8cae;
+    font-weight: bold;
+  }
+
+  .lang-mobile-item + .lang-mobile-item {
+    margin-left: 37px;
+  }
+
   @media only screen and (max-width: 1630px) {
     .search--active {
       .search-form {
@@ -344,12 +389,14 @@
       padding: 0 0;
     }
 
-    .header__top {
+    .container .header__top {
+      margin-bottom: 0;
       padding: 0 20px;
     }
 
     .hamburger {
       display: inline-block;
+      z-index: 1000;
     }
 
     .lang {
@@ -421,10 +468,12 @@
 
   @media only screen and (max-width: 640px) {
     .search--active {
+      z-index: 1110;
       .search-form {
-        left: 20%;
+        left: 3%;
         width: 100%;
-        max-width: 64%;
+        max-width: 81%;
+        z-index: 100;
       }
 
       .search-input {
@@ -437,15 +486,20 @@
   @media only screen and (max-width: 570px) {
     .search--active {
       .search-form {
-        left: 23%;
+        left: 4%;
         width: 100%;
-        max-width: 58%;
+        max-width: 78%;
       }
 
       .search-input {
         padding: 35px;
+        padding-top: 37px;
         border-radius: 0;
       }
+    }
+
+    .lang-mobile-item + .lang-mobile-item {
+      margin-left: 15px;
     }
   }
 
@@ -454,6 +508,15 @@
       max-width: 70%;
       max-height: 70%;
       padding: 18px 10px;
+    }
+
+    .lang-mobile {
+      padding-top: 10px;
+    }
+
+    .lang-mobile-item {
+      padding: 18px 16px;
+      font-size: 22px;
     }
 
     .search-wrapper {
@@ -479,14 +542,15 @@
     }
 
     .search--active {
-      .search-form {
-        left: 26%;
-        width: 100%;
-        max-width: 54%;
-      }
+      // .search-form {
+      //   left: 26%;
+      //   width: 100%;
+      //   max-width: 54%;
+      // }
 
       .search-input {
         padding: 23px;
+        padding-top: 25px;
       }
     }
   }
@@ -494,13 +558,12 @@
   @media only screen and (max-width: 385px) {
     .search--active {
       .search-form {
-        left: 26%;
         width: 100%;
-        max-width: 48%;
+        max-width: 76%;
       }
 
       .search-input {
-        padding: 15px;
+        padding: 23px;
         border-radius: 10px;
         font-size: 16px;
       }
@@ -513,6 +576,33 @@
       min-height: 48px !important;
       margin-top: auto !important;
     }
+
+    .lang-mobile-item {
+      padding: 16px 12px;
+    }
+
+    .lang-mobile-item + .lang-mobile-item {
+      margin-left: 10px;
+    }
+
+    .search--active {
+      .search-form {
+        width: 100%;
+        max-width: 76%;
+      }
+
+      .search-input {
+        padding: 17px;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #header {
+    box-shadow: 0px 4px 4px rgba(90, 140, 174, 0.15);
   }
 }
 
@@ -524,13 +614,25 @@
 
 #header {
   .header__bottom--mobile {
+    position: absolute;
+    top: 166px;
+    left: 0;
+    width: 100%;
     display: block;
+    padding-top: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(90, 140, 174, 0.15);
 
     .navbar__list {
       flex-direction: column;
     }
 
     .navbar__item {
+      width: 100%;
+    }
+
+    .navbar__item-link {
+      background-color: #fff;
       width: 100%;
     }
 
