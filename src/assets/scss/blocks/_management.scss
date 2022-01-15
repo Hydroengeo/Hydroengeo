@@ -1,6 +1,5 @@
 .management {
 	margin: 0;
-	margin-bottom: 100px;
 }
 
 .management__info-box {
@@ -30,5 +29,25 @@
 		font-size: 18px;
 		line-height: 21px;
 		color: #242424;
+	}
+
+	&__info + &__info {
+		margin: 0;
+		margin-top: 45px;
+	}
+}
+
+.management__btn {
+   display: none;
+}
+
+@include media-max(1000px) {
+	.management__btn {
+		position: fixed;
+		// top: 0;
+		bottom: 0;
+		// left: 0;
+		right: 0;
+		display: block;
 	}
 }
