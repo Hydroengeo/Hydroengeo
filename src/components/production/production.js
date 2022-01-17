@@ -17,9 +17,6 @@ function production() {
                   <li className="production__info-box__item">изучение гидрогеологических и инженерно-геологических условий месторождений полезных ископаемых;</li>
                   <li className="production__info-box__item">изучение экологических условий городов и промышленных зон;</li>
                   <li className="production__info-box__item">разработку новых технических средств;</li>
-                  <li className="production__info-box__item">изучение экологических условий городов и промышленных зон;</li>
-                  <li className="production__info-box__item">разработку новых технических средств;</li>
-                  <li className="production__info-box__item">разработку технологий разведки подземных вод и их рациональное использование;</li>
                   <li className="production__info-box__item">разработку технологий разведки подземных вод и их рациональное использование;</li>
                   <li className="production__info-box__item">разработку технологий искусственного пополнения запасов пресных подземных вод и защита их от загрязнения;</li>
                   <li className="production__info-box__item">разработку технологий переработки гидроминерального сырья и их использование;</li>
