@@ -1,4 +1,4 @@
-.ameliorative{
+.ameliorative {
 	margin-bottom: 250px;
 }
 
@@ -29,6 +29,58 @@
 
 .workers--padding {
 	padding-bottom: 0;
+}
+
+.workers {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-bottom: 245px;
+
+	.avatar {
+		width: 100%;
+		max-width: 240px;
+		margin-bottom: 5px;
+	}
+
+	&__card {
+		margin-bottom: 40px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: stretch;
+		padding: 60px 0 56px 60px;
+		background: #f4f7fb;
+		border-radius: 10px;
+	}
+
+	&__info {
+		width: 100%;
+		margin-left: 100px;
+		min-height: 100%;
+	}
+
+	&__info-row {
+		height: 20% !important;
+
+		td:nth-child(1) {
+			font-family: 'Mazzard', sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 26px;
+			line-height: 36px;
+			color: #242424;
+		}
+
+		td:nth-child(2) {
+			width: 539px;
+			font-family: 'Mazzard', sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 26px;
+			line-height: 36px;
+			color: #242424;
+		}
+	}
 }
 
 .ameliorative__services {
@@ -97,7 +149,7 @@
 		text-align: center;
 	}
 
-	&--width{
+	&--width {
 		width: 100%;
 		max-width: 400px;
 	}
@@ -202,19 +254,19 @@
 	min-width: 500 !important;
 }
 
-.desktop{
+.desktop {
 	display: flex;
 }
 
-.desktop--block{
+.desktop--block {
 	display: block;
 }
 
-.mobile{
+.mobile {
 	display: none;
 }
 
-.image10{
+.image10 {
 	display: block;
 	width: 100%;
 	max-width: 305px;
@@ -228,16 +280,15 @@
 // }
 
 @include media-max(1110px) {
-
-	.desktop{
+	.desktop {
 		display: none;
 	}
 
-	.desktop--block{
+	.desktop--block {
 		display: none;
 	}
 
-	.mobile{
+	.mobile {
 		display: block;
 	}
 
@@ -283,42 +334,42 @@
 		margin: 0;
 	}
 
-	.image7{
+	.image7 {
 		display: block;
 		width: 100%;
 		max-width: 240px;
 		margin: 0 auto;
 	}
 
-	.image9{
+	.image9 {
 		display: block;
 		width: 100%;
 		max-width: 540px;
 		margin-bottom: 20px;
 	}
 
-	.image10{
-		margin: 0 auto; 
+	.image10 {
+		margin: 0 auto;
 	}
-	
-	.ameliorative__info--mobile-text{
+
+	.ameliorative__info--mobile-text {
 		text-align: center;
 		margin-bottom: 40px;
 	}
 
-	.ameliorative__info--mobile-bold{
+	.ameliorative__info--mobile-bold {
 		font-weight: bold;
 	}
 
-	.ameliorative__info--mobile-margin{
+	.ameliorative__info--mobile-margin {
 		margin-bottom: 20px;
 
-		&-big{
+		&-big {
 			margin-bottom: 40px;
 		}
 	}
 
-	.ameliorative__info--width{
+	.ameliorative__info--width {
 		max-width: 540px !important;
 		margin-bottom: 40px !important;
 		padding-left: 5px;
@@ -329,5 +380,4 @@
 	.scrolls {
 		display: none !important;
 	}
-
 }
