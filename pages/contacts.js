@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import Layout from "../src/components/layout/layout";
-import HistoryComponent from "../src/components/history/history";
+import Contacts from "../src/components/contacts/contacts";
 
-export default function History() {
+const ContactsPage = () => {
   return (
     <>
       <Head>
@@ -14,8 +13,10 @@ export default function History() {
       </Head>
 
       <Layout>
-        <HistoryComponent />
+        <Contacts />
       </Layout>
     </>
   );
 };
+
+export default ContactsPage;
