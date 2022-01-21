@@ -1,12 +1,11 @@
-.hydrogeology,
-.ameliorative {
+.hydrogeology {
 	margin-bottom: 250px;
 
 	.container {
 		width: 100%;
 		max-width: 1280px !important;
 		margin: 0 auto !important;
-		padding: 0 20px;	
+		padding: 0 20px;
 	}
 
 	.hydrogeology__heading-width {
@@ -56,11 +55,11 @@
 			font-weight: 600;
 		}
 
-		&--text{
+		&--text {
 			text-align: center;
 		}
 
-		&--size{
+		&--size {
 			width: 100%;
 			max-width: 915px;
 			font-size: 26px;
@@ -79,7 +78,7 @@
 		}
 	}
 
-	.hydrogeology__images-box{
+	.hydrogeology__images-box {
 		display: flex;
 		width: 100%;
 		max-width: 1280px;
@@ -87,12 +86,23 @@
 		margin: 0;
 		margin-bottom: 120px;
 
-		&--margin{
+		&--margin {
 			margin-bottom: 20px;
+		}
+
+		&--start {
+			justify-content: start;
 		}
 	}
 
-	.image6{
+	.image5 {
+		display: block;
+		width: 100%;
+		max-width: 1280px;
+		margin-bottom: 10px;
+	}
+
+	.image6 {
 		display: block;
 		width: 100%;
 		max-width: 1025px;
@@ -100,15 +110,20 @@
 		margin-bottom: 20px;
 	}
 
-	.image7{
+	.image7 {
 		display: block;
 		width: 100%;
 		max-width: 430px;
-		margin: 0 auto;
 		margin-bottom: 20px;
 
-		&--margin-bottom{
+		&--margin-bottom {
+			margin: 0 auto;
 			margin-bottom: 10px;
 		}
+	}
+
+	.image8 {
+		display: block;
+		margin-left: 65px;
 	}
 }

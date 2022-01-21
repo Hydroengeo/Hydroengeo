@@ -205,9 +205,9 @@ function Ameliorative() {
 
                <li className="developed__item developed__item--width">
                   <div className="image7">
-                     <Image src={image7} alt="" width={238} height={307} />
+                     <Image className="image7" src={image7} alt="" width={238} height={307} />
                   </div>
-                  <p className="ameliorative__info ameliorative__info--mobile-text">Уровни грунтовых вод по результатам моделирования</p>
+                  <p className="ameliorative__info ameliorative__info--text">Уровни грунтовых вод по результатам моделирования</p>
                </li>
             </ul>
 
@@ -283,7 +283,7 @@ function Ameliorative() {
                   <div className="image16">
                      <Image src={image16} alt="" width={width4} height={height4} />
                   </div>
-                  <p className="ameliorative__info ameliorative__info--mobile-text">
+                  <p className="ameliorative__info ameliorative__info--mobile-text ameliorative__info--mobile-none-text">
                      Участок Аккишлак.<br />
                      При проходке траншеи <br />
                      вскрыты глинистые отложения<br />

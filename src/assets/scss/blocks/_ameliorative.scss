@@ -267,18 +267,25 @@
 	display: none;
 }
 
+.image7 {
+	display: block !important;
+	width: 100% !important;
+	max-width: 240px !important;
+	margin: 0 auto !important;
+}
+
 .image10 {
 	display: block;
 	width: 100%;
 	max-width: 305px;
 }
 
-// .image16{
-// 	display: block;
-// 	width: 100%;
-// 	max-width: 540px;
-// 	padding: 10px;
-// }
+.image16{
+	display: block;
+	width: 100%;
+	max-width: 540px;
+	// padding: 10px;
+}
 
 @include media-max(1110px) {
 	.desktop {
@@ -336,10 +343,10 @@
 	}
 
 	.image7 {
-		display: block;
-		width: 100%;
-		max-width: 240px;
-		margin: 0 auto;
+		display: block !important;
+		width: 100% !important;
+		max-width: 240px !important;
+		margin: 0 auto !important;
 	}
 
 	.image9 {
@@ -380,6 +387,18 @@
 @include media-max(900px) {
 	.scrolls {
 		display: none !important;
+	}
+}
+
+@include media-max(490px){
+	.image16{
+		display: block;
+		width: 100%;
+		max-width: 350px;
+	}
+
+	.ameliorative__info--mobile-none-text{
+		text-align: unset;
 	}
 }
 

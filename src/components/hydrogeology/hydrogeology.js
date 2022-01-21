@@ -352,7 +352,7 @@ function hydrogeology() {
                Неустойчивые, с низким инженерно-геологическим потенциалом: сильно трещиноватые (коэффициент трещинной пустотности более 6%), коэффициент размягчения менее 0,7, форма структурного блока многоугольная и бесформенная, мало и слабо прочная (предел прочности на сжатие 35 и менее МПа), суммарный показатель качества ниже 50 баллов, генеральный угол устойчивого заложения бортов (до уровня базиса эрозии) 30-35°.
             </p>
 
-            <div className="">
+            <div className="image5">
                <Image src={image5} alt="" wi width={1280} height={840} />
             </div>
 
@@ -412,7 +412,7 @@ function hydrogeology() {
                Проведены научно исследовательские работы на Ангренском  угольном отстойнике по реализации угольной пыли по созданию экологического экрана для защиты подземных вод от сельскохозяйственных загрязнений, и в итоге был получен патент на изобретение «Способ детоксикации почвы».
             </p>
 
-            <div className="hydrogeology__images-box hydrogeology__images-box--margin">
+            <div className="hydrogeology__images-box hydrogeology__images-box--start hydrogeology__images-box--margin">
                <div className="image7">
                   <div className="image7 image7--margin-bottom">
                      <Image src={image7} alt="" width='428' height='625' />
@@ -424,8 +424,8 @@ function hydrogeology() {
                   </p>
                </div>
 
-               <div className="">
-                  <div className="">
+               <div className="image7 image8">
+                  <div className=" image7 image7 image7--margin-bottom">
                      <Image src={image8} alt="" width='413' height='625' />
                   </div>
                   <p className="hydrogeology__info hydrogeology__info--text">
