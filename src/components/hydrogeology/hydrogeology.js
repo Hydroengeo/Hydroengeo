@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 //images
 import ScrollTop from '../../assets/images/ScrollTop.svg'
@@ -213,11 +212,11 @@ function hydrogeology() {
             </p>
 
             <div className="hydrogeology__images-box">
-               <div className="">
-                  <Image src={image1} alt="" width={540} height={408} />
+               <div className="image1-box">
+                  <Image className="image1" src={image1} alt="" width={540} height={408} />
                </div>
-               <div className="">
-                  <Image src={image2} alt="" width={540} height={406} />
+               <div className="image2-box">
+                  <Image className="image2" src={image2} alt="" width={540} height={406} />
                </div>
             </div>
 
@@ -227,8 +226,12 @@ function hydrogeology() {
 
 
             <div className="hydrogeology__images-box">
-               <Image src={image3} alt="" width={554} height={727} />
-               <Image src={image4} alt="" width={540} height={727} />
+               <div className="image3-box">
+                  <Image className="image3" src={image3} alt="" width={554} height={727} />
+               </div>
+               <div className="image4-box">
+                  <Image className="image4" src={image4} alt="" width={540} height={727} />
+               </div>
             </div>
 
             <h2 className="hydrogeology__info hydrogeology__info--bold">Круг решаемых вопросов инженерно-геологических и гидрогеоло-гических исследований на разных стадиях геологоразведочных работ. </h2>
@@ -366,24 +369,29 @@ function hydrogeology() {
 
             <h2 className="hydrogeology__info hydrogeology__info--bold hydrogeology__info--text">Условные обозначения</h2>
 
-            <ul className="">
-               <li className="">
-                  <p className="hydrogeology__info hydrogeology__info--text hydrogeology__info--margin-small">Зона массивных пород</p>
+            <ul className="conventions__list">
+               <li className="conventions__item">
+                  <span className="conventions__item-box conventions__item-box--blue"></span>
+                  <p className="hydrogeology__info hydrogeology__info--margin-small">Зона массивных пород</p>
                </li>
 
-               <li className="">
-                  <p className="hydrogeology__info hydrogeology__info--text hydrogeology__info--margin-small">Зона раздробленных участков (мелкоблочная, размеры обломков от 5х10х15см до 10х15х10м)</p>
+               <li className="conventions__item">
+                  <span className="conventions__item-box conventions__item-box--red"></span>
+                  <p className="hydrogeology__info hydrogeology__info--margin-small">Зона раздробленных участков (мелкоблочная, размеры обломков от 5х10х15см до 10х15х10м)</p>
                </li>
-               <li className="">
-                  <p className="hydrogeology__info hydrogeology__info--text hydrogeology__info--margin-small">Зона сильнотрещиноватых пород (блочная с размерами обломков от 10х15х20м до 40х50х60м)</p>
-               </li>
-
-               <li className="">
-                  <p className="hydrogeology__info hydrogeology__info--text hydrogeology__info--margin-small">Разломы (регионального значения) имеющие зоны дробления</p>
+               <li className="conventions__item">
+                  <span className="conventions__item-box conventions__item-box--yellow"></span>
+                  <p className="hydrogeology__info hydrogeology__info--margin-small">Зона сильнотрещиноватых пород (блочная с размерами обломков от 10х15х20м до 40х50х60м)</p>
                </li>
 
-               <li className="">
-                  <p className="hydrogeology__info hydrogeology__info--text hydrogeology__info--margin-small">Разломы (местного значения) имеющие небольшие зоны дробления</p>
+               <li className="conventions__item">
+                  <span className="conventions__item-box conventions__item-box--image1"></span>
+                  <p className="hydrogeology__info hydrogeology__info--margin-small">Разломы (регионального значения) имеющие зоны дробления</p>
+               </li>
+
+               <li className="conventions__item">
+                  <span className="conventions__item-box conventions__item-box--image2"></span>
+                  <p className="hydrogeology__info hydrogeology__info--margin-small">Разломы (местного значения) имеющие небольшие зоны дробления</p>
                </li>
             </ul>
 
@@ -412,10 +420,10 @@ function hydrogeology() {
                Проведены научно исследовательские работы на Ангренском  угольном отстойнике по реализации угольной пыли по созданию экологического экрана для защиты подземных вод от сельскохозяйственных загрязнений, и в итоге был получен патент на изобретение «Способ детоксикации почвы».
             </p>
 
-            <div className="hydrogeology__images-box hydrogeology__images-box--start hydrogeology__images-box--margin">
+            <div className="hydrogeology__images-box hydrogeology__images-box--start hydrogeology__images-box--margin hydrogeology__images--mobile-flex">
                <div className="image7">
                   <div className="image7 image7--margin-bottom">
-                     <Image src={image7} alt="" width='428' height='625' />
+                     <Image className="image7-img" src={image7} alt="" width={428} height={625} />
                   </div>
                   <p className="hydrogeology__info hydrogeology__info--text">
                      <strong>
@@ -426,7 +434,7 @@ function hydrogeology() {
 
                <div className="image7 image8">
                   <div className=" image7 image7 image7--margin-bottom">
-                     <Image src={image8} alt="" width='413' height='625' />
+                     <Image src={image8} alt="" width={413} height={625} />
                   </div>
                   <p className="hydrogeology__info hydrogeology__info--text">
                      <strong>
@@ -455,7 +463,7 @@ function hydrogeology() {
             <div className="scientific__btn ">
                <Link href={'#header'}>
                   <a className="cooperation__btn__link">
-                     <Image src={ScrollTop} alt="ScrollTop" width='80' height='80' />
+                     <Image src={ScrollTop} alt="ScrollTop" width={80} height={80} />
                   </a>
                </Link>
             </div>
