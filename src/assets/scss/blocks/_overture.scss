@@ -1,0 +1,70 @@
+#overture {
+  .small-container {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .heading {
+    width: 100%;
+    max-width: 994px;
+    margin-bottom: 43px;
+  }
+
+  .workers--padding {
+    padding-bottom: 0;
+  }
+
+  .workers {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 245px;
+
+    .avatar {
+      width: 100%;
+      max-width: 240px;
+      margin-bottom: 5px;
+    }
+
+    &__card {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      padding: 60px 0 56px 60px;
+      background: #f4f7fb;
+      border-radius: 10px;
+    }
+
+    &__info {
+      width: 100%;
+      margin-left: 100px;
+      min-height: 100%;
+    }
+
+    &__info-row {
+      height: 20% !important;
+
+      td:nth-child(1) {
+        font-family: "Mazzard", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 36px;
+        color: #242424;
+      }
+
+      td:nth-child(2) {
+        width: 539px;
+        font-family: "Mazzard", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        color: #242424;
+      }
+    }
+  }
+}
