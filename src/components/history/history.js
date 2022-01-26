@@ -6,7 +6,7 @@ import Kenessarin from "../../assets/images/kenessarin.jpg";
 import MandK from "../../assets/images/MandK.jpg";
 import ScientificDiscussion from "../../assets/images/scientific-discussion.jpg";
 import Xodjibaev from "../../assets/images/xodjibaev.jpg";
-import Meeting from "../../assets/images/meeting.jpg";
+import Meeting from "../../assets/images/Meeting.jpg";
 import Awarding from "../../assets/images/awarding.jpg";
 import Astronauts from "../../assets/images/astronauts.jpg";
 import StudentG from "../../assets/images/studentsG.jpg";
