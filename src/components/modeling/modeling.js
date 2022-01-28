@@ -60,7 +60,7 @@ function modeling() {
          <div className="container">
             <div className="ameliorative__head-box">
                <h1 className="ameliorative__heading">ЛАБОРАТОРИЯ ГЕОИНФОРМАЦИОННЫХ ТЕХНОЛОГИИ И МОДЕЛИРОВАНИЕ</h1>
-               <Image className="scrolls" src={scrolls} alt=" " width={80} height={80} />
+               <Image className="scrolls" src={scrolls} alt="scroll" width={80} height={80} />
             </div>
 
             <Card

@@ -34,7 +34,7 @@ function hydrogeophysics() {
          <div className="container">
             <div className="ameliorative__head-box">
                <h1 className="ameliorative__heading">ЛАБОРАТОРИЯ ГИДРОГЕОФИЗИКИ</h1>
-               <Image className="scrolls" src={scrolls} alt=" " width={80} height={80} />
+               <Image className="scrolls" src={scrolls} alt="scroll" width={80} height={80} />
             </div>
 
             <Card

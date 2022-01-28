@@ -21,7 +21,7 @@ function hydrogeology() {
          <div className="container">
             <div className="ameliorative__head-box">
                <h1 className="ameliorative__heading ">ЛАБОРАТОРИЯ ГИДРОГЕОЛОГИИ И ИНЖЕНЕРНОЙ ГЕОЛОГИИ МЕСТОРОЖДЕНИЙ ТВЁРДЫХ ПОЛЕЗНЫХ ИСКОПАЕМЫХ</h1>
-               <Image className="scrolls" src={scrolls} alt=" " width={100} height={100} />
+               <Image className="scrolls" src={scrolls} alt="scroll" width={100} height={100} />
             </div>
 
             <div className="workers workers--padding">

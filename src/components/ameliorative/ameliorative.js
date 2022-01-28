@@ -97,7 +97,7 @@ function Ameliorative() {
          <div className="container">
             <div className="ameliorative__head-box">
                <h1 className="ameliorative__heading">ЛАБОРАТОРИЯ МЕЛИОРАТИВНОЙ ГИДРОГЕОЛОГИИ И ДРЕНАЖА</h1>
-               <Image className="scrolls" src={scrolls} alt=" " width={80} height={80} />
+               <Image className="scrolls" src={scrolls} alt="scroll" width={80} height={80} />
             </div>
 
             <div className="workers workers--padding">
