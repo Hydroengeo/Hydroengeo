@@ -16,7 +16,7 @@
     max-width: 737px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
   .header__contact-item {
@@ -112,6 +112,7 @@
     background-color: #fff;
     box-shadow: 0px -2px 15px rgba(90, 140, 174, 0.15);
     border-radius: 10px;
+    z-index: 1000;
   }
 
   .dropdown3--active {
