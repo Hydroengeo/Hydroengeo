@@ -2,10 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Layout from "../src/components/layout/layout";
-import Hydrogeology from "../src/components/hydrogeology/hydrogeology";
+import Technical from "../src/components/technical/technical";
 
 
-export default function hydrogeology() {
+export default function technical() {
    return (
       <>
          <Head>
@@ -15,7 +15,7 @@ export default function hydrogeology() {
          </Head>
 
          <Layout>
-            <Hydrogeology />
+            <Technical />
          </Layout>
       </>
    );
