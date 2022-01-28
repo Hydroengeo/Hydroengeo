@@ -1,0 +1,194 @@
+.technical {
+    .container {
+        width: 100%;
+        max-width: 1280px;
+    }
+
+    &__info {
+        display: block;
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: "Mazzard";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 40px;
+        color: #000000;
+
+        &--text {
+            text-align: center;
+        }
+
+        &--bold {
+            font-family: "Mazzard";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 35px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+    }
+
+    &__images-box {
+        display: flex;
+        width: 100%;
+        max-width: 1280px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        &--center {
+            display: flex !important;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        &--between {
+            display: flex !important;
+            justify-content: space-between;
+        }
+    }
+
+    .mobile-block {
+        display: none;
+    }
+
+    .iamge1 {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .iamge2 {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .iamge3 {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .iamge4 {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .iamge5 {
+        display: block;
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .iamge6 {
+        display: block;
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .image7 {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .iamge8 {
+        display: block;
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .iamge9 {
+        display: block;
+        width: 100%;
+        max-width: 620px;
+    }
+
+    .iamge11 {
+        display: block;
+        width: 100%;
+        max-width: 1013px;
+        margin-bottom: 20px;
+    }
+
+    .iamge12 {
+        display: block;
+        width: 100%;
+        max-width: 1013px;
+        margin-bottom: 20px;
+    }
+
+    .iamge13 {
+        display: block;
+        width: 100%;
+        max-width: 1013px;
+        margin-bottom: 20px;
+    }
+
+    .iamge14 {
+        display: block;
+        width: 100%;
+        max-width: 1013px;
+        margin-bottom: 20px;
+    }
+
+    .iamge15 {
+        display: block;
+        width: 100%;
+        max-width: 423px;
+        margin-bottom: 20px;
+    }
+
+    .iamge16 {
+        display: block;
+        width: 100%;
+        max-width: 590px;
+    }
+}
+
+.technical_image10 {
+    display: block;
+    width: 100%;
+    max-width: 788px !important;
+}
+
+@include media-max(1245px) {
+    .technical__images-box {
+        display: block;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .technical__info--text {
+        text-align: start;
+    }
+
+    .mobile-block {
+        width: 100%;
+        max-width: 1200px;
+        display: block !important;
+    }
+    .mobile-none {
+        display: none !important;
+    }
+
+    .iamge7 {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@include media-max(917px) {
+    .technical__info--text {
+        text-align: center;
+    }
+}

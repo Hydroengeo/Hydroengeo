@@ -386,8 +386,12 @@
 }
 
 @include media-max(900px) {
-	.scrolls {
-		display: none !important;
+	// .scrolls {
+	// 	display: none !important;
+	// }
+
+	.ameliorative__head-box{
+		align-items: flex-start;
 	}
 }
 
