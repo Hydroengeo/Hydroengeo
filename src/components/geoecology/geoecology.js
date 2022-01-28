@@ -86,10 +86,10 @@ function geoecology() {
 
         <div className="geoecology__images-box">
           <div className="image1">
-            <Image src={image1} alt="" width={588} height={525} />
+            <Image src={image1} alt="Horiba" width={588} height={525} />
           </div>
           <div className="image2">
-            <Image src={image2} alt="" width={570} height={525} />
+            <Image src={image2} alt="Horiba-U54G" width={570} height={525} />
           </div>
         </div>
 
@@ -267,19 +267,19 @@ function geoecology() {
         </ul>
 
         <div className="image3">
-          <Image src={image3} alt="" width={1280} height={881} />
+          <Image src={image3} alt="map uzb1" width={1280} height={881} />
         </div>
 
         <div className="image4">
-          <Image src={image4} alt="" width={500} height={730} />
+          <Image src={image4} alt="map part" width={500} height={730} />
         </div>
 
         <div className="geoecology__images-box">
           <div className="image5">
-            <Image src={image5} alt="" width={570} height={680} />
+            <Image src={image5} alt="map half" width={570} height={680} />
           </div>
           <div className="image6">
-            <Image src={image6} alt="" width={630} height={680} />
+            <Image src={image6} alt="map 0.5" width={630} height={680} />
           </div>
         </div>
 
@@ -377,13 +377,13 @@ function geoecology() {
 
         <div className="geoecology__images-box">
           <div className="image7">
-            <Image src={image7} alt="" width={640} height={413} />
+            <Image src={image7} alt="Map of the anionic composition of groundwater in the Republic of Uzbekistan" width={640} height={413} />
             <p className="geoecology__info geoecology__info--text">
               Карта анионного состава подземных вод по Республики Узбекистан
             </p>
           </div>
           <div className="image8">
-            <Image src={image8} alt="" width={640} height={413} />
+            <Image src={image8} alt="Map of groundwater mineralization in the Republic of Uzbekistan" width={640} height={413} />
             <p className="geoecology__info geoecology__info--text">
               Карта минерализации подземных вод по Республики Узбекистан
             </p>
@@ -391,7 +391,7 @@ function geoecology() {
         </div>
 
         <div className="image9">
-          <Image src={image9} alt="" width={665} height={413} />
+          <Image src={image9} alt="Map of the cation composition for the Republic of Uzbekistan" width={665} height={413} />
           <p className="geoecology__info">
             Карта катионного состава по Республики Узбекистан
           </p>
@@ -406,14 +406,14 @@ function geoecology() {
 
         <div className="geoecology__images-box">
           <div className="image10">
-            <Image src={image10} alt="" width={560} height={397} />
+            <Image src={image10} alt="Technological scheme of operation of the intercepting system during the injection of captured waters" width={560} height={397} />
             <p className="geoecology__info">
               Технологическая схема эксплуатации перехватывающей системы при
               закачке каптируемых вод
             </p>
           </div>
           <div className="image11">
-            <Image src={image11} alt="" width={620} height={397} />
+            <Image src={image11} alt="Localization and elimination of oil pollution of groundwater" width={620} height={397} />
             <p className="geoecology__info">
               Локализация и ликвидация нефтяного загрязнения грунтовых вод
             </p>
@@ -422,13 +422,13 @@ function geoecology() {
 
         <div className="geoecology__images-box">
           <div className="image12">
-            <Image src={image12} alt="" width={507} height={343} />
+            <Image src={image12} alt="Schematic map of the intercepting system of an oil terminal" width={507} height={343} />
             <p className="geoecology__info">
               Карта-схема перехватывающей системы нефтяного терминала
             </p>
           </div>
           <div className="image13">
-            <Image src={image13} alt="" width={526} height={343} />
+            <Image src={image13} alt="Schematic diagram of stepwise adsorption treatment of wastewater from oil products" width={526} height={343} />
             <p className="geoecology__info">
               Принципиальная технологическая схема ступенчатой адсорбционной
               очистки сточных вод от нефтепродуктов
@@ -480,13 +480,13 @@ function geoecology() {
 
         <div className="geoecology__images-box--flex">
           <div className="image14">
-            <Image src={image14} alt="" width={400} height={609} />
+            <Image src={image14} alt="Requirement for hydrogeological" width={400} height={609} />
           </div>
           <div className="image15">
-            <Image src={image15} alt="" width={400} height={609} />
+            <Image src={image15} alt="The requirement for hydrogeological and engineering-geological studies to assess the territory for the possible creation of underground oil storages (UGS) and gas storages (UGS)" width={400} height={609} />
           </div>
           <div className="image16">
-            <Image src={image16} alt="" width={400} height={609} />
+            <Image src={image16} alt="Methodological recommendation for conducting geological and environmental monitoring and audit" width={400} height={609} />
           </div>
         </div>
 
@@ -511,15 +511,15 @@ function geoecology() {
         </p>
 
         <div className="image17">
-          <Image src={image17} alt="" width={1280} height={712} />
+          <Image src={image17} alt="photo team" width={1280} height={712} />
         </div>
 
         <div className="image18">
-          <Image src={image18} alt="" width={1280} height={730} />
+          <Image src={image18} alt="team work" width={1280} height={730} />
         </div>
 
         <div className="image19">
-          <Image src={image19} alt="" width={1280} height={720} />
+          <Image src={image19} alt="workers" width={1280} height={720} />
         </div>
 
         <div className="scientific__btn ">

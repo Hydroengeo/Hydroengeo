@@ -135,10 +135,10 @@ function groundwater() {
 
             <div className="groundwater__images-box--block">
                <div className="image1">
-                  <Image src={image1} alt="" width={500} height={350} />
+                  <Image src={image1} alt="map 1/20000" width={500} height={350} />
                </div>
                <div className="image2">
-                  <Image src={image2} alt="" width={700} height={340} />
+                  <Image src={image2} alt="map2" width={700} height={340} />
                </div>
             </div>
 
@@ -155,10 +155,10 @@ function groundwater() {
 
             <div className="groundwater__images-box">
                <div className="image3">
-                  <Image src={image3} alt="" width={593} height={362} />
+                  <Image src={image3} alt="map3" width={593} height={362} />
                </div>
                <div className="image4">
-                  <Image src={image4} alt="" width={563} height={362} />
+                  <Image src={image4} alt="map4" width={563} height={362} />
                </div>
             </div>
 
@@ -196,34 +196,34 @@ function groundwater() {
 
             <div className="groundwater__images-box-2">
                <div className="image5">
-                  <Image src={image5} alt="" width={250} height={356} />
+                  <Image src={image5} alt="Guidelines" width={250} height={356} />
                </div>
                <div className="image6">
-                  <Image src={image6} alt="" width={250} height={356} />
+                  <Image src={image6} alt="Methodological guide" width={250} height={356} />
                </div>
                <div className="image7">
-                  <Image src={image7} alt="" width={250} height={356} />
+                  <Image src={image7} alt="Recommendations" width={250} height={356} />
                </div>
                <div className="image8">
-                  <Image src={image8} alt="" width={250} height={356} />
+                  <Image src={image8} alt="Requirements" width={250} height={356} />
                </div>
             </div>
 
             <div className="groundwater__images-box-mobile">
                <div className="image5">
-                  <Image src={image5} alt="" width={250} height={356} />
+                  <Image src={image5} alt="Guidelines1" width={250} height={356} />
                </div>
                <div className="image6">
-                  <Image src={image6} alt="" width={250} height={356} />
+                  <Image src={image6} alt="Methodological guide." width={250} height={356} />
                </div>
             </div>
 
             <div className="groundwater__images-box-mobile">
                <div className="image7">
-                  <Image src={image7} alt="" width={250} height={356} />
+                  <Image src={image7} alt="Recommendations3" width={250} height={356} />
                </div>
                <div className="image8">
-                  <Image src={image8} alt="" width={250} height={356} />
+                  <Image src={image8} alt="Requirements1" width={250} height={356} />
                </div>
             </div>
 
@@ -240,17 +240,17 @@ function groundwater() {
 
             <div className="groundwater__images-box--block">
                <div className="image9">
-                  <Image src={image9} alt="" width={360} height={230} />
+                  <Image src={image9} alt="map5" width={360} height={230} />
                </div>
                <div className="image10">
-                  <Image src={image10} alt="" width={412} height={230} />
+                  <Image src={image10} alt="map8" width={412} height={230} />
                </div>
                <div className="">
                   <div className="image11">
-                     <Image src={image11} alt="" width={357} height={114} />
+                     <Image src={image11} alt="diagram2019" width={357} height={114} />
                   </div>
                   <div className="image12">
-                     <Image src={image12} alt="" width={393} height={97} />
+                     <Image src={image12} alt="diagram 2019y" width={393} height={97} />
                   </div>
                </div>
             </div>
@@ -281,10 +281,10 @@ function groundwater() {
 
             <div className="groundwater__images-box--block">
                <div className="image13">
-                  <Image src={image13} alt="" width={573} height={285} />
+                  <Image src={image13} alt="word" width={573} height={285} />
                </div>
                <div className="image14">
-                  <Image src={image14} alt="" width={645} height={285} />
+                  <Image src={image14} alt="excel" width={645} height={285} />
                </div>
             </div>
 
@@ -301,24 +301,24 @@ function groundwater() {
 
             <div className="groundwater__images-box">
                <div className="image15">
-                  <Image src={image15} alt="" width={612} height={370} />
+                  <Image src={image15} alt="map9" width={612} height={370} />
                </div>
                <div className="groundwater__images-box--flex">
                   <div className="">
                      <div className="image16">
-                        <Image src={image16} alt="" width={290} height={198} />
+                        <Image src={image16} alt="diagram1" width={290} height={198} />
                      </div>
                      <div className="image18">
-                        <Image src={image18} alt="" width={283} height={190} />
+                        <Image src={image18} alt="diagram2" width={283} height={190} />
                      </div>
                   </div>
 
                   <div className="">
                      <div className="image17">
-                        <Image src={image17} alt="" width={280} height={184} />
+                        <Image src={image17} alt="diagram3" width={280} height={184} />
                      </div>
                      <div className="image19">
-                        <Image src={image19} alt="" width={244} height={214} />
+                        <Image src={image19} alt="diagram4" width={244} height={214} />
                      </div>
                   </div>
                </div>
@@ -410,18 +410,18 @@ function groundwater() {
 
             <div className="groundwater__images-box">
                <div className="image26">
-                  <Image src={image26} alt="" width={324} height={229} />
+                  <Image src={image26} alt="map26" width={324} height={229} />
                </div>
                <div className="image27">
-                  <Image src={image27} alt="" width={367} height={229} />
+                  <Image src={image27} alt="map27" width={367} height={229} />
                </div>
                <div className="image28">
-                  <Image src={image28} alt="" width={367} height={229} />
+                  <Image src={image28} alt="map28" width={367} height={229} />
                </div>
             </div>
 
             <div className="image29">
-               <Image src={image29} alt="" width={690} height={294} />
+               <Image src={image29} alt="map29" width={690} height={294} />
             </div>
 
             <div className="scientific__btn ">

@@ -28,8 +28,8 @@ function education() {
                </p>
 
                <div className="education__img-box">
-                  <Image className="education__img-box__img" src={secondImg} alt="education" width='540' height='360' />
-                  <Image className="education__img-box__img" src={firstImg} alt="education" width='540' height='360' />
+                  <Image className="education__img-box__img" src={secondImg} alt="education1" width='540' height='360' />
+                  <Image className="education__img-box__img" src={firstImg} alt="education2" width='540' height='360' />
                </div>
             </div>
          </div>
