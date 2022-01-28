@@ -11,6 +11,7 @@ const card = ({ avatar, name, date, position }) => {
       setImageHeight("260");
     }
   }, []);
+  
 
   return (
     <>
