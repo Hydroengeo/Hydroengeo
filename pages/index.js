@@ -2,6 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Layout from "../src/components/layout/layout";
+import HomeAbout from "../src/components/home-about/home-about";
+import HomeNews from "../src/components/home-news/home-news";
+import International from "../src/components/international/international";
 
 export default function Home() {
   return (
@@ -12,7 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout></Layout>
+      <Layout>
+        <div className="home-box">
+          <HomeAbout />
+          <HomeNews />
+        </div>
+        <International />
+      </Layout>
     </>
   );
 }

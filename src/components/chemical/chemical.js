@@ -5,7 +5,6 @@ import Card from "../card/card";
 
 //images
 import ScrollTop from "../../assets/images/ScrollTop.svg";
-import scrolls from "../../assets/images/scrolls.svg";
 import avatar from '../../assets/images/chemical-avatar.png'
 import image1 from '../../assets/images/chemical1.png'
 import image2 from '../../assets/images/chemical2.png'
@@ -24,13 +23,6 @@ function chemical() {
           <h1 className="ameliorative__heading groundwater__heading--width">
             ГЕОЭКОЛОГО-ХИМИЧЕСКАЯ ЛАБОРАТОРИЯ
           </h1>
-          <Image
-            className="scrolls"
-            src={scrolls}
-            alt="scroll"
-            width={80}
-            height={80}
-          />
         </div>
 
         <Card

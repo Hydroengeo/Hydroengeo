@@ -3,7 +3,6 @@ import Link from "next/link";
 
 //images
 import ScrollTop from '../../assets/images/ScrollTop.svg'
-import scrolls from '../../assets/images/scrolls.svg'
 import avatar from '../../assets/images/hydrogeology1.png'
 import image1 from '../../assets/images/hydrogeology2.png'
 import image2 from '../../assets/images/hydrogeology3.png'
@@ -21,7 +20,6 @@ function hydrogeology() {
          <div className="container">
             <div className="ameliorative__head-box">
                <h1 className="ameliorative__heading ">ЛАБОРАТОРИЯ ГИДРОГЕОЛОГИИ И ИНЖЕНЕРНОЙ ГЕОЛОГИИ МЕСТОРОЖДЕНИЙ ТВЁРДЫХ ПОЛЕЗНЫХ ИСКОПАЕМЫХ</h1>
-               <Image className="scrolls" src={scrolls} alt="scroll" width={100} height={100} />
             </div>
 
             <div className="workers workers--padding">

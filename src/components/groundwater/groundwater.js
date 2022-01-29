@@ -5,7 +5,6 @@ import Card from "../card/card";
 
 //images
 import ScrollTop from '../../assets/images/ScrollTop.svg'
-import scrolls from '../../assets/images/scrolls.svg'
 import avatar from '../../assets/images/groundwater-avatar.png'
 import image1 from '../../assets/images/groundwater1.png'
 import image2 from '../../assets/images/groundwater2.png'
@@ -43,7 +42,6 @@ function groundwater() {
          <div className="container">
             <div className="ameliorative__head-box">
                <h1 className="ameliorative__heading groundwater__heading--width">ЛАБОРАТОРИЯ МОНИТОРИНГА ПОДЗЕМНЫХ ВОД И РЕГИОНАЛЬНЫХ ИССЛЕДОВАНИЙ</h1>
-               <Image className="scrolls" src={scrolls} alt="scroll" width={80} height={80} />
             </div>
 
             <Card

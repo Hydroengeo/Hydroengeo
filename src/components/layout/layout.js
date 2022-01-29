@@ -55,7 +55,9 @@ const Layout = ({ children }) => {
             </button>
 
             <div
-              className={!hamOpen ? "lang-wrapper" : "lang-wrapper lang-wrapper--active"}
+              className={
+                !hamOpen ? "lang-wrapper" : "lang-wrapper lang-wrapper--active"
+              }
             >
               <ul className="lang-mobile">
                 <li className="lang-mobile-item">РУ</li>
@@ -106,15 +108,21 @@ const Layout = ({ children }) => {
             </ul>
 
             <div
-              className={`search-wrapper ${searchActive ? "search--active" : ""}`}
-              onClick={e => {
+              className={`search-wrapper ${
+                searchActive ? "search--active" : ""
+              }`}
+              onClick={(e) => {
                 if (!e.target.classList.contains("search-input")) {
                   setSearchActive(!searchActive);
                 }
               }}
             >
               <form className="search-form">
-                <input className="search-input" type="text" placeholder="Поиск" />
+                <input
+                  className="search-input"
+                  type="text"
+                  placeholder="Поиск"
+                />
               </form>
 
               <span className="search">
@@ -140,7 +148,9 @@ const Layout = ({ children }) => {
 
           <div
             className={
-              !hamOpen ? "header__bottom" : "header__bottom header__bottom--mobile"
+              !hamOpen
+                ? "header__bottom"
+                : "header__bottom header__bottom--mobile"
             }
           >
             <nav className="navbar">
@@ -155,7 +165,9 @@ const Layout = ({ children }) => {
                     ref={dwnImg1}
                     className="navbar__item-link dropdown-link"
                     onClick={() => {
-                      if (!dropdwn1.current.classList.contains("dropdown--active")) {
+                      if (
+                        !dropdwn1.current.classList.contains("dropdown--active")
+                      ) {
                         dropdwn1.current.classList.add("dropdown--active");
                         dropdwn2.current.classList.remove("dropdown--active");
                         dropdwn3.current.classList.remove("dropdown--active");
@@ -191,7 +203,9 @@ const Layout = ({ children }) => {
 
                     <li className="navbar__dropdown-item">
                       <Link href="/">
-                        <a className="navbar__dropdown-link">Структура института</a>
+                        <a className="navbar__dropdown-link">
+                          Структура института
+                        </a>
                       </Link>
                     </li>
 
@@ -203,13 +217,17 @@ const Layout = ({ children }) => {
 
                     <li className="navbar__dropdown-item">
                       <Link href="/">
-                        <a className="navbar__dropdown-link">История института</a>
+                        <a className="navbar__dropdown-link">
+                          История института
+                        </a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
                       <Link href="/">
-                        <a className="navbar__dropdown-link">Миссия и политика</a>
+                        <a className="navbar__dropdown-link">
+                          Миссия и политика
+                        </a>
                       </Link>
                     </li>
 
@@ -221,7 +239,9 @@ const Layout = ({ children }) => {
 
                     <li className="navbar__dropdown-item">
                       <Link href="/">
-                        <a className="navbar__dropdown-link">История и руководство</a>
+                        <a className="navbar__dropdown-link">
+                          История и руководство
+                        </a>
                       </Link>
                     </li>
                   </ul>
@@ -231,7 +251,9 @@ const Layout = ({ children }) => {
                     ref={dwnImg2}
                     className="navbar__item-link dropdown-link"
                     onClick={() => {
-                      if (!dropdwn2.current.classList.contains("dropdown--active")) {
+                      if (
+                        !dropdwn2.current.classList.contains("dropdown--active")
+                      ) {
                         dropdwn2.current.classList.add("dropdown--active");
                         dropdwn1.current.classList.remove("dropdown--active");
                         dropdwn3.current.classList.remove("dropdown--active");
@@ -267,7 +289,9 @@ const Layout = ({ children }) => {
 
                     <li className="navbar__dropdown-item">
                       <Link href="/">
-                        <a className="navbar__dropdown-link">Научная деятельность</a>
+                        <a className="navbar__dropdown-link">
+                          Научная деятельность
+                        </a>
                       </Link>
                     </li>
 
@@ -291,7 +315,9 @@ const Layout = ({ children }) => {
                     ref={dwnImg3}
                     className="navbar__item-link dropdown-link"
                     onClick={() => {
-                      if (!dropdwn3.current.classList.contains("dropdown--active")) {
+                      if (
+                        !dropdwn3.current.classList.contains("dropdown--active")
+                      ) {
                         dropdwn3.current.classList.add("dropdown--active");
                         dropdwn2.current.classList.remove("dropdown--active");
                         dropdwn1.current.classList.remove("dropdown--active");
@@ -318,10 +344,14 @@ const Layout = ({ children }) => {
                     />
                   </button>
 
-                  <ul ref={dropdwn3} className="navbar-item__dropdown  dropdown3--active">
+                  <ul
+                    ref={dropdwn3}
+                    className="navbar-item__dropdown  dropdown3--active"
+                  >
                     <li
-                      className={`navbar__dropdown-item ${activeClass1 ? "navbar__dropdown-item--active" : ""
-                        }`}
+                      className={`navbar__dropdown-item ${
+                        activeClass1 ? "navbar__dropdown-item--active" : ""
+                      }`}
                     >
                       <button
                         className="navbar__dropdown-link"
@@ -329,7 +359,9 @@ const Layout = ({ children }) => {
                           setActiveClass1(!activeClass1);
                         }}
                       >
-                        <span>Исследование ресурсов и запасов подземных вод</span>
+                        <span>
+                          Исследование ресурсов и запасов подземных вод
+                        </span>
                         <Image
                           src={Arrow}
                           width="20"
@@ -342,8 +374,9 @@ const Layout = ({ children }) => {
                     </li>
 
                     <li
-                      className={`navbar__dropdown-item ${activeClass2 ? "navbar__dropdown-item--active" : ""
-                        }`}
+                      className={`navbar__dropdown-item ${
+                        activeClass2 ? "navbar__dropdown-item--active" : ""
+                      }`}
                     >
                       <button
                         className="navbar__dropdown-link "
@@ -352,7 +385,8 @@ const Layout = ({ children }) => {
                         }}
                       >
                         <span>
-                          Мониторинг подземных вод и геоэкологические исследования
+                          Мониторинг подземных вод и геоэкологические
+                          исследования
                         </span>
                         <Image
                           src={Arrow}
@@ -367,8 +401,9 @@ const Layout = ({ children }) => {
                     </li>
 
                     <li
-                      className={`navbar__dropdown-item ${activeClass3 ? "navbar__dropdown-item--active" : ""
-                        }`}
+                      className={`navbar__dropdown-item ${
+                        activeClass3 ? "navbar__dropdown-item--active" : ""
+                      }`}
                     >
                       <button
                         className="navbar__dropdown-link"
@@ -377,8 +412,8 @@ const Layout = ({ children }) => {
                         }}
                       >
                         <span>
-                          Международные научно-исследовательские работы, Start-Up проекты,
-                          маркетинг и патентоведение
+                          Международные научно-исследовательские работы,
+                          Start-Up проекты, маркетинг и патентоведение
                         </span>
 
                         <Image
@@ -395,7 +430,8 @@ const Layout = ({ children }) => {
                     <li className="navbar__dropdown-item">
                       <Link href="/">
                         <a className="navbar__dropdown-link">
-                          Инженерная геодинамика и дистанционное зондирование земли
+                          Инженерная геодинамика и дистанционное зондирование
+                          земли
                         </a>
                       </Link>
                     </li>
@@ -409,7 +445,8 @@ const Layout = ({ children }) => {
                     <li className="navbar__dropdown-item">
                       <Link href="/">
                         <a className="navbar__dropdown-link">
-                          Гидрогеология и инженерная геология рудных месторождений
+                          Гидрогеология и инженерная геология рудных
+                          месторождений
                         </a>
                       </Link>
                     </li>
@@ -450,7 +487,12 @@ const Layout = ({ children }) => {
                 <div className="logo-box">
                   <Link href="/">
                     <a className="header__logo">
-                      <Image src={Logo} alt="Hydroengo logo" width="295" height="120" />
+                      <Image
+                        src={Logo}
+                        alt="Hydroengo logo"
+                        width="295"
+                        height="120"
+                      />
                     </a>
                   </Link>
                 </div>
@@ -458,33 +500,69 @@ const Layout = ({ children }) => {
                 <div className="app-box">
                   <ul className="app-box__list">
                     <li className="app-box__item">
-                      <a className="app-box__link" href="https://m.facebook.com/login/?locale2=ru_RU">
-                        <Image src={facebook} alt="facebook logo" width="36" height="36" />
+                      <a
+                        className="app-box__link"
+                        href="https://m.facebook.com/login/?locale2=ru_RU"
+                      >
+                        <Image
+                          src={facebook}
+                          alt="facebook logo"
+                          width="36"
+                          height="36"
+                        />
                       </a>
                     </li>
 
                     <li className="app-box__item">
-                      <a className="app-box__link" href="https://twitter.com/login">
-                        <Image src={twitter} alt="twitter logo" width="36" height="36" />
+                      <a
+                        className="app-box__link"
+                        href="https://twitter.com/login"
+                      >
+                        <Image
+                          src={twitter}
+                          alt="twitter logo"
+                          width="36"
+                          height="36"
+                        />
                       </a>
                     </li>
 
                     <li className="app-box__item">
-                      <a className="app-box__link" href="https://www.instagram.com/">
-                        <Image src={instagram} alt="instagram logo" width="36" height="36" />
+                      <a
+                        className="app-box__link"
+                        href="https://www.instagram.com/"
+                      >
+                        <Image
+                          src={instagram}
+                          alt="instagram logo"
+                          width="36"
+                          height="36"
+                        />
                       </a>
                     </li>
 
-
                     <li className="app-box__item">
-                      <a className="app-box__link" href="https://www.youtube.com/?hl=ru">
-                        <Image src={youtube} alt="youtube logo" width="36" height="36" />
+                      <a
+                        className="app-box__link"
+                        href="https://www.youtube.com/?hl=ru"
+                      >
+                        <Image
+                          src={youtube}
+                          alt="youtube logo"
+                          width="36"
+                          height="36"
+                        />
                       </a>
                     </li>
 
                     <li className="app-box__item">
                       <a className="app-box__link" href="https://telegram.org/">
-                        <Image src={telegram} alt="telegram logo" width="36" height="36" />
+                        <Image
+                          src={telegram}
+                          alt="telegram logo"
+                          width="36"
+                          height="36"
+                        />
                       </a>
                     </li>
                   </ul>
@@ -493,7 +571,8 @@ const Layout = ({ children }) => {
                 {/* Disply-block 890px */}
                 <ul className="left-box__list-bottom left-box__list-bottom--display-2">
                   <li className="left-box__item-bottom">
-                    <a className="left-box__item-bottom__link"
+                    <a
+                      className="left-box__item-bottom__link"
                       href="https://www.google.ru/maps/search/100041+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82+%D1%83%D0%BB.+%D0%9E%D0%BB%D0%B8%D0%BC%D0%BB%D0%B0%D1%80+-64/@41.2825125,69.1392826,11z/data=!3m1!4b1"
                     >
                       100041 Узбекистан, Ташкент <br />
@@ -502,19 +581,24 @@ const Layout = ({ children }) => {
                   </li>
 
                   <li className="left-box__item-bottom">
-                    <a className="left-box__item-bottom__link" href="https://hydroengeo.uz/">
+                    <a
+                      className="left-box__item-bottom__link"
+                      href="https://hydroengeo.uz/"
+                    >
                       hydrouz@hydroengeo.uz <br />
                       hydrouz@exat.uz
                     </a>
                   </li>
 
                   <li className="left-box__item-bottom">
-                    <a className="left-box__item-bottom__link" href="tel: +998712650378">
+                    <a
+                      className="left-box__item-bottom__link"
+                      href="tel: +998712650378"
+                    >
                       Tel: 998(71)265-03-78
                     </a>
                   </li>
                 </ul>
-
               </li>
               <li className="left-box__item-top">
                 <Link href="/">
@@ -607,7 +691,8 @@ const Layout = ({ children }) => {
 
             <ul className="left-box__list-bottom">
               <li className="left-box__item-bottom">
-                <a className="left-box__item-bottom__link"
+                <a
+                  className="left-box__item-bottom__link"
                   href="https://www.google.ru/maps/search/100041+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82+%D1%83%D0%BB.+%D0%9E%D0%BB%D0%B8%D0%BC%D0%BB%D0%B0%D1%80+-64/@41.2825125,69.1392826,11z/data=!3m1!4b1"
                 >
                   100041 Узбекистан, Ташкент <br />
@@ -616,14 +701,20 @@ const Layout = ({ children }) => {
               </li>
 
               <li className="left-box__item-bottom">
-                <a className="left-box__item-bottom__link" href="https://hydroengeo.uz/">
+                <a
+                  className="left-box__item-bottom__link"
+                  href="https://hydroengeo.uz/"
+                >
                   hydrouz@hydroengeo.uz <br />
                   hydrouz@exat.uz
                 </a>
               </li>
 
               <li className="left-box__item-bottom">
-                <a className="left-box__item-bottom__link" href="tel: +998712650378">
+                <a
+                  className="left-box__item-bottom__link"
+                  href="tel: +998712650378"
+                >
                   Tel: 998(71)265-03-78
                 </a>
               </li>
@@ -637,7 +728,6 @@ const Layout = ({ children }) => {
               </a>
             </Link>
 
-
             <Link href="/">
               <a className="left-box__item-top__info">
                 <p>МЕЛИОРАТИВНОЙ ГИДРОГЕОЛОГИИ</p>
@@ -646,14 +736,18 @@ const Layout = ({ children }) => {
 
             <Link href="/">
               <a className="left-box__item-top__info">
-                <p>ИНЖЕНЕРНОЙ ГЕОДИНАМИКИ И ДИСТАНЦИОННОГО ЗОНДИРОВАНИЯ ЗЕМЛИ</p>
+                <p>
+                  ИНЖЕНЕРНОЙ ГЕОДИНАМИКИ И ДИСТАНЦИОННОГО ЗОНДИРОВАНИЯ ЗЕМЛИ
+                </p>
               </a>
             </Link>
 
             <Link href="/">
               <a className="left-box__item-top__info">
-                <p>ГИДРОГЕОЛОГИИ И ИНЖЕНЕРНОЙ ГЕОЛОГИИ МЕСТОРОЖДЕНИЙ ТВЕРДЫХ
-                  ПОЛЕЗНЫХ ИСКОПАЕМЫХ</p>
+                <p>
+                  ГИДРОГЕОЛОГИИ И ИНЖЕНЕРНОЙ ГЕОЛОГИИ МЕСТОРОЖДЕНИЙ ТВЕРДЫХ
+                  ПОЛЕЗНЫХ ИСКОПАЕМЫХ
+                </p>
               </a>
             </Link>
 
@@ -708,7 +802,8 @@ const Layout = ({ children }) => {
           {/* Display-flex 1225*/}
           <ul className="left-box__list-bottom left-box__list-bottom--display">
             <li className="left-box__item-bottom">
-              <a className="left-box__item-bottom__link"
+              <a
+                className="left-box__item-bottom__link"
                 href="https://www.google.ru/maps/search/100041+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82+%D1%83%D0%BB.+%D0%9E%D0%BB%D0%B8%D0%BC%D0%BB%D0%B0%D1%80+-64/@41.2825125,69.1392826,11z/data=!3m1!4b1"
               >
                 100041 Узбекистан, Ташкент <br />
@@ -717,14 +812,20 @@ const Layout = ({ children }) => {
             </li>
 
             <li className="left-box__item-bottom">
-              <a className="left-box__item-bottom__link" href="https://hydroengeo.uz/">
+              <a
+                className="left-box__item-bottom__link"
+                href="https://hydroengeo.uz/"
+              >
                 hydrouz@hydroengeo.uz <br />
                 hydrouz@exat.uz
               </a>
             </li>
 
             <li className="left-box__item-bottom">
-              <a className="left-box__item-bottom__link" href="tel: +998712650378">
+              <a
+                className="left-box__item-bottom__link"
+                href="tel: +998712650378"
+              >
                 Tel: 998(71)265-03-78
               </a>
             </li>

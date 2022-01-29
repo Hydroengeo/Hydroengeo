@@ -6,7 +6,6 @@ import Card from "../card/card";
 
 //images
 import ScrollTop from '../../assets/images/ScrollTop.svg'
-import scrolls from '../../assets/images/scrolls.svg'
 import avatar from '../../assets/images/modeling-avatar.png'
 import image1 from '../../assets/images/modeling1.png'
 import image2 from '../../assets/images/modeling2.png'
@@ -60,7 +59,6 @@ function modeling() {
          <div className="container">
             <div className="ameliorative__head-box">
                <h1 className="ameliorative__heading">ЛАБОРАТОРИЯ ГЕОИНФОРМАЦИОННЫХ ТЕХНОЛОГИИ И МОДЕЛИРОВАНИЕ</h1>
-               <Image className="scrolls" src={scrolls} alt="scroll" width={80} height={80} />
             </div>
 
             <Card

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 //images
 import ScrollTop from "../../assets/images/ScrollTop.svg";
-import scrolls from "../../assets/images/scrolls.svg";
 import avatar from "../../assets/images/ameliorative1.jpg";
 import image1 from "../../assets/images/ameliorative2.png";
 import image2 from "../../assets/images/ameliorative3.png";
@@ -97,13 +96,6 @@ function Ameliorative() {
           <h1 className="ameliorative__heading">
             ЛАБОРАТОРИЯ МЕЛИОРАТИВНОЙ ГИДРОГЕОЛОГИИ И ДРЕНАЖА
           </h1>
-          <Image
-            className="scrolls"
-            src={scrolls}
-            alt="scroll"
-            width={80}
-            height={80}
-          />
         </div>
 
         <div className="workers workers--padding">
