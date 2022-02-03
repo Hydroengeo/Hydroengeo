@@ -1,9 +1,10 @@
 import Head from "next/head";
+import Image from "next/image";
 
-import Layout from "../src/components/layout/layout";
-import Uran from "../src/components/uran/uran";
+import Layout from "../../src/components/layout/layout";
+import Hydrogeology from "../../src/components/hydrogeology/hydrogeology";
 
-const UranPage = () => {
+export default function hydrogeology() {
   return (
     <>
       <Head>
@@ -13,10 +14,8 @@ const UranPage = () => {
       </Head>
 
       <Layout>
-        <Uran />
+        <Hydrogeology />
       </Layout>
     </>
   );
-};
-
-export default UranPage;
+}

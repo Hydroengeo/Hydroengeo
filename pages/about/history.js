@@ -1,11 +1,10 @@
 import Head from "next/head";
+import Image from "next/image";
 
-import Layout from "../src/components/layout/layout";
-import Contacts from "../src/components/contacts/contacts";
-import { useDispatch } from "react-redux";
+import Layout from "../../src/components/layout/layout";
+import HistoryComponent from "../../src/components/history/history";
 
-const ContactsPage = () => {
-  const dispatch = useDispatch();
+export default function History() {
   return (
     <>
       <Head>
@@ -15,10 +14,8 @@ const ContactsPage = () => {
       </Head>
 
       <Layout>
-        <Contacts />
+        <HistoryComponent />
       </Layout>
     </>
   );
-};
-
-export default ContactsPage;
+}

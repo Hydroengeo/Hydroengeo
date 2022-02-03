@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import Layout from "../src/components/layout/layout";
-import HistoryComponent from "../src/components/history/history";
+import Layout from "../../src/components/layout/layout";
+import Scientific from "../../src/components/scientific/scientific";
 
-export default function History() {
+export default function scientific() {
   return (
     <>
       <Head>
@@ -14,8 +14,8 @@ export default function History() {
       </Head>
 
       <Layout>
-        <HistoryComponent />
+        <Scientific />
       </Layout>
     </>
   );
-};
+}

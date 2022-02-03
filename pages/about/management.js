@@ -1,9 +1,10 @@
 import Head from "next/head";
+import Image from "next/image";
 
-import Layout from "../src/components/layout/layout";
-import Overture from "../src/components/overture/overture";
+import Layout from "../../src/components/layout/layout";
+import Managements from "../../src/components/management/management";
 
-const OverturePage = () => {
+export default function management() {
   return (
     <>
       <Head>
@@ -13,10 +14,8 @@ const OverturePage = () => {
       </Head>
 
       <Layout>
-        <Overture />
+        <Managements />
       </Layout>
     </>
   );
-};
-
-export default OverturePage;
+}

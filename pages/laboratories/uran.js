@@ -1,11 +1,9 @@
 import Head from "next/head";
 
-import Layout from "../src/components/layout/layout";
-import Contacts from "../src/components/contacts/contacts";
-import { useDispatch } from "react-redux";
+import Layout from "../../src/components/layout/layout";
+import Uran from "../../src/components/uran/uran";
 
-const ContactsPage = () => {
-  const dispatch = useDispatch();
+const UranPage = () => {
   return (
     <>
       <Head>
@@ -15,10 +13,10 @@ const ContactsPage = () => {
       </Head>
 
       <Layout>
-        <Contacts />
+        <Uran />
       </Layout>
     </>
   );
 };
 
-export default ContactsPage;
+export default UranPage;

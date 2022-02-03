@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-import Layout from "../src/components/layout/layout";
-import Chemical from "../src/components/chemical/chemical";
+import Layout from "../../src/components/layout/layout";
+import Chemical from "../../src/components/chemical/chemical";
 
 export default function chemical() {
   return (

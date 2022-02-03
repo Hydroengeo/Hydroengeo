@@ -1,9 +1,10 @@
 import Head from "next/head";
-import Layout from "../src/components/layout/layout";
+import Image from "next/image";
 
-import Resources from "../src/components/resources/resources";
+import Layout from "../../src/components/layout/layout";
+import Technical from "../../src/components/technical/technical";
 
-const ResourcesPage = () => {
+export default function technical() {
   return (
     <>
       <Head>
@@ -13,10 +14,8 @@ const ResourcesPage = () => {
       </Head>
 
       <Layout>
-        <Resources />
+        <Technical />
       </Layout>
     </>
   );
-};
-
-export default ResourcesPage;
+}

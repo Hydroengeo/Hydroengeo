@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect, useContext } from "react";
+import Content from "../../Localization/Content";
+import { useDispatch, useSelector } from "react-redux";
 
 // Components
 import InnerDropdown1 from "../innerDropdown1/innerDropdown";
@@ -21,6 +23,13 @@ import youtube from "../../assets/images/youtube.svg";
 import telegram from "../../assets/images/telegram.svg";
 
 const Layout = ({ children }) => {
+  const dispatch = useDispatch();
+  const {
+    count: { lang },
+  } = useSelector(state => state);
+
+  const { header, main, footer } = Content[lang];
+
   const dropdwn1 = useRef(null);
   const dropdwn2 = useRef(null);
   const dropdwn3 = useRef(null);
@@ -35,6 +44,10 @@ const Layout = ({ children }) => {
   const [searchActive, setSearchActive] = useState(false);
 
   const [hamOpen, setHamOpen] = useState(false);
+
+  useEffect(() => {
+    dispatch({ type: window.localStorage.getItem("lang") || "ru" });
+  }, []);
 
   return (
     <>
@@ -58,9 +71,30 @@ const Layout = ({ children }) => {
               className={!hamOpen ? "lang-wrapper" : "lang-wrapper lang-wrapper--active"}
             >
               <ul className="lang-mobile">
-                <li className="lang-mobile-item">РУ</li>
-                <li className="lang-mobile-item">Uz</li>
-                <li className="lang-mobile-item">EN</li>
+                <li
+                  className="lang-mobile-item"
+                  onClick={() => {
+                    dispatch({ type: "ru" });
+                  }}
+                >
+                  РУ
+                </li>
+                <li
+                  className="lang-mobile-item"
+                  onClick={() => {
+                    dispatch({ type: "uz" });
+                  }}
+                >
+                  Uz
+                </li>
+                <li
+                  className="lang-mobile-item"
+                  onClick={() => {
+                    dispatch({ type: "en" });
+                  }}
+                >
+                  EN
+                </li>
               </ul>
             </div>
 
@@ -94,13 +128,28 @@ const Layout = ({ children }) => {
             </ul>
 
             <ul className="lang">
-              <li className="lang__item">
+              <li
+                className="lang__item"
+                onClick={() => {
+                  dispatch({ type: "ru" });
+                }}
+              >
                 <span>РУ</span>
               </li>
-              <li className="lang__item">
+              <li
+                className="lang__item"
+                onClick={() => {
+                  dispatch({ type: "uz" });
+                }}
+              >
                 <span>УЗ</span>
               </li>
-              <li className="lang__item">
+              <li
+                className="lang__item"
+                onClick={() => {
+                  dispatch({ type: "en" });
+                }}
+              >
                 <span>EN</span>
               </li>
             </ul>
@@ -147,7 +196,7 @@ const Layout = ({ children }) => {
               <ul className="navbar__list">
                 <li className="navbar__item">
                   <Link href="/">
-                    <a className="navbar__item-link">ГЛАВНАЯ</a>
+                    <a className="navbar__item-link">{header.home}</a>
                   </Link>
                 </li>
                 <li className="navbar__item">
@@ -172,7 +221,7 @@ const Layout = ({ children }) => {
                       }
                     }}
                   >
-                    <span>ОБ ИНСТИТУТЕ</span>
+                    <span>{header.about}</span>
                     <Image
                       src={Arrow}
                       alt="Down arrow"
@@ -184,44 +233,56 @@ const Layout = ({ children }) => {
 
                   <ul ref={dropdwn1} className="navbar-item__dropdown">
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">Об институте</a>
+                      <Link href="/about">
+                        <a className="navbar__dropdown-link">{header.about}</a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">Структура института</a>
+                      <Link href="/about/structura">
+                        <a className="navbar__dropdown-link">
+                          {header.about_drop_down.structure}
+                        </a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">Руководство</a>
+                      <Link href="/about/governance">
+                        <a className="navbar__dropdown-link">
+                          {header.about_drop_down.management}
+                        </a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">История института</a>
+                      <Link href="/about/history">
+                        <a className="navbar__dropdown-link">
+                          {header.about_drop_down.history_institute}
+                        </a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">Миссия и политика</a>
+                      <Link href="/about/politics">
+                        <a className="navbar__dropdown-link">
+                          {header.about_drop_down.policy}
+                        </a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">Сотрудничество</a>
+                      <Link href="/about/cooperation">
+                        <a className="navbar__dropdown-link">
+                          {header.about_drop_down.cooperation}
+                        </a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">История и руководство</a>
+                      <Link href="/about/management">
+                        <a className="navbar__dropdown-link">
+                          {header.about_drop_down.history_leadership}
+                        </a>
                       </Link>
                     </li>
                   </ul>
@@ -248,7 +309,7 @@ const Layout = ({ children }) => {
                       }
                     }}
                   >
-                    <span>ДЕЯТЕЛЬНОСТЬ</span>
+                    <span>{header.activity}</span>
                     <Image
                       src={Arrow}
                       alt="Down arrow"
@@ -260,28 +321,32 @@ const Layout = ({ children }) => {
 
                   <ul ref={dropdwn2} className="navbar-item__dropdown">
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">Деятельность</a>
+                      <Link href="/activity">
+                        <a className="navbar__dropdown-link">{header.activity}</a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">Научная деятельность</a>
-                      </Link>
-                    </li>
-
-                    <li className="navbar__dropdown-item">
-                      <Link href="/">
+                      <Link href="/activity/scientific">
                         <a className="navbar__dropdown-link">
-                          Производственная деятельность
+                          {header.activity_drop_down.scientific}
                         </a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">Образование</a>
+                      <Link href="/activity/production">
+                        <a className="navbar__dropdown-link">
+                          {header.activity_drop_down.production}
+                        </a>
+                      </Link>
+                    </li>
+
+                    <li className="navbar__dropdown-item">
+                      <Link href="/activity/education">
+                        <a className="navbar__dropdown-link">
+                          {header.activity_drop_down.education}
+                        </a>
                       </Link>
                     </li>
                   </ul>
@@ -308,7 +373,7 @@ const Layout = ({ children }) => {
                       }
                     }}
                   >
-                    <span>ЦЕНТРЫ И ЛАБОРАТОРИИ</span>
+                    <span>{header.centers_laboratories}</span>
                     <Image
                       src={Arrow}
                       alt="Down arrow"
@@ -330,7 +395,7 @@ const Layout = ({ children }) => {
                           setActiveClass1(!activeClass1);
                         }}
                       >
-                        <span>Исследование ресурсов и запасов подземных вод</span>
+                        <span>{header.laboratories_drop_down.research}</span>
                         <Image
                           src={Arrow}
                           width="20"
@@ -353,9 +418,7 @@ const Layout = ({ children }) => {
                           setActiveClass2(!activeClass2);
                         }}
                       >
-                        <span>
-                          Мониторинг подземных вод и геоэкологические исследования
-                        </span>
+                        <span>{header.laboratories_drop_down.groundwater}</span>
                         <Image
                           src={Arrow}
                           width="20"
@@ -380,8 +443,7 @@ const Layout = ({ children }) => {
                         }}
                       >
                         <span>
-                          Международные научно-исследовательские работы, Start-Up проекты,
-                          маркетинг и патентоведение
+                          {header.laboratories_drop_down.international_research}
                         </span>
 
                         <Image
@@ -396,44 +458,58 @@ const Layout = ({ children }) => {
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
+                      <Link href="/laboratories/overture">
                         <a className="navbar__dropdown-link">
-                          Инженерная геодинамика и дистанционное зондирование земли
+                          {
+                            header.laboratories_drop_down.international_research_drop_down
+                              .engineering
+                          }
+                        </a>
+                      </Link>
+                    </li>
+
+                    <li className="navbar__dropdown-item">
+                      <Link href="/laboratories/hydrogeophysics">
+                        <a className="navbar__dropdown-link">
+                          {
+                            header.laboratories_drop_down.international_research_drop_down
+                              .hydrogeophysics
+                          }
                         </a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
                       <Link href="/">
-                        <a className="navbar__dropdown-link">Гидрогеофизика</a>
-                      </Link>
-                    </li>
-
-                    <li className="navbar__dropdown-item">
-                      <Link href="/">
                         <a className="navbar__dropdown-link">
-                          Гидрогеология и инженерная геология рудных месторождений
+                          {
+                            header.laboratories_drop_down.international_research_drop_down
+                              .deposits
+                          }
                         </a>
                       </Link>
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
+                      <Link href="/laboratories/hydrogeology">
                         <a className="navbar__dropdown-link">
-                          Гидрогеология и инженерная геология МТПИ
+                          {
+                            header.laboratories_drop_down.international_research_drop_down
+                              .engineering_geology
+                          }
                         </a>
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="navbar__item">
-                  <Link href="/">
-                    <a className="navbar__item-link">НОРМАТИВНАЯ БАЗА</a>
+                  <Link href="/normatives">
+                    <a className="navbar__item-link">{header.normative}</a>
                   </Link>
                 </li>
                 <li className="navbar__item">
-                  <Link href="/">
-                    <a className="navbar__item-link">КОНТАКТЫ</a>
+                  <Link href="/contacts">
+                    <a className="navbar__item-link">{header.contacts}</a>
                   </Link>
                 </li>
               </ul>
@@ -542,43 +618,43 @@ const Layout = ({ children }) => {
               <li className="left-box__item-top">
                 <Link href="/">
                   <a className="left-box__item-top__title">
-                    <strong>ОБ ИНСТИТУТЕ</strong>
+                    <strong>{footer.about}</strong>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>СТРУКТУРА ИНСТИТУТА</p>
+                    <p>{footer.about_drop_down.structure}</p>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>РУКОВОДСТВО</p>
+                    <p>{footer.about_drop_down.management}</p>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>ИСТОРИЯ ИНСТИТУТА</p>
+                    <p>{footer.about_drop_down.history_institute}</p>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>МИССИЯ И ПОЛИТИКА</p>
+                    <p>{footer.about_drop_down.policy}</p>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>СОТРУДНИЧЕСТВО</p>
+                    <p>{footer.about_drop_down.cooperation}</p>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>ИСТОРИЯ И РУКОВОДСТВО</p>
+                    <p>{footer.about_drop_down.history_leaderships}</p>
                   </a>
                 </Link>
               </li>
@@ -586,43 +662,43 @@ const Layout = ({ children }) => {
               <li className="left-box__item-top">
                 <Link href="/">
                   <a className="left-box__item-top__title">
-                    <strong>ДЕЯТЕЛЬНОСТЬ</strong>
+                    <strong>{footer.activity}</strong>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>НАУЧНАЯ</p>
+                    <p>{footer.activity_drop_down.scientific}</p>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>ПРОИЗВОДСТВЕННАЯ</p>
+                    <p>{footer.activity_drop_down.production}</p>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>ОБРАЗОВАНИЕ</p>
+                    <p>{footer.activity_drop_down.education}</p>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__title">
-                    <strong>НОРМАТИВНАЯ БАЗА</strong>
+                    <strong>{footer.normative}</strong>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>КОНТАКТЫ</p>
+                    <p>{footer.contacts}</p>
                   </a>
                 </Link>
 
                 <Link href="/">
                   <a className="left-box__item-top__info">
-                    <p>ИНТЕРАКТИВНЫЕ УСЛУГИ</p>
+                    <p>{footer.interactives}</p>
                   </a>
                 </Link>
               </li>
@@ -657,13 +733,13 @@ const Layout = ({ children }) => {
           <div className="footer__right-box">
             <Link href="/">
               <a className="left-box__item-top__title">
-                <strong>ЛАБОРАТОРИИ ИНСТИТУТА</strong>
+                <strong>{footer.centers_laboratories}</strong>
               </a>
             </Link>
 
             <Link href="/">
               <a className="left-box__item-top__info">
-                <p>МЕЛИОРАТИВНОЙ ГИДРОГЕОЛОГИИ</p>
+                <p>{footer.laboratories_drop_down.meliorative}</p>
               </a>
             </Link>
 

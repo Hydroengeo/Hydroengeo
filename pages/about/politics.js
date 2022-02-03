@@ -1,11 +1,10 @@
 import Head from "next/head";
+import Image from "next/image";
 
-import Layout from "../src/components/layout/layout";
-import Contacts from "../src/components/contacts/contacts";
-import { useDispatch } from "react-redux";
+import Layout from "../../src/components/layout/layout";
+import Politics from "../../src/components/politics/politics";
 
-const ContactsPage = () => {
-  const dispatch = useDispatch();
+export default function politics() {
   return (
     <>
       <Head>
@@ -15,10 +14,8 @@ const ContactsPage = () => {
       </Head>
 
       <Layout>
-        <Contacts />
+        <Politics />
       </Layout>
     </>
   );
-};
-
-export default ContactsPage;
+}

@@ -1,11 +1,9 @@
 import Head from "next/head";
 
-import Layout from "../src/components/layout/layout";
-import Contacts from "../src/components/contacts/contacts";
-import { useDispatch } from "react-redux";
+import Layout from "../../src/components/layout/layout";
+import Overture from "../../src/components/overture/overture";
 
-const ContactsPage = () => {
-  const dispatch = useDispatch();
+const OverturePage = () => {
   return (
     <>
       <Head>
@@ -15,10 +13,10 @@ const ContactsPage = () => {
       </Head>
 
       <Layout>
-        <Contacts />
+        <Overture />
       </Layout>
     </>
   );
 };
 
-export default ContactsPage;
+export default OverturePage;
