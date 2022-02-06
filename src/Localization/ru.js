@@ -1,10 +1,7 @@
 import history from "./pages/ru/history";
 import ameliorative from "./pages/ru/ameliorative";
-<<<<<<< HEAD
 import hydrogeophysics from "./pages/ru/hydrogeophysics";
-=======
 import overture from "./pages/ru/overture";
->>>>>>> 16bf43acc1b76d9e0ffde66024e6362a0cb6e3d5
 
 const ru = {
   header: {
@@ -329,14 +326,11 @@ const ru = {
         },
       },
     },
-    
+
     history,
     ameliorative,
-<<<<<<< HEAD
-    hydrogeophysics
-=======
+    hydrogeophysics,
     overture,
->>>>>>> 16bf43acc1b76d9e0ffde66024e6362a0cb6e3d5
   },
 
   footer: {

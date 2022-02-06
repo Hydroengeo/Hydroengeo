@@ -1,10 +1,7 @@
 import history from "./pages/en/history";
 import ameliorative from "./pages/en/ameliorative";
-<<<<<<< HEAD
-import hydrogeophysics from "./pages/en/hydrogeophysics"
-=======
+import hydrogeophysics from "./pages/en/hydrogeophysics";
 import overture from "./pages/en/overture";
->>>>>>> 16bf43acc1b76d9e0ffde66024e6362a0cb6e3d5
 
 const en = {
   header: {
@@ -328,11 +325,8 @@ const en = {
 
     history,
     ameliorative,
-<<<<<<< HEAD
-    hydrogeophysics
-=======
+    hydrogeophysics,
     overture,
->>>>>>> 16bf43acc1b76d9e0ffde66024e6362a0cb6e3d5
   },
 
   footer: {
