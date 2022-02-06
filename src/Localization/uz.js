@@ -1,6 +1,10 @@
 import history from "./pages/uz/history";
 import ameliorative from "./pages/uz/ameliorative";
+<<<<<<< HEAD
 import hydrogeophysics from "./pages/uz/hydrogeophysics";
+=======
+import overture from "./pages/uz/overture";
+>>>>>>> 16bf43acc1b76d9e0ffde66024e6362a0cb6e3d5
 
 const uz = {
   header: {
@@ -325,7 +329,11 @@ const uz = {
     
     history,
     ameliorative,
+<<<<<<< HEAD
     hydrogeophysics,
+=======
+    overture,
+>>>>>>> 16bf43acc1b76d9e0ffde66024e6362a0cb6e3d5
   },
 
   footer: {
