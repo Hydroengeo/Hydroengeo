@@ -1,32 +1,45 @@
 import Link from "next/link";
 
+import { useSelector } from "react-redux";
+import Content from "../../Localization/Content";
+
 const InnerDropdown2 = () => {
+  const {
+    count: { lang },
+  } = useSelector(state => state);
+
+  const { header } = Content[lang];
+
   return (
     <>
       <ul className="inner__drop-down">
         <li className="inner__drop-down-item">
-          <Link href="/">
-            <a className="inner__drop-down-link">Геоэкология</a>
-          </Link>
-        </li>
-        <li className="inner__drop-down-item">
-          <Link href="/">
+          <Link href="/laboratories/geoecology">
             <a className="inner__drop-down-link">
-              Геоинформационные технологии и моделирование
+              {header.laboratories_drop_down.groundwater_drop_down.geoecology}
             </a>
           </Link>
         </li>
         <li className="inner__drop-down-item">
-          <Link href="/">
+          <Link href="/laboratories/modeling">
             <a className="inner__drop-down-link">
-              Мониторинг подземных вод и региональные исследования
+              {header.laboratories_drop_down.groundwater_drop_down.geoinformation}
+            </a>
+          </Link>
+        </li>
+        <li className="inner__drop-down-item">
+          <Link href="/laboratories/groundwater">
+            <a className="inner__drop-down-link">
+              {header.laboratories_drop_down.groundwater_drop_down.groundwater}
             </a>
           </Link>
         </li>
 
         <li className="inner__drop-down-item">
-          <Link href="/">
-            <a className="inner__drop-down-link">Геоэколого-химическая лаборатория</a>
+          <Link href="/laboratories/chemical">
+            <a className="inner__drop-down-link">
+              {header.laboratories_drop_down.groundwater_drop_down.chemical_laboratory}
+            </a>
           </Link>
         </li>
       </ul>

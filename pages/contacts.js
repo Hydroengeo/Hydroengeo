@@ -2,8 +2,10 @@ import Head from "next/head";
 
 import Layout from "../src/components/layout/layout";
 import Contacts from "../src/components/contacts/contacts";
+import { useDispatch } from "react-redux";
 
 const ContactsPage = () => {
+  const dispatch = useDispatch();
   return (
     <>
       <Head>
