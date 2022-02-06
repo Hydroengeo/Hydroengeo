@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Content from "../../Localization/Content";
+import { useDispatch, useSelector } from "react-redux";
 
 //images
 import ScrollTop from "../../assets/images/ScrollTop.svg";
@@ -38,6 +40,15 @@ import image25_1 from "../../assets/images/ameliorative26-1.png";
 import image25_2 from "../../assets/images/ameliorative26-2.png";
 
 function Ameliorative() {
+  const dispatch = useDispatch();
+  const {
+    count: { lang },
+  } = useSelector(state => state);
+
+  const {
+    main: { ameliorative: ac },
+  } = Content[lang];
+
   const [width, setWidth] = useState(350);
   const [height, setHeight] = useState(250);
 
@@ -93,9 +104,7 @@ function Ameliorative() {
     <section className="ameliorative">
       <div className="container">
         <div className="ameliorative__head-box">
-          <h1 className="ameliorative__heading">
-            ЛАБОРАТОРИЯ МЕЛИОРАТИВНОЙ ГИДРОГЕОЛОГИИ И ДРЕНАЖА
-          </h1>
+          <h1 className="ameliorative__heading">{ac.heading}</h1>
         </div>
 
         <div className="workers workers--padding">
@@ -132,32 +141,17 @@ function Ameliorative() {
         </div>
 
         <div className="ameliorative__services">
-          <p className="ameliorative__services__title">
-            Лаборатория оказывает следующие услуги:
-          </p>
+          <p className="ameliorative__services__title">{ac.services}</p>
           <ul className="ameliorative__services__list">
-            <li className="ameliorative__services__item">
-              Обоснование технологий извлечения подземных вод водозаборами
-              горизонтального типа для хозяйственно-питьевого водоснабжения для
-              Министерства жилищно-коммунального хозяйства.
-            </li>
-            <li className="ameliorative__services__item">
-              Оценка эксплуатационных запасов подземных вод по скважинным
-              централизованным водозаборам для хозяйственно-питьевого
-              водоснабжения
-            </li>
+            <li className="ameliorative__services__item">{ac.services1}</li>
+            <li className="ameliorative__services__item">{ac.services2}</li>
           </ul>
         </div>
 
         <p className="ameliorative__info">
-          Согласно Постановлению Президента Республики Узбекистан «О мерах по
-          упорядочению контроля и учета рационального использования запасов
-          подземных вод на 2017 — 2021 годы» сформирована лаборатория
-          "Мелиоративная гидрогеология и дренаж". <br />
-          <span className="ameliorative__info__span">
-            В настоящее время в лаборатории работает 12 сотрудников, из которых
-            5 – ведущие специалисты, 1 магистрант.
-          </span>
+          {ac.paragraph1}
+          <br />
+          <span className="ameliorative__info__span">{ac.paragraph2}</span>
         </p>
 
         <ul className="developed__list">
@@ -169,9 +163,7 @@ function Ameliorative() {
               width={width}
               height={height}
             />
-            <p className="ameliorative__info">
-              Освоенные территории с благоприятными условиями мелиорации
-            </p>
+            <p className="ameliorative__info">{ac.territory1}</p>
           </li>
 
           <li className="developed__item developed__item--mobile-margin">
@@ -182,9 +174,7 @@ function Ameliorative() {
               width={width}
               height={height}
             />
-            <p className="ameliorative__info">
-              Освоенные территории со слабой дренированностью
-            </p>
+            <p className="ameliorative__info">{ac.territory2}</p>
           </li>
 
           <li className="developed__item developed__item--mobile-margin">
@@ -195,36 +185,16 @@ function Ameliorative() {
               width={width}
               height={height}
             />
-            <p className="ameliorative__info">
-              Территории, подверженные процессам вторичного засоления
-            </p>
+            <p className="ameliorative__info">{ac.territory3}</p>
           </li>
         </ul>
 
-        <p className="ameliorative__info ameliorative__info--margin">
-          Предметом деятельности лаборатории является проведение
-          научно-исследовательских работ по изучению процесса регионального
-          засоления грунтов зоны аэрации и грунтовых вод и их прогноз на
-          орошаемых территориях, в том числе:
-        </p>
+        <p className="ameliorative__info ameliorative__info--margin">{ac.paragraph3}</p>
 
         <ul className="ameliorative__services__list">
-          <li className="ameliorative__services__item">
-            Выявление пространственно-временных закономерностей фильтрационных и
-            миграционных процессов, протекающих в зоне аэрации на основе
-            экспериментальных исследований на участках с различным механическим
-            составом, степенью засоления почвогрунтов и режимом грунтовых вод;
-          </li>
-          <li className="ameliorative__services__item">
-            Математическое моделирование физико-химических процессов,
-            протекающих в зоне аэрации и в грунтовых водах, и прогноз выноса
-            солей с орошаемых территорий;
-          </li>
-          <li className="ameliorative__services__item">
-            Разработка комплекса мероприятий по улучшению мелиоративного
-            состояния земель на основе натурных исследований на опытных
-            полигонах и математического моделирования процессов засоления.
-          </li>
+          <li className="ameliorative__services__item">{ac.activity1}</li>
+          <li className="ameliorative__services__item">{ac.activity2}</li>
+          <li className="ameliorative__services__item">{ac.activity3}</li>
         </ul>
 
         <ul className="developed__list developed__list--flex">
@@ -235,9 +205,7 @@ function Ameliorative() {
               width={width2}
               height={height2}
             />
-            <p className="">
-              Ранее применяемый подход, без учета процессов в зоне аэрации
-            </p>
+            <p className="">{ac.activity4}</p>
           </li>
 
           <li className="developed__item developed__item--width">
@@ -247,10 +215,7 @@ function Ameliorative() {
               width={width2}
               height={height2}
             />
-            <p className="">
-              Физико-химические процессы в зоне аэрации и их связь с грунтовыми
-              водами
-            </p>
+            <p className="">{ac.activity5}</p>
           </li>
         </ul>
 
@@ -262,7 +227,7 @@ function Ameliorative() {
               width={width}
               height={height}
             />
-            <p className="">Структура модели тестового полигона</p>
+            <p className="">{ac.activity6}</p>
           </li>
 
           <li className="developed__item developed__item--width">
@@ -275,16 +240,12 @@ function Ameliorative() {
                 height={307}
               />
             </div>
-            <p className="ameliorative__info ameliorative__info--text">
-              Уровни грунтовых вод по результатам моделирования
-            </p>
+            <p className="ameliorative__info ameliorative__info--text">{ac.activity7}</p>
           </li>
         </ul>
 
         <div className="territories">
-          <h2 className="territories__heading">
-            Территории Республики Узбекистан, подверженные процессам засоления
-          </h2>
+          <h2 className="territories__heading">{ac.secondaryHeading1}</h2>
           <Image
             src={image8}
             alt="Territories of the Republic of Uzbekistan subject to salinization processes"
@@ -292,40 +253,23 @@ function Ameliorative() {
             height={762}
           />
           <p className="ameliorative__info ameliorative__info--margin ameliorative__info--mobile-bold">
-            Изучение агрофизических и агрохимических свойств почвогрунтов
-            приповерхностных горизонтов и взаимосвязи подземных вод различных
-            горизонтов в течение годичного цикла
+            {ac.paragraph4}
           </p>
         </div>
 
         <div className="developed__list developed__list--width">
           <div className="image9">
-            <Image
-              src={image9}
-              alt="water motor"
-              width={width3}
-              height={height3}
-            />
+            <Image src={image9} alt="water motor" width={width3} height={height3} />
           </div>
           <div className="image10">
             <Image src={image10} alt="thin water" width={304} height={427} />
           </div>
         </div>
 
-        <p className="ameliorative__info ameliorative__info--margin">
-          Физические свойства грунтов обусловлены гранулометрическим и
-          минералогическим составом грунтов. Более высокими значениями в целом
-          характеризуются тяжелые суглинистые породы, более низкими средние,
-          пылеватые суглинки. Естественная влажность грунтов изменяется в
-          широких пределах, увеличиваясь в разрезе выработок с увеличением
-          содержаний пылеватых и глинистых частиц. Фильтрационные свойства пород
-          отличаются крайней пространственной неоднородностью как от одной
-          геоморфологической зоны к другой, так и в пределах одной зоны..
-        </p>
+        <p className="ameliorative__info ameliorative__info--margin">{ac.paragraph5}</p>
 
         <p className="ameliorative__info ameliorative__info--margin-many">
-          Построение гидрогеологических моделей водозаборов горизонтального типа
-          (галерей) с целью переоценки запасов подземных вод.
+          {ac.paragraph6}
         </p>
 
         <div className="developed__list developed__list">
@@ -336,9 +280,7 @@ function Ameliorative() {
               width={width}
               height={height}
             />
-            <p className="ameliorative__info">
-              Укладка перфорированной трубы на дно траншеи на участке Дамходжа
-            </p>
+            <p className="ameliorative__info">{ac.models1}</p>
           </div>
 
           <div className="">
@@ -361,22 +303,12 @@ function Ameliorative() {
               </li>
             </ul>
             <p className="ameliorative__info ameliorative__info--text developed__item--mobile-margin-small">
-              Кадры из видео, снятого внутри водозаборной галереи
+              {ac.models2}
             </p>
           </div>
         </div>
 
-        <p className="ameliorative__info ameliorative__info--margin">
-          Поиски и нахождение участков, пригодных для строительства и
-          эксплуатации водозаборов галерейного типа, является задачей сложной и
-          требует пристального внимания и интеллектуальных затрат специалистов –
-          гидрогеологов. Строительство таких сооружений без гидрогеологического
-          обоснования является недопустимым и приведет к непредсказуемым
-          материальным и финансовым потерям без получения требуемого эффекта.
-          Вместе с тем галерейные водозаборы относительно скважинных более
-          экономичны, поскольку рассчитаны на извлечение подземных вод с глубины
-          до 10м без затрат электроэнергии.
-        </p>
+        <p className="ameliorative__info ameliorative__info--margin">{ac.paragraph7}</p>
 
         <ul className="developed__list--block">
           <li className="developed__item--width">
@@ -387,7 +319,7 @@ function Ameliorative() {
               height={height6}
             />
             <p className="ameliorative__info ameliorative__info--margin  ameliorative__info--text">
-              Участок работ «Дамходжа»
+              {ac.workspace1}
             </p>
           </li>
 
@@ -399,13 +331,13 @@ function Ameliorative() {
               height={height6}
             />
             <p className="ameliorative__info ameliorative__info--margin ameliorative__info--text">
-              Участок работ «Аккишлак»
+              {ac.workspace2}
             </p>
           </li>
         </ul>
 
         <h2 className="ameliorative__info ameliorative__info--margin ameliorative__info--mobile-text">
-          Проходка траншеи под перфорированные трубы на участках Аксу и Дамходжа
+          {ac.secondaryHeading2}
         </h2>
 
         <div className="developed__list--block">
@@ -419,11 +351,9 @@ function Ameliorative() {
               />
             </div>
             <p className="ameliorative__info ameliorative__info--mobile-text ameliorative__info--mobile-none-text">
-              Участок Аккишлак.
+              {ac.ditch1T}
               <br />
-              При проходке траншеи <br />
-              вскрыты глинистые отложения
-              <br />в центральной части участка
+              {ac.ditch1}
             </p>
           </div>
 
@@ -438,12 +368,7 @@ function Ameliorative() {
                   height={height2}
                 />
               </div>
-              <Image
-                src={image18}
-                alt="Damhoja area 2"
-                width={width2}
-                height={height2}
-              />
+              <Image src={image18} alt="Damhoja area 2" width={width2} height={height2} />
             </li>
 
             <li className="developed__item--margin-small">
@@ -451,16 +376,14 @@ function Ameliorative() {
                 <Image src={image19} alt="" width={width2} height={height2} />
               </div>
               <p className="developed__item--margin-small ameliorative__info--width">
-                Участок Дамходжа. При проходке траншеи (1030 м от
-                экспериментального фрагмента) на глубине 7м вскрыты глинистые
-                отложения
+                {ac.ditch2}
               </p>
             </li>
           </ul>
         </div>
 
         <h2 className="ameliorative__info ameliorative__info--margin desktop">
-          Участок Аксу-Аккишлак. Вода из галереи подаётся в райцентр Дехканабад{" "}
+          {ac.secondaryHeading3}
         </h2>
 
         <div className="developed__list--block desktop">
@@ -474,42 +397,24 @@ function Ameliorative() {
             />
             <p className="">
               <strong className="ameliorative__info ameliorative__info--margin-little">
-                Расходы воды, замеренные в колодцах по галерее Аксу. В
-                паводковый период расход галереи выше проектного в 2 раза
+                {ac.expenseH}
               </strong>
             </p>
 
-            <p className="ameliorative__info">
-              Участок Дамходжа. Уложена практически вся перфорированная труба.
-              Идет укладка обратного фильтра
-            </p>
+            <p className="ameliorative__info">{ac.expenseP}</p>
           </div>
 
           <div className="bottom-box">
-            <Image
-              src={image21}
-              alt="Aksu section"
-              width={width7}
-              height={height7}
-            />
+            <Image src={image21} alt="Aksu section" width={width7} height={height7} />
             <p className="ameliorative__info ameliorative__info--margin-big ameliorative__info--mobile-margin">
-              На участке Аксу проводятся гидрогеологические исследования по
-              замеру расхода воды в галерее и в саях. В паводок расход воды
-              превышает утвержденный эксплуатационный отбор в 2,1 раза.
-              Отбирались пробы воды через смотровые колодцы и проводилось
-              изучение мутности воды в галерее.
+              {ac.aksu}
             </p>
           </div>
         </div>
 
         <div className="mobile">
           <div className="image21 developed__item--mobile-margin-small">
-            <Image
-              src={image21}
-              alt="Aksu section"
-              width={width}
-              height={height}
-            />
+            <Image src={image21} alt="Aksu section" width={width} height={height} />
           </div>
           <div className="image20">
             {" "}
@@ -522,25 +427,16 @@ function Ameliorative() {
             />
           </div>
           <p className="ameliorative__info ameliorative__info--mobile-margin-big">
-            Участок Аксу-Аккишлак. Вода из галереи подаётся в райцентр
-            Дехканабад{" "}
+            {ac.secondaryHeading3}
           </p>
           <p className="ameliorative__info">
             <strong className="ameliorative__info ameliorative__info--margin-little">
-              Расходы воды, замеренные в колодцах по галерее Аксу. В паводковый
-              период расход галереи выше проектного в 2 раза
+              {ac.expenseH}
             </strong>
           </p>
-          <p className="ameliorative__info">
-            Участок Дамходжа. Уложена практически вся перфорированная труба.
-            Идет укладка обратного фильтра
-          </p>
+          <p className="ameliorative__info">{ac.expenseP}</p>
           <p className="ameliorative__info ameliorative__info--margin-big ameliorative__info--mobile-margin">
-            На участке Аксу проводятся гидрогеологические исследования по замеру
-            расхода воды в галерее и в саях. В паводок расход воды превышает
-            утвержденный эксплуатационный отбор в 2,1 раза. Отбирались пробы
-            воды через смотровые колодцы и проводилось изучение мутности воды в
-            галерее.
+            {ac.aksu}
           </p>
         </div>
 
@@ -554,20 +450,13 @@ function Ameliorative() {
             />
           </div>
           <div className="developed__item--margin-left">
-            <Image
-              src={image23}
-              alt="map construction"
-              width={width}
-              height={height2}
-            />
-            <p className="ameliorative__info">Строительство галереи</p>
+            <Image src={image23} alt="map construction" width={width} height={height2} />
+            <p className="ameliorative__info">{ac.gallery}</p>
           </div>
         </div>
 
         <h2 className="ameliorative__info ameliorative__info--margin">
-          Разработка методов улучшения гидрогеологических условий с целью
-          прогрессивного повышения плодородия почвы без ущерба для геологической
-          обстановки.
+          {ac.secondaryHeading4}
         </h2>
 
         <div className="desktop--block">
@@ -586,27 +475,23 @@ function Ameliorative() {
             width={540}
             height={532}
           />
-          <p className="ameliorative__info">
-            Минерализация подземных вод на начало моделирования(3 слой)
-          </p>
-          <Image src={image24_2} alt="3D modeling of hydrogeological processes2" width={540} height={510} />
+          <p className="ameliorative__info">{ac.mobileHeading}</p>
+          <Image
+            src={image24_2}
+            alt="3D modeling of hydrogeological processes2"
+            width={540}
+            height={510}
+          />
         </div>
 
         <h2 className="ameliorative__info ameliorative__info--text ameliorative__info--margin">
-          3D моделирование гидрогеологических процессов
+          {ac.modelling}
         </h2>
 
         <ul className="ameliorative__services__list">
-          <li className="ameliorative__services__item">
-            Занимается изучением подземных вод в районах поливного земледелия.
-          </li>
-          <li className="ameliorative__services__item">
-            Разрабатывает 3D модели влияния орошения на различные регионы.
-          </li>
-          <li className="ameliorative__services__item">
-            Выявление микроэлементов зоны аэрации и прогнозирование засоления
-            земель с учетом химического состава зоны аэрации
-          </li>
+          <li className="ameliorative__services__item">{ac.modelling1}</li>
+          <li className="ameliorative__services__item">{ac.modelling2}</li>
+          <li className="ameliorative__services__item">{ac.modelling3}</li>
         </ul>
 
         <div className="desktop--block">

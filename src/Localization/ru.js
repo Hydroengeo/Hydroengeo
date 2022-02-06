@@ -1,3 +1,6 @@
+import history from "./pages/ru/history";
+import ameliorative from "./pages/ru/ameliorative";
+
 const ru = {
   header: {
     home: "ГЛАВНАЯ",
@@ -377,6 +380,8 @@ const ru = {
         title3: "3. Геотехнические задачи",
       },
     },
+    history,
+    ameliorative,
   },
 
   footer: {

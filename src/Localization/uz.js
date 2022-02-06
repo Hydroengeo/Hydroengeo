@@ -1,3 +1,6 @@
+import history from "./pages/uz/history";
+import ameliorative from "./pages/uz/ameliorative";
+
 const uz = {
   header: {
     home: "Asosiy",
@@ -66,7 +69,7 @@ const uz = {
       },
 
       text2: {
-        title: "BAJAR ETILGAN:",
+        title: "BAJARILMOQDA:",
         body: `Doimiy so'rovlar bo'yicha axborot ta'minoti; bir martalik qidiruvlar, maqsadli so'rovlar; XBA bo'yicha birlamchi manbalarga buyurtmalar, nashrlarning xorijiy tillardan tarjimalari, ilmiy-texnikaviy adabiyotlardan nusxa ko'chirish, yangi texnika va texnologiya sohasida ilmiy-texnik hujjatlarni ma'lumot qidirish, texnik hujjatlarni xarid qilish uchun buyurtmalar.`,
       },
 
@@ -75,7 +78,7 @@ const uz = {
         body: `Gidrogeologiya, muhandislik geologiyasi, gidrogeofizika va boshqalar yo'nalishlari bo'yicha chuqurligi 12 - 15 yil bo'lgan ma'lumotnoma-axborot fondi, ilmiy-texnik hujjatlarning kartotekasi, IR, tarjimalari, manzillari.`,
       },
 
-      text3: {
+      text4: {
         title: "TAKLIFLAR:",
         body: `Gidrogeologiya, muhandislik geologiyasi, gidrogeofizika va boshqalar masalalari bo'yicha har tomonlama axborot ta'minoti.`,
       },
@@ -322,6 +325,8 @@ const uz = {
     hydrogeophysics: {
       heading: "GIDROGEOFIZIKA LABORATORIYASI",
     },
+    history,
+    ameliorative,
   },
 
   footer: {

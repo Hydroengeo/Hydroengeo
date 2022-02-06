@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-// import { useRef, useState } from "react";
+import Content from "../../Localization/Content";
+import { useDispatch, useSelector } from "react-redux";
 
 //images
 import ScrollTop from "../../assets/images/ScrollTop.svg";
@@ -11,11 +12,20 @@ import Candidates from "../../assets/images/contacts-line.svg";
 import PhDs from "../../assets/images/spy-line.svg";
 
 function homeAbout() {
+  const dispatch = useDispatch();
+  const {
+    count: { lang },
+  } = useSelector(state => state);
+
+  const {
+    main: { about_page },
+  } = Content[lang];
+
   return (
     <>
       <section className="home-about">
         <div className="container">
-          <h1 className="home-about__heading">Об Институте</h1>
+          <h1 className="home-about__heading">{about_page.heading}</h1>
           <div className="border-box"></div>
 
           <div className="home-about__box">
@@ -29,29 +39,20 @@ function homeAbout() {
             </div>
             <div className="">
               <p className="home-about__institute-info">
-                <strong>Разрабатывает: </strong>
-                Комплект постоянно действующих запросов по интересующей
-                заказчиков тематике.
+                <strong>{about_page.text1.title} </strong>
+                {about_page.text1.body}
               </p>
               <p className="home-about__institute-info">
-                <strong>Выполняет: </strong>
-                Информационное обеспечение по постоянно действующим запросам;
-                разовые поиски, целевые запросы; заказы первоисточников по МБА,
-                переводы публикаций с иностранных языков, ксерокопирование
-                научно-технической литературы, информационные поиски НТД в
-                области новой техники и технологии, заказы на приобретение
-                технической документации.
+                <strong>{about_page.text2.title} </strong>
+                {about_page.text2.body}
               </p>
               <p className="home-about__institute-info">
-                <strong>Располагает: </strong>
-                Справочно-информационным фондом глубиной 12-15 лет по
-                направлениям гидрогеологии, инженерной геологии, гидрогеофизики
-                и др., картотекой НТД, ИК, переводов, адресов.
+                <strong>{about_page.text3.title} </strong>
+                {about_page.text3.body}
               </p>
               <p className="home-about__institute-info">
-                <strong>Предлагает: </strong>
-                Комплексное информационное обеспечение по вопросам
-                гидрогеологии, инженерной геологии, гидрогеофизики и др.
+                <strong>{about_page.text4.title} </strong>
+                {about_page.text4.body}
               </p>
             </div>
           </div>
@@ -79,12 +80,7 @@ function homeAbout() {
             </li>
             <li className="home-about__item">
               <div className="home-about__item__box">
-                <Image
-                  src={PhDstudents}
-                  alt="PhD students"
-                  width={64}
-                  height={64}
-                />
+                <Image src={PhDstudents} alt="PhD students" width={64} height={64} />
                 <span className="home-about__span">193</span>
               </div>
 
@@ -112,8 +108,6 @@ function homeAbout() {
               <p className="home-about__item__info">Доктора наук</p>
             </li>
           </ul>
-
-  
         </div>
       </section>
     </>

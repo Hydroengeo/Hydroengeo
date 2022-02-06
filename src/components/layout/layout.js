@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState, useEffect, useContext } from "react";
+import { useRef, useState, useEffect } from "react";
 import Content from "../../Localization/Content";
 import { useDispatch, useSelector } from "react-redux";
 

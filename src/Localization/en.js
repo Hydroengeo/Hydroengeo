@@ -1,3 +1,6 @@
+import history from "./pages/en/history";
+import ameliorative from "./pages/en/ameliorative";
+
 const en = {
   header: {
     home: "HOME",
@@ -75,7 +78,7 @@ const en = {
         body: "Reference and information fund with a depth of 12 - 15 years in the areas of hydrogeology, engineering geology, hydrogeophysics, etc., a card file of scientific and technical documentation, IR, translations, addresses.",
       },
 
-      text3: {
+      text4: {
         title: "OFFERS:",
         body: "Comprehensive information support on issues of hydrogeology, engineering geology, hydrogeophysics, etc.",
       },
@@ -321,6 +324,9 @@ const en = {
     hydrogeophysics: {
       heading: " LABORATORY OF HYDROGEOPHYSICS",
     },
+
+    history,
+    ameliorative,
   },
 
   footer: {
