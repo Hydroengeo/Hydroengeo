@@ -1,5 +1,6 @@
 import history from "./pages/ru/history";
 import ameliorative from "./pages/ru/ameliorative";
+import overture from "./pages/ru/overture";
 
 const ru = {
   header: {
@@ -382,6 +383,7 @@ const ru = {
     },
     history,
     ameliorative,
+    overture,
   },
 
   footer: {

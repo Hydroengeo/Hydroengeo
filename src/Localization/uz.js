@@ -1,5 +1,6 @@
 import history from "./pages/uz/history";
 import ameliorative from "./pages/uz/ameliorative";
+import overture from "./pages/uz/overture";
 
 const uz = {
   header: {
@@ -327,6 +328,7 @@ const uz = {
     },
     history,
     ameliorative,
+    overture,
   },
 
   footer: {
