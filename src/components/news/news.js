@@ -74,33 +74,35 @@ function News() {
         <ul className="news__list">
           {data &&
             data.map((e) => (
-              <li
-                className="news__item"
-                data-set-id={e.news_id}
-                key={e.news_id}
-              >
-                <div className="news__item-img">
-                  <Image
-                    src={  `https://hydroengeo.herokuapp.com/${e.news_main_img}`}
-                    loader={() =>
-                      `https://hydroengeo.herokuapp.com/${e.news_main_img}`
-                    }
-                    alt={e.news_heading}
-                    width={600}
-                    height={400}
-                  />
-                </div>
+              <Link href={`new/${e.news_id}`}>
+                <a>
+                  <li
+                    className="news__item"
+                    data-set-id={e.news_id}
+                    key={e.news_id}
+                  >
+                    <div className="news__item-img">
+                      <Image
+                        src={`https://hydroengeo.herokuapp.com/${e.news_main_img}`}
+                        loader={() =>
+                          `https://hydroengeo.herokuapp.com/${e.news_main_img}`
+                        }
+                        alt={e.news_heading}
+                        width={600}
+                        height={400}
+                      />
+                    </div>
 
-                <div className="">
-                  <p className="news__box-time">{e.news_data}</p>
-                  <h3 className="news__box-heading">{e.news_heading}</h3>
-                  <p className="news__box-title">{e.news_title}</p>
-                </div>
-              </li>
+                    <div className="">
+                      <p className="news__box-time">{e.news_data}</p>
+                      <h3 className="news__box-heading">{e.news_heading}</h3>
+                      <p className="news__box-title">{e.news_title}</p>
+                    </div>
+                  </li>
+                </a>
+              </Link>
             ))}
         </ul>
-
-        <button className="news__btn" type="button">Загрузить еще</button>
 
         <div className="scientific__btn ">
           <Link href={"#header"}>

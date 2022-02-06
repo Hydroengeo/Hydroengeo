@@ -450,7 +450,7 @@ function Ameliorative() {
               <div className="developed__item--margin-small developed__item--margin-bottom">
                 <Image src={image19} alt="" width={width2} height={height2} />
               </div>
-              <p className="developed__item--margin-small ameliorative__info--width">
+              <p className="ameliorative__info developed__item--margin-small ameliorative__info--width">
                 Участок Дамходжа. При проходке траншеи (1030 м от
                 экспериментального фрагмента) на глубине 7м вскрыты глинистые
                 отложения
@@ -589,7 +589,12 @@ function Ameliorative() {
           <p className="ameliorative__info">
             Минерализация подземных вод на начало моделирования(3 слой)
           </p>
-          <Image src={image24_2} alt="3D modeling of hydrogeological processes2" width={540} height={510} />
+          <Image
+            src={image24_2}
+            alt="3D modeling of hydrogeological processes2"
+            width={540}
+            height={510}
+          />
         </div>
 
         <h2 className="ameliorative__info ameliorative__info--text ameliorative__info--margin">

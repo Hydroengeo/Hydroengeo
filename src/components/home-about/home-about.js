@@ -1,6 +1,6 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import { useRef, useState } from "react";
 
 //images
 import ScrollTop from "../../assets/images/ScrollTop.svg";
@@ -11,6 +11,18 @@ import Candidates from "../../assets/images/contacts-line.svg";
 import PhDs from "../../assets/images/spy-line.svg";
 
 function homeAbout() {
+  const [data, setdata] = useState();
+
+  useEffect(() => {
+    fetch("https://hydroengeo.herokuapp.com/staff")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data) {
+          setdata(data.data[0]);
+        }
+      });
+  }, []);
+
   return (
     <>
       <section className="home-about">
@@ -72,7 +84,7 @@ function homeAbout() {
             <li className="home-about__item">
               <div className="home-about__item__box">
                 <Image src={Employees} alt="Employees" width={64} height={64} />
-                <span className="home-about__span">193</span>
+                <span className="home-about__span">{data.staff_name}</span>
               </div>
 
               <p className="home-about__item__info">Сотрудников</p>
@@ -85,7 +97,7 @@ function homeAbout() {
                   width={64}
                   height={64}
                 />
-                <span className="home-about__span">193</span>
+                <span className="home-about__span">{data.doctor_name}</span>
               </div>
 
               <p className="home-about__item__info">Докторанты</p>
@@ -98,7 +110,7 @@ function homeAbout() {
                   width={64}
                   height={64}
                 />
-                <span className="home-about__span">193</span>
+                <span className="home-about__span">{data.redoctors_name}</span>
               </div>
 
               <p className="home-about__item__info">Кандидатов наук</p>
@@ -106,14 +118,12 @@ function homeAbout() {
             <li className="home-about__item">
               <div className="home-about__item__box">
                 <Image src={PhDs} alt="PhDs" width={64} height={64} />
-                <span className="home-about__span">193</span>
+                <span className="home-about__span">{data.scientist_name}</span>
               </div>
 
               <p className="home-about__item__info">Доктора наук</p>
             </li>
           </ul>
-
-  
         </div>
       </section>
     </>
