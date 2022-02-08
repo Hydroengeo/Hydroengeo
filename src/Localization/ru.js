@@ -2,6 +2,7 @@ import history from "./pages/ru/history";
 import ameliorative from "./pages/ru/ameliorative";
 import hydrogeophysics from "./pages/ru/hydrogeophysics";
 import overture from "./pages/ru/overture";
+import hydrogeology from "./pages/ru/hydrogeology";
 
 const ru = {
   header: {
@@ -331,6 +332,7 @@ const ru = {
     ameliorative,
     hydrogeophysics,
     overture,
+    hydrogeology,
   },
 
   footer: {
