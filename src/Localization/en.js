@@ -3,6 +3,7 @@ import ameliorative from "./pages/en/ameliorative";
 import hydrogeophysics from "./pages/en/hydrogeophysics";
 import overture from "./pages/en/overture";
 import hydrogeology from "./pages/en/hydrogeology";
+import modeling from "./pages/en/modeling";
 
 const en = {
   header: {
@@ -329,6 +330,7 @@ const en = {
     hydrogeophysics,
     overture,
     hydrogeology,
+    modeling,
   },
 
   footer: {

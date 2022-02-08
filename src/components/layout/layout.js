@@ -72,7 +72,11 @@ const Layout = ({ children }) => {
             >
               <ul className="lang-mobile">
                 <li
-                  className="lang-mobile-item"
+                  className={
+                    lang === "ru"
+                      ? "lang-mobile-item lang-mobile-item--active"
+                      : "lang-mobile-item"
+                  }
                   onClick={() => {
                     dispatch({ type: "ru" });
                   }}
@@ -80,7 +84,11 @@ const Layout = ({ children }) => {
                   РУ
                 </li>
                 <li
-                  className="lang-mobile-item"
+                  className={
+                    lang === "uz"
+                      ? "lang-mobile-item lang-mobile-item--active"
+                      : "lang-mobile-item"
+                  }
                   onClick={() => {
                     dispatch({ type: "uz" });
                   }}
@@ -88,7 +96,11 @@ const Layout = ({ children }) => {
                   Uz
                 </li>
                 <li
-                  className="lang-mobile-item"
+                  className={
+                    lang === "en"
+                      ? "lang-mobile-item lang-mobile-item--active"
+                      : "lang-mobile-item"
+                  }
                   onClick={() => {
                     dispatch({ type: "en" });
                   }}
@@ -129,7 +141,7 @@ const Layout = ({ children }) => {
 
             <ul className="lang">
               <li
-                className="lang__item"
+                className={lang === "ru" ? "lang__item--active" : "lang__item"}
                 onClick={() => {
                   dispatch({ type: "ru" });
                 }}
@@ -137,7 +149,7 @@ const Layout = ({ children }) => {
                 <span>РУ</span>
               </li>
               <li
-                className="lang__item"
+                className={lang === "uz" ? "lang__item--active" : "lang__item"}
                 onClick={() => {
                   dispatch({ type: "uz" });
                 }}
@@ -145,7 +157,7 @@ const Layout = ({ children }) => {
                 <span>УЗ</span>
               </li>
               <li
-                className="lang__item"
+                className={lang === "en" ? "lang__item--active" : "lang__item"}
                 onClick={() => {
                   dispatch({ type: "en" });
                 }}
