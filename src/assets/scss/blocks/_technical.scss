@@ -20,6 +20,7 @@
         }
 
         &--bold {
+            display: block;
             font-family: "Mazzard";
             font-style: normal;
             font-weight: 600;
@@ -28,7 +29,15 @@
             display: flex;
             align-items: center;
             color: #000000;
+            text-align: center !important;
         }
+    }
+
+    .technical__info--text-heading {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
 
     &__images-box {
@@ -44,7 +53,7 @@
             justify-content: center;
             align-items: flex-end;
         }
-
+        
         &--between {
             display: flex !important;
             justify-content: space-between;
@@ -55,37 +64,37 @@
         display: none;
     }
 
-    .iamge1 {
+    .image1 {
         display: block;
         width: 100%;
         max-width: 600px;
     }
 
-    .iamge2 {
+    .image2 {
         display: block;
         width: 100%;
         max-width: 600px;
     }
 
-    .iamge3 {
+    .image3 {
         display: block;
         width: 100%;
         max-width: 600px;
     }
 
-    .iamge4 {
+    .image4 {
         display: block;
         width: 100%;
         max-width: 600px;
     }
 
-    .iamge5 {
+    .image5 {
         display: block;
         width: 100%;
         max-width: 420px;
     }
 
-    .iamge6 {
+    .image6 {
         display: block;
         width: 100%;
         max-width: 380px;
@@ -99,57 +108,63 @@
         margin-bottom: 40px;
     }
 
-    .iamge8 {
+    .image8 {
         display: block;
         width: 100%;
         max-width: 520px;
     }
 
-    .iamge9 {
+    .image9 {
         display: block;
         width: 100%;
         max-width: 620px;
     }
 
-    .iamge11 {
+    .image11 {
         display: block;
         width: 100%;
+        max-width: 1013px;
+        margin: 0 auto;
+        margin-bottom: 20px !important;
+    }
+
+    .image12 {
+        display: block;
+        width: 100%;
+        max-width: 1013px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .image13 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
         max-width: 1013px;
         margin-bottom: 20px;
     }
 
-    .iamge12 {
+    .image14 {
         display: block;
         width: 100%;
+        margin: 0 auto;
         max-width: 1013px;
         margin-bottom: 20px;
     }
 
-    .iamge13 {
+    .image15 {
         display: block;
         width: 100%;
-        max-width: 1013px;
-        margin-bottom: 20px;
-    }
-
-    .iamge14 {
-        display: block;
-        width: 100%;
-        max-width: 1013px;
-        margin-bottom: 20px;
-    }
-
-    .iamge15 {
-        display: block;
-        width: 100%;
+        // margin: 0 auto;
         max-width: 423px;
         margin-bottom: 20px;
     }
 
-    .iamge16 {
+    .image16 {
         display: block;
         width: 100%;
         max-width: 590px;
+        // margin: 0 auto;
     }
 }
 
@@ -180,7 +195,7 @@
         display: none !important;
     }
 
-    .iamge7 {
+    .image7 {
         width: 100%;
         max-width: 300px;
         margin: 0 auto;
