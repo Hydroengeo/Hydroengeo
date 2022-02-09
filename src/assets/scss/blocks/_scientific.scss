@@ -45,10 +45,22 @@
 .scientific__btn {
   position: fixed;
   // top: 0;
-  bottom: 0;
+  bottom: 30px;
   // left: 0;
-  right: 0;
+  right: 150px;
   display: block;
   z-index: 1000;
+}
+
+@media only screen and (max-width: 1000px) {
+  .scientific__btn {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .scientific__btn {
+  }
 }
 // }

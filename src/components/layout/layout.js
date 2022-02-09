@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 import Content from "../../Localization/Content";
 import { useDispatch, useSelector } from "react-redux";
+import { useRouter } from "next/router";
 
 // Components
 import InnerDropdown1 from "../innerDropdown1/innerDropdown";
@@ -21,14 +22,16 @@ import twitter from "../../assets/images/twitter.svg";
 import instagram from "../../assets/images/instagram.svg";
 import youtube from "../../assets/images/youtube.svg";
 import telegram from "../../assets/images/telegram.svg";
+import ScrollTop from "../../assets/images/ScrollTop.svg";
 
 const Layout = ({ children }) => {
+  const router = useRouter();
   const dispatch = useDispatch();
   const {
     count: { lang },
   } = useSelector(state => state);
 
-  const { header, main, footer } = Content[lang];
+  const { header, footer } = Content[lang];
 
   const dropdwn1 = useRef(null);
   const dropdwn2 = useRef(null);
@@ -48,6 +51,8 @@ const Layout = ({ children }) => {
   useEffect(() => {
     dispatch({ type: window.localStorage.getItem("lang") || "ru" });
   }, []);
+
+  console.log(router.pathname.includes("/laboratories"));
 
   return (
     <>
@@ -208,7 +213,13 @@ const Layout = ({ children }) => {
               <ul className="navbar__list">
                 <li className="navbar__item">
                   <Link href="/">
-                    <a className="navbar__item-link">{header.home}</a>
+                    <a
+                      className={`navbar__item-link ${
+                        router.pathname == "/" ? "navbar__item-link--active" : ""
+                      }`}
+                    >
+                      {header.home}
+                    </a>
                   </Link>
                 </li>
                 <li className="navbar__item">
@@ -233,7 +244,15 @@ const Layout = ({ children }) => {
                       }
                     }}
                   >
-                    <span>{header.about}</span>
+                    <span
+                      className={
+                        router.pathname.includes("/about")
+                          ? "navbar__item-link--active"
+                          : ""
+                      }
+                    >
+                      {header.about}
+                    </span>
                     <Image
                       src={Arrow}
                       alt="Down arrow"
@@ -321,7 +340,15 @@ const Layout = ({ children }) => {
                       }
                     }}
                   >
-                    <span>{header.activity}</span>
+                    <span
+                      className={
+                        router.pathname.includes("/activity")
+                          ? "navbar__item-link--active"
+                          : ""
+                      }
+                    >
+                      {header.activity}
+                    </span>
                     <Image
                       src={Arrow}
                       alt="Down arrow"
@@ -385,7 +412,15 @@ const Layout = ({ children }) => {
                       }
                     }}
                   >
-                    <span>{header.centers_laboratories}</span>
+                    <span
+                      className={
+                        router.pathname.includes("/laboratories")
+                          ? "navbar__item-link--active"
+                          : ""
+                      }
+                    >
+                      {header.centers_laboratories}
+                    </span>
                     <Image
                       src={Arrow}
                       alt="Down arrow"
@@ -516,12 +551,26 @@ const Layout = ({ children }) => {
                 </li>
                 <li className="navbar__item">
                   <Link href="/normatives">
-                    <a className="navbar__item-link">{header.normative}</a>
+                    <a
+                      className={`navbar__item-link ${
+                        router.pathname == "/normatives"
+                          ? "navbar__item-link--active"
+                          : ""
+                      }`}
+                    >
+                      {header.normative}
+                    </a>
                   </Link>
                 </li>
                 <li className="navbar__item">
                   <Link href="/contacts">
-                    <a className="navbar__item-link">{header.contacts}</a>
+                    <a
+                      className={`navbar__item-link ${
+                        router.pathname == "/contacts" ? "navbar__item-link--active" : ""
+                      }`}
+                    >
+                      {header.contacts}
+                    </a>
                   </Link>
                 </li>
               </ul>
@@ -844,6 +893,14 @@ const Layout = ({ children }) => {
           </ul>
         </div>
       </footer>
+
+      <div className="scientific__btn">
+        <Link href={"#header"}>
+          <a className="scientific__btn__link">
+            <Image src={ScrollTop} alt="ScrollTop" width="80" height="80" />
+          </a>
+        </Link>
+      </div>
     </>
   );
 };

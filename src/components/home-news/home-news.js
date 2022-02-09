@@ -2,16 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import ScrollTop from "../../assets/images/ScrollTop.svg";
-
 function HomeNews() {
   const [data, setData] = useState([]);
   const [dat, setDat] = useState([]);
 
   useEffect(() => {
     fetch("https://hydroengeo.herokuapp.com/introNews")
-      .then((res) => res.json())
-      .then((data) => {
+      .then(res => res.json())
+      .then(data => {
         setDat(data.data.reverse()[0]), setData(data.data.slice(1, 5));
       });
   }, []);
@@ -43,9 +41,7 @@ function HomeNews() {
                     <div className="">
                       <p className="home-news__box-time">{dat.news_data}</p>
                       <span className=""></span>
-                      <h2 className="home-news__box-heading">
-                        {dat.news_heading}
-                      </h2>
+                      <h2 className="home-news__box-heading">{dat.news_heading}</h2>
                       <p className="home-news__box-title">{dat.news_title}</p>
                     </div>
                   </div>
@@ -56,7 +52,7 @@ function HomeNews() {
 
           <ul className="home-news__list">
             {data.length &&
-              data.map((e) => (
+              data.map(e => (
                 <Link key={e.news_id} href={`new/${e.news_id}`}>
                   <a>
                     <li className="home-news__item" data-set-id={e.news_id}>
@@ -74,9 +70,7 @@ function HomeNews() {
 
                       <div className="">
                         <p className="home-news__box-time">{e.news_data}</p>
-                        <h3 className="home-news__box-heading">
-                          {e.news_heading}
-                        </h3>
+                        <h3 className="home-news__box-heading">{e.news_heading}</h3>
                       </div>
                     </li>
                   </a>

@@ -24,10 +24,18 @@
       font-family: "Mazzard", sans-serif;
       font-style: normal;
       font-weight: normal;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 24px;
       color: #242424;
     }
+  }
+
+  .header__contact-item:nth-child(1) {
+    max-width: 270px;
+  }
+
+  .header__contact-item:nth-child(2) {
+    max-width: 216px;
   }
 
   .lang {
@@ -90,7 +98,11 @@
     background-color: #fff;
   }
 
-  .navbar__item:first-child .navbar__item-link {
+  // .navbar__item:first-child .navbar__item-link {
+  //   color: #5a8cae;
+  // }
+
+  .navbar__item-link--active {
     color: #5a8cae;
   }
 
