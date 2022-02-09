@@ -4,6 +4,7 @@ import hydrogeophysics from "./pages/uz/hydrogeophysics";
 import overture from "./pages/uz/overture";
 import hydrogeology from "./pages/uz/hydrogeology";
 import modeling from "./pages/uz/modeling";
+import geoecology from "./pages/uz/geoecology";
 
 const uz = {
   header: {
@@ -332,6 +333,7 @@ const uz = {
     overture,
     hydrogeology,
     modeling,
+    geoecology,
   },
 
   footer: {
