@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-import Layout from "../src/components/layout/layout";
-import Engineering from "../src/components/engineering/engineering";
+import Layout from "../../src/components/layout/layout";
+import Engineering from "../../src/components/engineering/engineering";
 
 export default function engineering() {
   return (

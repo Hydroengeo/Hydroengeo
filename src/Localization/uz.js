@@ -6,6 +6,7 @@ import hydrogeology from "./pages/uz/hydrogeology";
 import modeling from "./pages/uz/modeling";
 import geoecology from "./pages/uz/geoecology";
 import technical from "./pages/uz/technical";
+import engineering from "./pages/uz/engineering";
 
 const uz = {
   header: {
@@ -336,6 +337,7 @@ const uz = {
     modeling,
     geoecology,
     technical,
+    engineering,
   },
 
   footer: {

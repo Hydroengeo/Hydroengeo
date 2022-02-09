@@ -492,7 +492,7 @@ const Layout = ({ children }) => {
                     </li>
 
                     <li className="navbar__dropdown-item">
-                      <Link href="/">
+                      <Link href="/laboratories/engineering">
                         <a className="navbar__dropdown-link">
                           {
                             header.laboratories_drop_down.international_research_drop_down

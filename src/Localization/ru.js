@@ -6,6 +6,7 @@ import hydrogeology from "./pages/ru/hydrogeology";
 import modeling from "./pages/ru/modeling";
 import geoecology from "./pages/ru/geoecology";
 import technical from "./pages/ru/technical";
+import engineering from "./pages/ru/engineering";
 
 const ru = {
   header: {
@@ -339,6 +340,7 @@ const ru = {
     modeling,
     geoecology,
     technical,
+    engineering,
   },
 
   footer: {
