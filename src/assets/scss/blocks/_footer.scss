@@ -55,7 +55,7 @@
 	display: block;
 	margin: 0;
 	margin-bottom: 20px;
-	font-family: 'Mazzard', sans-serif;
+	font-family: "Mazzard", sans-serif;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
@@ -67,11 +67,12 @@
 	display: block;
 	margin: 0;
 	margin-bottom: 20px;
-	font-family: 'Mazzard', sans-serif !important;
-	font-style: normal !important;
-	font-weight: 500 !important;
-	font-size: 18px !important;
-	line-height: 21px !important;
+	font-family: "Mazzard";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: uppercase;
 	color: #242424;
 }
 
@@ -86,11 +87,10 @@
 		display: none;
 		margin-bottom: 20px;
 
-		&-2{
+		&-2 {
 			display: none;
 		}
 	}
-	
 }
 
 .left-box__item-bottom + .left-box__item-bottom {
@@ -100,7 +100,7 @@
 
 .left-box__item-bottom__link {
 	display: block;
-	font-family: 'Mazzard', sans-serif;
+	font-family: "Mazzard", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
@@ -113,7 +113,6 @@
 }
 
 @include media-max(1390px) {
-
 	.left-box__item-top + .left-box__item-top {
 		margin-left: 40px;
 	}
@@ -167,14 +166,13 @@
 			margin-bottom: 20px;
 		}
 	}
-
 }
 
 @include media-max(890px) {
 	.left-box__list-top {
 		display: block;
 	}
-	
+
 	.left-box__item-top + .left-box__item-top {
 		margin: 0;
 		margin-top: 20px;
@@ -182,13 +180,12 @@
 		border-bottom: 3px solid #5a8cae;
 		border-radius: 3px;
 	}
-	
 
-	.footer .logo-box{
+	.footer .logo-box {
 		margin-bottom: 40px;
 	}
 
-	.app-box{
+	.app-box {
 		margin-bottom: 40px;
 	}
 
@@ -199,15 +196,14 @@
 			display: none;
 			margin-bottom: 20px;
 
-			&-2{
+			&-2 {
 				display: block;
 			}
 
-			&-2 .left-box__item-bottom + .left-box__item-bottom{
+			&-2 .left-box__item-bottom + .left-box__item-bottom {
 				margin: 0;
 				margin-top: 20px;
 			}
 		}
-	
 	}
 }

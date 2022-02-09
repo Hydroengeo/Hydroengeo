@@ -807,8 +807,8 @@ const Layout = ({ children }) => {
             </Link>
 
             <Link href="/">
-              <a className="left-box__item-top__info">
-                <p>Гидрогеология и инженерная геология рудных месторождений</p>
+              <a >
+                <p  className="left-box__item-top__info">Гидрогеология и инженерная геология рудных месторождений</p>
               </a>
             </Link>
             <Link href="/">
