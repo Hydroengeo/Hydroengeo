@@ -4,6 +4,7 @@ import hydrogeophysics from "./pages/ru/hydrogeophysics";
 import overture from "./pages/ru/overture";
 import hydrogeology from "./pages/ru/hydrogeology";
 import modeling from "./pages/ru/modeling";
+import technical from "./pages/ru/technical";
 
 const ru = {
   header: {
@@ -335,6 +336,7 @@ const ru = {
     overture,
     hydrogeology,
     modeling,
+    technical,
   },
 
   footer: {

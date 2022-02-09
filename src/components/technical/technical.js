@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import Content from "../../Localization/Content";
+import { useDispatch, useSelector } from "react-redux";
 
 import Card from "../card/card";
 
@@ -24,12 +26,21 @@ import image15 from "../../assets/images/technical15.png";
 import image16 from "../../assets/images/technical16.png";
 
 function technical() {
+  const dispatch = useDispatch();
+  const {
+    count: { lang },
+  } = useSelector(state => state);
+
+  const {
+    main: { technical: tech },
+  } = Content[lang];
+
   return (
     <section className="technical">
       <div className="container">
         <div className="ameliorative__head-box">
           <h1 className="ameliorative__heading groundwater__heading--width">
-            ОТДЕЛ ВЫПУСКА НАУЧНО-ТЕХНИЧЕСКОЙ ПРОДУКЦИИ
+            {tech.heading}
           </h1>
         </div>
 
@@ -42,30 +53,16 @@ function technical() {
 
         <p className="technical__info">
           <strong>
-            «Создание электронной библиотеки в области гидрогеологии, инженерной
-            геологии и геоэкологии и обеспечение научно-технической информацией
-            специалистов подразделений Госкомгеологии РУз».
+            {tech.paragraph1}
           </strong>
         </p>
 
         <p className="technical__info">
-          В настоящее время в Республике исключительно актуальной является
-          проблема водоснабжения населения и обеспечения водой народного
-          хозяйства. Подземные воды, являются важнейшей составляющей общих
-          водных ресурсов. В связи, с чем создание электронных геологических
-          фондовых массивов и научно-технической библиотеки при институте было и
-          есть жизненно необходимым при всегда существовавшем, а ныне резко
-          возросшем спросе на геологическую информацию. Гидрогеологические и
-          инженерно-геологические исследования состоят в обобщении всех
-          имеющихся гидрогеологических материалов в соответствии с существующими
-          методическими рекомендациями схемы гидрогеологической стратификации и
-          гидрогеологической карты нового поколения. Это упростит и ускорит
-          работу специалистов.
+          {tech.paragraph2}
         </p>
 
         <p className="technical__info">
-          Перевод на электронные носители отчетов по разделу «Гидрогеологические
-          и инженерно-геологические исследования территории Узбекистана за».
+          {tech.paragraph3}
         </p>
 
         <div className="technical__images-box">
@@ -141,16 +138,12 @@ function technical() {
 
         <p className="technical__info">
           <strong>
-            Расшивка научно-исследовательских материалов и подготовка их к
-            переводу в электронный формат. При расшивке, также ведутся
-            реставрационные работы научно-исследовательской документации.
+            {tech.paragraph4}
           </strong>
         </p>
 
         <p className="technical__info">
-          Выполнения в автоматизированном и традиционном режимах разовых
-          запросов не тематические подборки и обзоры (библиографии и
-          первоисточники).
+          {tech.paragraph5}
         </p>
 
         <div className="technical__images-box">
@@ -158,7 +151,7 @@ function technical() {
             <Image src={image8} alt="avto search" width={520} height={305} />
             <p className="technical__info technical__info--text">
               <strong>
-                Комплектование электронной БД фондовых геологических отчётов
+                {tech.img_title1}
               </strong>
             </p>
           </div>
@@ -171,7 +164,9 @@ function technical() {
               height={305}
             />
             <p className="technical__info technical__info--text">
-              <strong>Комплектование СИФ библиографических документов</strong>
+              <strong>
+                {tech.img_title2}
+              </strong>
             </p>
           </div>
         </div>
@@ -185,20 +180,18 @@ function technical() {
           />
           <p className="technical__info technical__info--text">
             <strong>
-              Электронной БД первоисточников. Создание из фонда НТБ
+              {tech.img_title3}
             </strong>
           </p>
         </div>
 
-        <h2 className="technical__info technical__info--text technical__info--bold">
-          База данных «Поиск – НТБ»
+        <h2 className="technical__info technical__info--text-heading technical__info--bold">
+          {tech.heading2}
         </h2>
 
         <p className="technical__info">
           <strong>
-            Создание электронной БД первоисточников из фонда НТБ (книги,
-            журналы, диссертации, статьи), аннотированные и систематизированные
-            по тематике
+            {tech.paragraph6}
           </strong>
         </p>
 
