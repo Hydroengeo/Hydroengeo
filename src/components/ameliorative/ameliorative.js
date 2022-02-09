@@ -114,7 +114,7 @@ function Ameliorative() {
                 src={avatar}
                 width="240"
                 height="320"
-                alt="Бимурзаев Гани Амиргалиевич"
+                alt="Мирюсупов Фазлиддин Мухитдинович"
               />
             </div>
 

@@ -628,91 +628,91 @@ const Layout = ({ children }) => {
                 </ul>
               </li>
               <li className="left-box__item-top">
-                <Link href="/">
+                <Link href="/about">
                   <a className="left-box__item-top__title">
                     <strong>{footer.about}</strong>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/about/structura">
                   <a className="left-box__item-top__info">
                     <p>{footer.about_drop_down.structure}</p>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/about/governance">
                   <a className="left-box__item-top__info">
                     <p>{footer.about_drop_down.management}</p>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/about/history">
                   <a className="left-box__item-top__info">
                     <p>{footer.about_drop_down.history_institute}</p>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/about/politics">
                   <a className="left-box__item-top__info">
                     <p>{footer.about_drop_down.policy}</p>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/about/cooperation">
                   <a className="left-box__item-top__info">
                     <p>{footer.about_drop_down.cooperation}</p>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/about/management">
                   <a className="left-box__item-top__info">
-                    <p>{footer.about_drop_down.history_leaderships}</p>
+                    <p>{footer.about_drop_down.history_leadership}</p>
                   </a>
                 </Link>
               </li>
 
               <li className="left-box__item-top">
-                <Link href="/">
+                <Link href="/activity">
                   <a className="left-box__item-top__title">
                     <strong>{footer.activity}</strong>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/activity/scientific">
                   <a className="left-box__item-top__info">
                     <p>{footer.activity_drop_down.scientific}</p>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/activity/production">
                   <a className="left-box__item-top__info">
                     <p>{footer.activity_drop_down.production}</p>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/activity/education">
                   <a className="left-box__item-top__info">
                     <p>{footer.activity_drop_down.education}</p>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/normatives">
                   <a className="left-box__item-top__title">
                     <strong>{footer.normative}</strong>
                   </a>
                 </Link>
 
-                <Link href="/">
+                <Link href="/contacts">
                   <a className="left-box__item-top__info">
                     <p>{footer.contacts}</p>
                   </a>
                 </Link>
 
-                <Link href="/">
+                {/* <Link href="/">
                   <a className="left-box__item-top__info">
                     <p>{footer.interactives}</p>
                   </a>
-                </Link>
+                </Link> */}
               </li>
             </ul>
 
@@ -749,71 +749,70 @@ const Layout = ({ children }) => {
               </a>
             </Link>
 
-            <Link href="/">
+            <Link href="/laboratories/ameliorative">
               <a className="left-box__item-top__info">
                 <p>{footer.laboratories_drop_down.meliorative}</p>
               </a>
             </Link>
 
-            <Link href="/">
+            <Link href="/laboratories/overture">
               <a className="left-box__item-top__info">
-                <p>ИНЖЕНЕРНОЙ ГЕОДИНАМИКИ И ДИСТАНЦИОННОГО ЗОНДИРОВАНИЯ ЗЕМЛИ</p>
+                <p>{footer.laboratories_drop_down.remote_sensing}</p>
               </a>
             </Link>
 
-            <Link href="/">
+            <Link href="/laboratories/hydrogeology">
               <a className="left-box__item-top__info">
-                <p>
-                  ГИДРОГЕОЛОГИИ И ИНЖЕНЕРНОЙ ГЕОЛОГИИ МЕСТОРОЖДЕНИЙ ТВЕРДЫХ ПОЛЕЗНЫХ
-                  ИСКОПАЕМЫХ
+                <p>{footer.laboratories_drop_down.engineering_geology}</p>
+              </a>
+            </Link>
+
+            <Link href="/laboratories/modeling">
+              <a className="left-box__item-top__info">
+                <p>{footer.laboratories_drop_down.geoinformation}</p>
+              </a>
+            </Link>
+
+            <Link href="/laboratories/geoecology">
+              <a className="left-box__item-top__info">
+                <p>{footer.laboratories_drop_down.geoecology}</p>
+              </a>
+            </Link>
+
+            <Link href="/laboratories/hydrogeophysics">
+              <a className="left-box__item-top__info">
+                <p>{footer.laboratories_drop_down.hydrophysics}</p>
+              </a>
+            </Link>
+
+            <Link href="/laboratories/groundwater">
+              <a className="left-box__item-top__info">
+                <p>{footer.laboratories_drop_down.monitoring}</p>
+              </a>
+            </Link>
+
+            <Link href="/laboratories/resources">
+              <a className="left-box__item-top__info">
+                <p>{footer.laboratories_drop_down.resources}</p>
+              </a>
+            </Link>
+
+            <Link href="/laboratories/uran">
+              <a className="left-box__item-top__info">
+                <p>{footer.laboratories_drop_down.uran}</p>
+              </a>
+            </Link>
+
+            <Link href="/laboratories/engineering">
+              <a>
+                <p className="left-box__item-top__info">
+                  {footer.laboratories_drop_down.deposits}
                 </p>
               </a>
             </Link>
-
-            <Link href="/">
+            <Link href="/laboratories/chemical">
               <a className="left-box__item-top__info">
-                <p>ГЕОИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ И МОДЕЛИРОВАНИЯ</p>
-              </a>
-            </Link>
-
-            <Link href="/">
-              <a className="left-box__item-top__info">
-                <p>ГЕОЭКОЛОГИИ</p>
-              </a>
-            </Link>
-
-            <Link href="/">
-              <a className="left-box__item-top__info">
-                <p>ГИДРОГЕОФИЗИКИ</p>
-              </a>
-            </Link>
-
-            <Link href="/">
-              <a className="left-box__item-top__info">
-                <p>МОНИТОРИНГА ПОДЗЕМНЫХ ВОД И РЕГИОНАЛЬНЫХ ИССЛЕДОВАНИЙ</p>
-              </a>
-            </Link>
-
-            <Link href="/">
-              <a className="left-box__item-top__info">
-                <p>РЕСУРСОВ ПОДЗЕМНЫХ ВОД</p>
-              </a>
-            </Link>
-
-            <Link href="/">
-              <a className="left-box__item-top__info">
-                <p>УРАНА И ГИДРОМИНЕРАЛЬНЫХ РЕСУРСОВ</p>
-              </a>
-            </Link>
-
-            <Link href="/">
-              <a >
-                <p  className="left-box__item-top__info">Гидрогеология и инженерная геология рудных месторождений</p>
-              </a>
-            </Link>
-            <Link href="/">
-              <a className="left-box__item-top__info">
-                <p>Геоэколого-химическая лаборатория</p>
+                <p> {footer.laboratories_drop_down.chemical}</p>
               </a>
             </Link>
           </div>

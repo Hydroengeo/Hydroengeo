@@ -7,6 +7,7 @@ import modeling from "./pages/en/modeling";
 import geoecology from "./pages/en/geoecology";
 import technical from "./pages/en/technical";
 import engineering from "./pages/en/engineering";
+import chemical from "./pages/en/chemical";
 
 const en = {
   header: {
@@ -337,6 +338,7 @@ const en = {
     geoecology,
     technical,
     engineering,
+    chemical,
   },
 
   footer: {
@@ -365,25 +367,17 @@ const en = {
     centers_laboratories: "INSTITUTE LABORATORIES",
     laboratories_drop_down: {
       meliorative: "Ameliorative hydrogeology",
-      groundwater: "Groundwater monitoring and geoecological studies",
-      groundwater_drop_down: {
-        geoecology: "Geoecology",
-        geoinformation: "Geoinformation technologies and modeling",
-        groundwater: "Groundwater monitoring and regional studies",
-        chemical_laboratory: "Geoecological and chemical laboratory",
-      },
-
-      international_research:
-        "International research works, Start-Up projects, marketing and patenting",
-      international_research_drop_down: {
-        marketing: "Marketing and patenting",
-        department: "Department of scientific and technical production",
-        ict_department: "ICT department",
-        engineering: "Engineering geodynamics and remote sensing of the earth",
-        hydrogeophysics: "Hydrogeophysics",
-        deposits: "Hydrogeology and engineering geology of ore deposits",
-        engineering_geology: "Hydrogeology and engineering geology MTPI",
-      },
+      remote_sensing: "ENGINEERING GEODYNAMICS AND EARTH REMOTE SENSING",
+      engineering_geology:
+        "HYDROGEOLOGY AND ENGINEERING GEOLOGY OF SOLID MINERAL DEPOSITS",
+      geoinformation: "GEOINFORMATION TECHNOLOGIES AND MODELING",
+      geoecology: "GEOECOLOGY",
+      hydrophysics: "HYDROGEOPHYSICS",
+      monitoring: "GROUNDWATER MONITORING AND REGIONAL STUDIES",
+      resources: "GROUNDWATER RESOURCES",
+      uran: "URANIUM AND HYDROMINERAL RESOURCES",
+      deposits: "Hydrogeology and engineering geology of ore deposits",
+      chemical: "Geoecological and chemical laboratory",
     },
 
     normative: "NORMATIVE BASE",

@@ -7,6 +7,7 @@ import modeling from "./pages/uz/modeling";
 import geoecology from "./pages/uz/geoecology";
 import technical from "./pages/uz/technical";
 import engineering from "./pages/uz/engineering";
+import chemical from "./pages/uz/chemical";
 
 const uz = {
   header: {
@@ -338,6 +339,7 @@ const uz = {
     geoecology,
     technical,
     engineering,
+    chemical,
   },
 
   footer: {
@@ -366,25 +368,17 @@ const uz = {
     centers_laboratories: "INSTITUT LABORATORIYALARI",
     laboratories_drop_down: {
       meliorative: "Meliorativ gidrogeologiya",
-      groundwater: "Er osti suvlarining monitoringi va geoekologik tadqiqotlar",
-      groundwater_drop_down: {
-        geoecology: "Geoekologiya",
-        geoinformation: "Geoaxborot texnologiyalari va modellashtirish",
-        groundwater: "Er osti suvlari monitoringi va mintaqaviy tadqiqotlar",
-        chemical_laboratory: "Geoekologik va kimyoviy laboratoriya",
-      },
-
-      international_research:
-        "Xalqaro tadqiqot ishlari, Start-Up loyihalari, marketing va patent fanlari",
-      international_research_drop_down: {
-        marketing: "Marketing va patentlash",
-        department: `Ilmiy-texnik ishlab chiqarish bo'limi`,
-        ict_department: `AKT bo'limi`,
-        engineering: "Muhandislik geodinamika va yerni masofadan zondlash",
-        hydrogeophysics: "Gidrogeofizika",
-        deposits: "Ruda konlarining gidrogeologiyasi va muhandislik geologiyasi",
-        engineering_geology: "Gidrogeologiya va muhandislik geologiyasi MTPI",
-      },
+      remote_sensing: "MUHANDISLIK GEODINAMIKASI VA YERNI MASOFADAN ZONDLASH",
+      engineering_geology:
+        "QATTIQ FOYDALANILGAN KONLAR GIDROGEOLOGIYASI VA MUHANDISLIK GEOLOGIYASI.",
+      geoinformation: "GEOAXBOROT TEXNOLOGIYALARI VA MODELLASH",
+      geoecology: "GEOEKOLOGIYA",
+      hydrophysics: "GIDROGEOFİZIKA",
+      monitoring: "YER OSTI SUVLARINING MONITORING VA MINTAQAVIY O'TISHLARI",
+      resources: "YER OSTI SUV RESURSLARI",
+      uran: "URAN VA GIDROMINERAL RESURSLAR",
+      deposits: "Ruda konlarining gidrogeologiyasi va muhandislik geologiyasi",
+      chemical: "Geoekologik va kimyoviy laboratoriya",
     },
 
     normative: "NORMATIV BAZA",

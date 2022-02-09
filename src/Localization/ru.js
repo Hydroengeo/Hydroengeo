@@ -7,6 +7,7 @@ import modeling from "./pages/ru/modeling";
 import geoecology from "./pages/ru/geoecology";
 import technical from "./pages/ru/technical";
 import engineering from "./pages/ru/engineering";
+import chemical from "./pages/ru/chemical";
 
 const ru = {
   header: {
@@ -341,6 +342,7 @@ const ru = {
     geoecology,
     technical,
     engineering,
+    chemical,
   },
 
   footer: {
@@ -369,25 +371,17 @@ const ru = {
     centers_laboratories: "ЛАБОРАТОРИИ ИНСТИТУТА",
     laboratories_drop_down: {
       meliorative: "МЕЛИОРАТИВНОЙ ГИДРОГЕОЛОГИИ",
-      groundwater: "Мониторинг подземных вод и геоэкологические исследования",
-      groundwater_drop_down: {
-        geoecology: "Геоэкология",
-        geoinformation: "Геоинформационные технологии и моделирование",
-        groundwater: "Мониторинг подземных вод и региональные исследования",
-        chemical_laboratory: "Геоэколого-химическая лаборатория",
-      },
-
-      international_research:
-        "Международные научно-исследовательские работы, Start-Up проекты, маркетинг и патентоведение",
-      international_research_drop_down: {
-        marketing: "Маркетинг и патентоведение",
-        department: "Отдел выпуска научно-технической продукции",
-        ict_department: "Отдел ИКТ",
-        engineering: "Инженерная геодинамика и дистанционное зондирование земли",
-        hydrogeophysics: "Гидрогеофизика",
-        deposits: "Гидрогеология и инженерная геология рудных месторождений",
-        engineering_geology: "Гидрогеология и инженерная геология МТПИ",
-      },
+      remote_sensing: "ИНЖЕНЕРНОЙ ГЕОДИНАМИКИ И ДИСТАНЦИОННОГО ЗОНДИРОВАНИЯ ЗЕМЛИ",
+      engineering_geology:
+        "ГИДРОГЕОЛОГИИ И ИНЖЕНЕРНОЙ ГЕОЛОГИИ МЕСТОРОЖДЕНИЙ ТВЕРДЫХ ПОЛЕЗНЫХ ИСКОПАЕМЫХ",
+      geoinformation: "ГЕОИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ И МОДЕЛИРОВАНИЯ",
+      geoecology: "ГЕОЭКОЛОГИИ",
+      hydrophysics: "ГИДРОГЕОФИЗИКИ",
+      monitoring: "МОНИТОРИНГА ПОДЗЕМНЫХ ВОД И РЕГИОНАЛЬНЫХ ИССЛЕДОВАНИЙ",
+      resources: "РЕСУРСОВ ПОДЗЕМНЫХ ВОД",
+      uran: "УРАНА И ГИДРОМИНЕРАЛЬНЫХ РЕСУРСОВ",
+      deposits: "Гидрогеология и инженерная геология рудных месторождений",
+      chemical: "Геоэколого-химическая лаборатория",
     },
 
     normative: "НОРМАТИВНАЯ БАЗА",
