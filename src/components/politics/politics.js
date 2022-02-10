@@ -1,7 +1,7 @@
 import Content from "../../Localization/Content";
 import { useSelector } from "react-redux";
 
-function politics() {
+function Politics() {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -29,4 +29,4 @@ function politics() {
   );
 }
 
-export default politics;
+export default Politics;

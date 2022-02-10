@@ -4,23 +4,22 @@ const { useRouter } = require("next/router");
 
 import Layout from "../../src/components/layout/layout";
 
-function news() {
-  const Router = useRouter();
-  const { id } = Router.query;
+function NewsPage() {
+  const router = useRouter();
+  const { id } = router.query;
   const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch("https://hydroengeo.herokuapp.com/news/" + id, {
       method: "GET",
     })
-      .then((res) => res.json())
-      .then((data) => {
+      .then(res => res.json())
+      .then(data => {
         if (data.data) {
           setData(data.data[0].news_text);
         }
       });
   }, [id]);
-  console.log(data);
 
   return (
     <Layout>
@@ -31,4 +30,4 @@ function news() {
   );
 }
 
-export default news;
+export default NewsPage;

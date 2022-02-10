@@ -17,7 +17,7 @@ import image6 from "../../assets/images/chemical6.png";
 import image7 from "../../assets/images/chemical7.png";
 import image8 from "../../assets/images/chemical8.png";
 
-function chemical() {
+function Chemical() {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -111,4 +111,4 @@ function chemical() {
   );
 }
 
-export default chemical;
+export default Chemical;

@@ -23,7 +23,7 @@ const Normatives = () => {
           <h1 className="heading">{normative_page.heading}</h1>
           <ul className="bases-list">
             <li className="bases__item">
-              <div className="bases__img-wrapper" className="bases__img-wrapper">
+              <div className="bases__img-wrapper">
                 <Image src={Lexuz} width="328" height="98" alt="Lexuz" />
               </div>
 

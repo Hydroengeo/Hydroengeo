@@ -15,7 +15,7 @@ import image6 from "../../assets/images/hydrogeology7.png";
 import image7 from "../../assets/images/hydrogeology8.png";
 import image8 from "../../assets/images/hydrogeology9.png";
 
-function hydrogeology() {
+function Hydrogeology() {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -418,4 +418,4 @@ function hydrogeology() {
   );
 }
 
-export default hydrogeology;
+export default Hydrogeology;

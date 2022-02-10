@@ -54,7 +54,7 @@ import image44 from "../../assets/images/modeling44.png";
 import Content from "../../Localization/Content";
 import { useSelector } from "react-redux";
 
-function modeling() {
+function Modeling() {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -477,4 +477,4 @@ function modeling() {
   );
 }
 
-export default modeling;
+export default Modeling;

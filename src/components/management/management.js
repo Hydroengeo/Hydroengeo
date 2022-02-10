@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 import ScrollTop from "../../assets/images/ScrollTop.svg";
 
-function management() {
+function Management() {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -57,4 +57,4 @@ function management() {
   );
 }
 
-export default management;
+export default Management;

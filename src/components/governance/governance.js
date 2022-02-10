@@ -96,7 +96,7 @@ const Governance = () => {
 
           <ul className="workers">
             {workers.map(row => (
-              <li className="workers__card">
+              <li key={Math.random()} className="workers__card">
                 <div className="avatar">
                   <Image
                     src={row.avatar}

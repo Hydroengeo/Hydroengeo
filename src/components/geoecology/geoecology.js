@@ -28,7 +28,7 @@ import image17 from "../../assets/images/geoecology17.png";
 import image18 from "../../assets/images/geoecology18.png";
 import image19 from "../../assets/images/geoecology19.png";
 
-function geoecology() {
+function Geoecology() {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -425,4 +425,4 @@ function geoecology() {
   );
 }
 
-export default geoecology;
+export default Geoecology;

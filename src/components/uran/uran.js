@@ -131,7 +131,7 @@ const Uran = () => {
               типов минеральных лечебных вод.
             </p>
           </div>
-          <Image src={Minerals} width={1280} height={907} />
+          <Image src={Minerals} width={1280} height={907} alt="" />
           <div className="tasks">
             <h4 className="tasks__title">Основные задачи</h4>
 
@@ -239,15 +239,15 @@ const Uran = () => {
           <div className="sertificates">
             <ul className="sertificates__list">
               <li>
-                <Image src={Sertificate1} width={338} height={485} />
+                <Image src={Sertificate1} width={338} height={485} alt="" />
               </li>
 
               <li>
-                <Image src={Sertificate2} width={337} height={484} />
+                <Image src={Sertificate2} width={337} height={484} alt="" />
               </li>
 
               <li>
-                <Image src={Sertificate3} width={329} height={473} />
+                <Image src={Sertificate3} width={329} height={473} alt="" />
               </li>
             </ul>
 
@@ -259,15 +259,15 @@ const Uran = () => {
               термальных и питьевых вод.
             </p>
 
-            <Image src={MineralWater} width={1098} height={800} />
+            <Image src={MineralWater} width={1098} height={800} alt="" />
 
             <ul className="sertificates__list se">
               <li>
-                <Image src={MineralsMap} width={500} height={648} />
+                <Image src={MineralsMap} width={500} height={648} alt="" />
               </li>
 
               <li>
-                <Image src={Fergana} width={639} height={631} />
+                <Image src={Fergana} width={639} height={631} alt="" />
               </li>
             </ul>
 
@@ -345,11 +345,11 @@ const Uran = () => {
 
           <ul className="images-list">
             <li>
-              <Image src={Andijan} width={615} height={445} />
+              <Image src={Andijan} width={615} height={445} alt="" />
             </li>
 
             <li>
-              <Image src={Namangan} width={600} height={445} />
+              <Image src={Namangan} width={600} height={445} alt="" />
             </li>
           </ul>
 
@@ -376,7 +376,7 @@ const Uran = () => {
             Карта распространения промышленных вод Республики Узбекистан
           </h3>
 
-          <Image src={Distribution} width={902} height={577} />
+          <Image src={Distribution} width={902} height={577} alt="" />
 
           <p className="text mt20 mb0">
             В настоящее время одно из актуальных направлений Госкомгеологии Республики

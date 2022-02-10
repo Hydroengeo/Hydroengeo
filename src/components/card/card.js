@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const card = ({ avatar, name, date, position }) => {
+const Card = ({ avatar, name, date, position }) => {
   const [imageWidth, setImageWidth] = useState("240");
   const [imageHeight, setImageHeight] = useState("320");
 
@@ -11,7 +11,6 @@ const card = ({ avatar, name, date, position }) => {
       setImageHeight("260");
     }
   }, []);
-  
 
   return (
     <>
@@ -55,4 +54,4 @@ const card = ({ avatar, name, date, position }) => {
   );
 };
 
-export default card;
+export default Card;

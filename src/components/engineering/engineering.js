@@ -21,7 +21,7 @@ import image10 from "../../assets/images/engineering10.png";
 import image11 from "../../assets/images/engineering11.png";
 import image12 from "../../assets/images/engineering12.png";
 
-function engineering() {
+function Engineering() {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -309,4 +309,4 @@ function engineering() {
   );
 }
 
-export default engineering;
+export default Engineering;

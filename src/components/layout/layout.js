@@ -64,9 +64,9 @@ const Layout = ({ children }) => {
               }}
             >
               {!hamOpen ? (
-                <Image className="open" src={Open} width="60" height="43" />
+                <Image className="open" src={Open} width="60" height="43" alt="" />
               ) : (
-                <Image className="close" src={Close} width="60" height="43" />
+                <Image className="close" src={Close} width="60" height="43" alt="" />
               )}
             </button>
 

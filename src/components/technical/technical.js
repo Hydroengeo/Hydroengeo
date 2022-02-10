@@ -25,7 +25,7 @@ import image14 from "../../assets/images/technical14.png";
 import image15 from "../../assets/images/technical15.png";
 import image16 from "../../assets/images/technical16.png";
 
-function technical() {
+function Technical() {
   const dispatch = useDispatch();
   const {
     count: { lang },
@@ -52,18 +52,12 @@ function technical() {
         />
 
         <p className="technical__info">
-          <strong>
-            {tech.paragraph1}
-          </strong>
+          <strong>{tech.paragraph1}</strong>
         </p>
 
-        <p className="technical__info">
-          {tech.paragraph2}
-        </p>
+        <p className="technical__info">{tech.paragraph2}</p>
 
-        <p className="technical__info">
-          {tech.paragraph3}
-        </p>
+        <p className="technical__info">{tech.paragraph3}</p>
 
         <div className="technical__images-box">
           <div className="image1">
@@ -81,12 +75,7 @@ function technical() {
           </div>
 
           <div className="image4">
-            <Image
-              src={image4}
-              alt="second use computer"
-              width={600}
-              height={412}
-            />
+            <Image src={image4} alt="second use computer" width={600} height={412} />
           </div>
         </div>
 
@@ -100,12 +89,7 @@ function technical() {
           </div>
 
           <div className="image7">
-            <Image
-              src={image7}
-              alt="why does printer use for"
-              width={300}
-              height={424}
-            />
+            <Image src={image7} alt="why does printer use for" width={300} height={424} />
           </div>
         </div>
 
@@ -126,33 +110,22 @@ function technical() {
             </div>
 
             <div className="image6">
-              <Image
-                src={image6}
-                alt="printer black"
-                width={380}
-                height={424}
-              />
+              <Image src={image6} alt="printer black" width={380} height={424} />
             </div>
           </div>
         </div>
 
         <p className="technical__info">
-          <strong>
-            {tech.paragraph4}
-          </strong>
+          <strong>{tech.paragraph4}</strong>
         </p>
 
-        <p className="technical__info">
-          {tech.paragraph5}
-        </p>
+        <p className="technical__info">{tech.paragraph5}</p>
 
         <div className="technical__images-box">
           <div className="image8">
             <Image src={image8} alt="avto search" width={520} height={305} />
             <p className="technical__info technical__info--text">
-              <strong>
-                {tech.img_title1}
-              </strong>
+              <strong>{tech.img_title1}</strong>
             </p>
           </div>
 
@@ -164,9 +137,7 @@ function technical() {
               height={305}
             />
             <p className="technical__info technical__info--text">
-              <strong>
-                {tech.img_title2}
-              </strong>
+              <strong>{tech.img_title2}</strong>
             </p>
           </div>
         </div>
@@ -179,9 +150,7 @@ function technical() {
             height={394}
           />
           <p className="technical__info technical__info--text">
-            <strong>
-              {tech.img_title3}
-            </strong>
+            <strong>{tech.img_title3}</strong>
           </p>
         </div>
 
@@ -190,9 +159,7 @@ function technical() {
         </h2>
 
         <p className="technical__info">
-          <strong>
-            {tech.paragraph6}
-          </strong>
+          <strong>{tech.paragraph6}</strong>
         </p>
 
         <div className="image11">
@@ -214,12 +181,7 @@ function technical() {
         </div>
 
         <div className="image13">
-          <Image
-            src={image13}
-            alt="system search NTB"
-            width={1013}
-            height={560}
-          />
+          <Image src={image13} alt="system search NTB" width={1013} height={560} />
         </div>
 
         <div className="image14">
@@ -228,21 +190,11 @@ function technical() {
 
         <div className="technical__images-box technical__images-box--center">
           <div className="image15">
-            <Image
-              src={image15}
-              alt="font theme list 1"
-              width={423}
-              height={612}
-            />
+            <Image src={image15} alt="font theme list 1" width={423} height={612} />
           </div>
 
           <div className="image16">
-            <Image
-              src={image16}
-              alt="font theme list 2"
-              width={590}
-              height={531}
-            />
+            <Image src={image16} alt="font theme list 2" width={590} height={531} />
           </div>
         </div>
 
@@ -258,4 +210,4 @@ function technical() {
   );
 }
 
-export default technical;
+export default Technical;

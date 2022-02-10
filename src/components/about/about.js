@@ -1,7 +1,7 @@
 import Content from "../../Localization/Content";
 import { useSelector } from "react-redux";
 
-function about() {
+function AboutPage() {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -49,4 +49,4 @@ function about() {
   );
 }
 
-export default about;
+export default AboutPage;

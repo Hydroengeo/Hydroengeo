@@ -2,7 +2,7 @@ import Image from "next/image";
 import Card from "../card/card";
 import { useEffect, useState } from "react";
 import Content from "../../Localization/Content";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 // Images
 import Minchenko from "../../assets/images/minchenko.jpg";
@@ -26,7 +26,6 @@ import Ogp2 from "../../assets/images/ogp2.jpg";
 import MapUz from "../../assets/images/mapuz.jpg";
 
 const Overture = () => {
-  const dispatch = useDispatch();
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -167,11 +166,11 @@ const Overture = () => {
           <div className="landslide">
             <h3 className="landslide__heading">{oc.secondaryHeading3}</h3>
             <div className="landslide__image">
-              <Image src={Landslide} width={1280} height={689} />
+              <Image src={Landslide} width={1280} height={689} alt="" />
             </div>
 
             <div className="scheme-image">
-              <Image src={Scheme} width={1280} height={1386} />
+              <Image src={Scheme} width={1280} height={1386} alt="" />
             </div>
 
             <p className="landslide__text">{oc.paragraph3}</p>
@@ -181,7 +180,7 @@ const Overture = () => {
             <p className="landslide__text">{oc.paragraph5}</p>
           </div>
           <div className="naugarzan">
-            <Image src={Naugarzan} width={1280} height={869} />
+            <Image src={Naugarzan} width={1280} height={869} alt="" />
             <h4 className="naugarzan__desc">{oc.naugarzan}</h4>
           </div>
 
@@ -193,7 +192,7 @@ const Overture = () => {
           <div className="graph">
             <h3 className="graph__heading">{oc.secondaryHeading4}</h3>
 
-            <Image src={Graph} width={1280} height={515} />
+            <Image src={Graph} width={1280} height={515} alt="" />
           </div>
 
           <div className="turkskiy">
@@ -249,7 +248,7 @@ const Overture = () => {
                   <li className="proccess__item">{oc.paragraph9}</li>
                   <li className="proccess__item">{oc.paragraph10}</li>
                 </ul>
-                <Image src={MapUz} width={1280} height={960} />
+                <Image src={MapUz} width={1280} height={960} alt="" />
               </div>
             </div>
           </div>

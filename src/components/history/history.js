@@ -16,7 +16,7 @@ import Almati from "../../assets/images/Almati.jpg";
 import President from "../../assets/images/president.jpg";
 import Collection from "../../assets/images/collection.jpg";
 
-const history = () => {
+const History = () => {
   const dispatch = useDispatch();
   const {
     count: { lang },
@@ -172,4 +172,4 @@ const history = () => {
   );
 };
 
-export default history;
+export default History;

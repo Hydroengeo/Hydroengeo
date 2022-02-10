@@ -2,7 +2,7 @@ import Link from "next/link";
 import Content from "../../Localization/Content";
 import { useSelector } from "react-redux";
 
-const contacts = () => {
+const Contacts = () => {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -71,4 +71,4 @@ const contacts = () => {
   );
 };
 
-export default contacts;
+export default Contacts;

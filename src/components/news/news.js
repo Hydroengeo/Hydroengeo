@@ -14,8 +14,8 @@ function News() {
 
   useEffect(() => {
     fetch("https://hydroengeo.herokuapp.com/introNews")
-      .then((res) => res.json())
-      .then((data) => {
+      .then(res => res.json())
+      .then(data => {
         setData(data.data.reverse()), setDat(data.data.slice(0, 5));
       });
   }, []);
@@ -33,11 +33,11 @@ function News() {
               nextEl: ".next-btn",
               prevEl: ".prev-btn",
             }}
-            onSwiper={(swiper) => console.log(swiper)}
+            onSwiper={swiper => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
           >
             {dat &&
-              dat.map((e) => (
+              dat.map(e => (
                 <SwiperSlide className="news__slider__item" key={e.news_id}>
                   <div className="news__slider__item__img">
                     <Image
@@ -45,14 +45,10 @@ function News() {
                       alt={e.news_heading}
                       width="1100"
                       height="700"
-                      loader={() =>
-                        `https://hydroengeo.herokuapp.com/${e.news_main_img}`
-                      }
+                      loader={() => `https://hydroengeo.herokuapp.com/${e.news_main_img}`}
                     />
 
-                    <h2 className="news__slider__item__heading">
-                      {e.news_heading}
-                    </h2>
+                    <h2 className="news__slider__item__heading">{e.news_heading}</h2>
                   </div>{" "}
                   <p className="news__slider__item__title">{e.news_title}</p>
                 </SwiperSlide>
@@ -73,14 +69,10 @@ function News() {
 
         <ul className="news__list">
           {data &&
-            data.map((e) => (
-              <Link href={`new/${e.news_id}`}>
+            data.map(e => (
+              <Link key={e.news_id} href={`new/${e.news_id}`}>
                 <a>
-                  <li
-                    className="news__item"
-                    data-set-id={e.news_id}
-                    key={e.news_id}
-                  >
+                  <li className="news__item" data-set-id={e.news_id} key={e.news_id}>
                     <div className="news__item-img">
                       <Image
                         src={`https://hydroengeo.herokuapp.com/${e.news_main_img}`}

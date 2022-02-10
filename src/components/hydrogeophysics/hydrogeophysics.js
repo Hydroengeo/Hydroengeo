@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Content from "../../Localization/Content";
 
 import Card from "../card/card";
@@ -27,11 +27,10 @@ import image16 from "../../assets/images/hydrogeophysics16.png";
 import image17 from "../../assets/images/hydrogeophysics17.png";
 import image18 from "../../assets/images/hydrogeophysics18.png";
 
-function hydrogeophysics() {
-  const dispatch = useDispatch();
+function Hydrogeophysics() {
   const {
     count: { lang },
-  } = useSelector((state) => state);
+  } = useSelector(state => state);
 
   const {
     main: { hydrogeophysics: hy },
@@ -144,27 +143,19 @@ function hydrogeophysics() {
 
         <ul className="hydrogeophysics__list">
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph1}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph1}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph2}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph2}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph3}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph3}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph4}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph4}</p>
           </li>
         </ul>
 
@@ -174,39 +165,27 @@ function hydrogeophysics() {
 
         <ul className="hydrogeophysics__list">
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph5}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph5}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph6}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph6}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph7}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph7}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph8}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph8}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph9}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph9}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph10}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph10}</p>
           </li>
         </ul>
 
@@ -216,57 +195,39 @@ function hydrogeophysics() {
 
         <ul className="hydrogeophysics__list">
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph11}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph11}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph12}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph12}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph13}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph13}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph14}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph14}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph16}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph16}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph17}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph17}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph18}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph18}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph19}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph19}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph20}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph20}</p>
           </li>
         </ul>
 
@@ -276,27 +237,19 @@ function hydrogeophysics() {
 
         <ul className="hydrogeophysics__list">
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph21}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph21}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph22}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph22}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph23}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph23}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph24}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph24}</p>
           </li>
         </ul>
 
@@ -306,15 +259,11 @@ function hydrogeophysics() {
 
         <ul className="hydrogeophysics__list">
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph25}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph25}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph26}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph26}</p>
           </li>
         </ul>
 
@@ -324,14 +273,10 @@ function hydrogeophysics() {
 
         <ul className="hydrogeophysics__list">
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph27}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph27}</p>
           </li>
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.task_structure_paragraph28}
-            </p>
+            <p className="hydrogeophysics__info">{hy.task_structure_paragraph28}</p>
           </li>
         </ul>
 
@@ -341,45 +286,31 @@ function hydrogeophysics() {
 
         <ul className="hydrogeophysics__list">
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.hydrogeophysics__paragraph1}
-            </p>
+            <p className="hydrogeophysics__info">{hy.hydrogeophysics__paragraph1}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.hydrogeophysics__paragraph2}
-            </p>
+            <p className="hydrogeophysics__info">{hy.hydrogeophysics__paragraph2}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.hydrogeophysics__paragraph3}
-            </p>
+            <p className="hydrogeophysics__info">{hy.hydrogeophysics__paragraph3}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.hydrogeophysics__paragraph4}
-            </p>
+            <p className="hydrogeophysics__info">{hy.hydrogeophysics__paragraph4}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.hydrogeophysics__paragraph5}
-            </p>
+            <p className="hydrogeophysics__info">{hy.hydrogeophysics__paragraph5}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.hydrogeophysics__paragraph6}
-            </p>
+            <p className="hydrogeophysics__info">{hy.hydrogeophysics__paragraph6}</p>
           </li>
 
           <li className="">
-            <p className="hydrogeophysics__info">
-              {hy.hydrogeophysics__paragraph7}
-            </p>
+            <p className="hydrogeophysics__info">{hy.hydrogeophysics__paragraph7}</p>
           </li>
 
           <li className="">
@@ -400,9 +331,7 @@ function hydrogeophysics() {
           </li>
         </ul>
 
-        <p className="hydrogeophysics__info">
-          {hy.hydrogeophysics__paragraph14}
-        </p>
+        <p className="hydrogeophysics__info">{hy.hydrogeophysics__paragraph14}</p>
 
         <h2 className="hydrogeophysics__info hydrogeophysics__info--bold hydrogeophysics__info--text">
           {hy.geophysical_heading1}
@@ -531,4 +460,4 @@ function hydrogeophysics() {
   );
 }
 
-export default hydrogeophysics;
+export default Hydrogeophysics;

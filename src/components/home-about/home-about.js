@@ -12,13 +12,13 @@ import PhDstudents from "../../assets/images/briefcase-5-line.svg";
 import Candidates from "../../assets/images/contacts-line.svg";
 import PhDs from "../../assets/images/spy-line.svg";
 
-function homeAbout() {
+function HomeAbout() {
   const [data, setdata] = useState();
 
   useEffect(() => {
     fetch("https://hydroengeo.herokuapp.com/staff")
-      .then((res) => res.json())
-      .then((data) => {
+      .then(res => res.json())
+      .then(data => {
         if (data) {
           setdata(data.data[0]);
         }
@@ -28,7 +28,7 @@ function homeAbout() {
   const dispatch = useDispatch();
   const {
     count: { lang },
-  } = useSelector((state) => state);
+  } = useSelector(state => state);
 
   const {
     main: { about_page },
@@ -93,12 +93,7 @@ function homeAbout() {
             </li>
             <li className="home-about__item">
               <div className="home-about__item__box">
-                <Image
-                  src={PhDstudents}
-                  alt="PhD students"
-                  width={64}
-                  height={64}
-                />
+                <Image src={PhDstudents} alt="PhD students" width={64} height={64} />
                 {/* <span className="home-about__span">{data.doctor_name}</span> */}
               </div>
 
@@ -132,4 +127,4 @@ function homeAbout() {
   );
 }
 
-export default homeAbout;
+export default HomeAbout;

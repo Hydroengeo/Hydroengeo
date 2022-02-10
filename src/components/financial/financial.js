@@ -14,7 +14,7 @@ import FinancialResult from "../../assets/images/financialresults.jpg";
 import FinancialResult2 from "../../assets/images/financialresults2.jpg";
 import FinancialResult3 from "../../assets/images/financialresults3.jpg";
 
-const financial = () => {
+const Financial = () => {
   return (
     <>
       <section id="financial">
@@ -45,7 +45,7 @@ const financial = () => {
             aftotransportlar bo’yicha ma’lumot
           </h2>
 
-          <Image src={Transports} width={866} height={576} />
+          <Image src={Transports} width={866} height={576} alt="" />
 
           <h2 className="secondary-heading mt100">
             «Гидрогеология ва инженерлик геологияси институти» ДМ бўйича Харид қилингар
@@ -64,7 +64,7 @@ const financial = () => {
             гидрогеологии и инженерной геологии» на 01.10.2021 г.
           </h2>
 
-          <Image src={Indicators} width={590} height={576} />
+          <Image src={Indicators} width={590} height={576} alt="" />
 
           <h2 className="secondary-heading mt100">Бухгалтерия баланси</h2>
 
@@ -114,4 +114,4 @@ const financial = () => {
   );
 };
 
-export default financial;
+export default Financial;

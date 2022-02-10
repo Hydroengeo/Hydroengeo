@@ -48,7 +48,7 @@ const Resources = () => {
 
               <li> Оценка (переоценка) эксплуатационных запасов подземных вод.</li>
             </ul>
-            <Image src={Model} width={635} height={355} />
+            <Image src={Model} width={635} height={355} alt="" />
             <p className="services__text">
               Разрабатывает рекомендации и методику по эффективному выбору направлений
               поисково-разведочных работ на пресные подземные воды и их рационального
@@ -58,7 +58,7 @@ const Resources = () => {
               Обоснование наиболее эффективных типов и схем водозаборов ПВ (скважинные,
               галерийный).
             </p>
-            <Image src={MapUzb} width={1280} height={1309} />
+            <Image src={MapUzb} width={1280} height={1309} alt="" />
           </div>
           <div className="achievements">
             <h3 className="achievements__heading">
