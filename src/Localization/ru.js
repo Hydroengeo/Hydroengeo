@@ -8,6 +8,7 @@ import geoecology from "./pages/ru/geoecology";
 import technical from "./pages/ru/technical";
 import engineering from "./pages/ru/engineering";
 import chemical from "./pages/ru/chemical";
+import groundwater from "./pages/ru/groundwater";
 
 const ru = {
   header: {
@@ -56,7 +57,8 @@ const ru = {
         marketing: "Маркетинг и патентоведение",
         department: "Отдел выпуска научно-технической продукции",
         ict_department: "Отдел ИКТ",
-        engineering: "Инженерная геодинамика и дистанционное зондирование земли",
+        engineering:
+          "Инженерная геодинамика и дистанционное зондирование земли",
         hydrogeophysics: "Гидрогеофизика",
         deposits: "Гидрогеология и инженерная геология рудных месторождений",
         engineering_geology: "Гидрогеология и инженерная геология МТПИ",
@@ -325,7 +327,8 @@ const ru = {
           title3: "Телефон",
           title4: "Время приёма граждан",
           fullname: "		Муминджанов Талат Исраилович",
-          position: "	Заведующий центром «Исследование ресурсов и запасов подземных вод»",
+          position:
+            "	Заведующий центром «Исследование ресурсов и запасов подземных вод»",
           // telephone: "71 265-03-16",
           // day: " C понедельника по пятницу",
           // time: "8:00-11:00",
@@ -343,6 +346,7 @@ const ru = {
     technical,
     engineering,
     chemical,
+    groundwater,
   },
 
   footer: {
@@ -371,7 +375,8 @@ const ru = {
     centers_laboratories: "ЛАБОРАТОРИИ ИНСТИТУТА",
     laboratories_drop_down: {
       meliorative: "МЕЛИОРАТИВНОЙ ГИДРОГЕОЛОГИИ",
-      remote_sensing: "ИНЖЕНЕРНОЙ ГЕОДИНАМИКИ И ДИСТАНЦИОННОГО ЗОНДИРОВАНИЯ ЗЕМЛИ",
+      remote_sensing:
+        "ИНЖЕНЕРНОЙ ГЕОДИНАМИКИ И ДИСТАНЦИОННОГО ЗОНДИРОВАНИЯ ЗЕМЛИ",
       engineering_geology:
         "ГИДРОГЕОЛОГИИ И ИНЖЕНЕРНОЙ ГЕОЛОГИИ МЕСТОРОЖДЕНИЙ ТВЕРДЫХ ПОЛЕЗНЫХ ИСКОПАЕМЫХ",
       geoinformation: "ГЕОИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ И МОДЕЛИРОВАНИЯ",

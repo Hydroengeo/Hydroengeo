@@ -8,6 +8,7 @@ import geoecology from "./pages/uz/geoecology";
 import technical from "./pages/uz/technical";
 import engineering from "./pages/uz/engineering";
 import chemical from "./pages/uz/chemical";
+import groundwater from "./pages/uz/groundwater";
 
 const uz = {
   header: {
@@ -58,7 +59,8 @@ const uz = {
         ict_department: `AKT bo'limi`,
         engineering: "Muhandislik geodinamika va yerni masofadan zondlash",
         hydrogeophysics: "Gidrogeofizika",
-        deposits: "Ruda konlarining gidrogeologiyasi va muhandislik geologiyasi",
+        deposits:
+          "Ruda konlarining gidrogeologiyasi va muhandislik geologiyasi",
         engineering_geology: "Gidrogeologiya va muhandislik geologiyasi MTPI",
       },
     },
@@ -151,7 +153,8 @@ const uz = {
       text2:
         "1950-1960 yillarda gidrogeologik va muhandislik-geologik tadqiqotlar X.M.Abdullaev, G.A.Mavlyanov, N.A.Kenesarin, X.T.Toʻlaganovlar nomlari bilan bogʻliq boʻlib, sanoat gidrogeolog va geologlardan yangi gʻoyalarni talab qildi. fan va ishlab chiqarishni rivojlantirish.Oʻzbekgidrogeologiya tresti (X.T.Toʻlaganov va boshqalar), GIDROINGEO instituti (G.A.Mavlyanov) tashkil etildi.Gidrogeologiya va muhandislik geologiyasi sohasida iqtisodiyot.",
       text3: {
-        title: "«GIDROINGEO» Gidrogeologiya va muhandislik geologiyasi instituti",
+        title:
+          "«GIDROINGEO» Gidrogeologiya va muhandislik geologiyasi instituti",
         body: "1959-yil 29-noyabrda Oʻzbekiston SSR Vazirlar Sovetining 737-sonli qarori bilan Oʻzbekiston SSR Fanlar akademiyasi tizimida tashkil etilgan.",
       },
       text4: `1971 yil 4 iyundan boshlab Oʻzbekiston SSR Vazirlar Kengashining 250-son buyrugʻi bilan GIDROINGEO instituti “Oʻzbekgidrogeologiya” davlat gidrogeologiya korxonasi tarkibiga kiradi.`,
@@ -160,7 +163,8 @@ const uz = {
       text6:
         "“O‘zbekiston Respublikasi Davlat geologiya va mineral resurslar qo‘mitasining geologiya ishlarini tashkil etish va faoliyatini takomillashtirish chora-tadbirlari to‘g‘risida”gi PQ – 568-sonli qarori asosida va O‘zbekiston Respublikasi Davlat geologiya qo‘mitasining buyrug‘i asosida O‘zbekiston Respublikasi Geologiya va mineral resurslar bo‘yicha 2007 yil 25 yanvardagi 11-son qarori bilan Institut Davlat geologiya qo‘mitasining tarkibiy bo‘linmasi hisoblanadi.",
       text7: {
-        title: "Gidrogeologiya va muhandislik geologiyasi instituti (GIDROINGEO)",
+        title:
+          "Gidrogeologiya va muhandislik geologiyasi instituti (GIDROINGEO)",
         body: "oʻz faoliyati bilan Oʻrta Osiyo, Janubiy Qozogʻiston va Ozarbayjon (qurgʻoqchil zona) hududlarini qamrab oladi.U 19ta laboratoriya va eksperimental metodik partiyaga ega 9ta kafedradan iborat.Fan nomzodlari,kichik ilmiy xodimlar-67,katta muhandislar-22,har xil fanlarning texnik xodimlari. mutaxassisliklar va laborantlar - 110",
       },
       title: "Gidrogeologiya va muhandislik geologiyasi instituti (GIDROINGEO)",
@@ -176,11 +180,13 @@ const uz = {
         item2: "gidro-mineral resurslarni o'rganish va ulardan foydalanish;",
         item3: "meliorativ gidrogeologiya sohasidagi tadqiqotlar;",
         item4: "er osti suvlarining monitoringi;",
-        item5: "suv zahiralarining ifloslanishi va kamayish jarayonlarini o'rganish;",
+        item5:
+          "suv zahiralarining ifloslanishi va kamayish jarayonlarini o'rganish;",
         item6: "muhandislik geodinamiği sohasidagi tadqiqotlar;",
         item7:
           "foydali qazilmalar konlarining gidrogeologik va muhandislik-geologik sharoitlarini o‘rganish;",
-        item8: "shaharlar va sanoat zonalarining ekologik sharoitlarini o'rganish;",
+        item8:
+          "shaharlar va sanoat zonalarining ekologik sharoitlarini o'rganish;",
         item9: "yangi texnik vositalarni ishlab chiqish;",
         item10:
           "yer osti suvlarini qidirish texnologiyalarini ishlab chiqish va ulardan oqilona foydalanish;",
@@ -189,7 +195,8 @@ const uz = {
         item12:
           "gidromineral xom ashyoni qayta ishlash va ulardan foydalanish texnologiyalarini ishlab chiqish;",
         item13: "jinslarning fizik-mexanik xossalarini aniqlash;",
-        item14: "topografik-geodeziya ishlarini olib borish va xaritalar berish;",
+        item14:
+          "topografik-geodeziya ishlarini olib borish va xaritalar berish;",
         item15: "qurilish va kapital ta'mirlash;",
         item16: "yuridik va jismoniy shaxslarga pullik xizmatlar ko‘rsatish;",
         item17: "qishloq xo'jaligi uchun o'g'itlar ishlab chiqarish;",
@@ -247,7 +254,8 @@ const uz = {
           title3: "Telefon",
           title4: "Fuqarolarni qabul qilish vaqti",
           fullname: "Oxunov Farruxjon Abduqahhorovich",
-          position: "	Ilmiy ishlar va innovatsiyalar bo‘yicha direktor o‘rinbosari",
+          position:
+            "	Ilmiy ishlar va innovatsiyalar bo‘yicha direktor o‘rinbosari",
           telephone: "71 265-03-78",
           day: "Dushanba va juma",
           time: "18:00-17:00",
@@ -271,7 +279,8 @@ const uz = {
           title3: "Telefon",
           title4: "Fuqarolarni qabul qilish vaqti",
           fullname: "Toshev Doniyor Xudoyorovich",
-          position: "Iqtisodiyot va geologiya xizmatini shakllantirish kafedrasi mudiri",
+          position:
+            "Iqtisodiyot va geologiya xizmatini shakllantirish kafedrasi mudiri",
           telephone: "71 265-03-78",
           day: " Dushanbadan jumagacha",
           time: "8:00-11:00",
@@ -340,6 +349,7 @@ const uz = {
     technical,
     engineering,
     chemical,
+    groundwater,
   },
 
   footer: {
