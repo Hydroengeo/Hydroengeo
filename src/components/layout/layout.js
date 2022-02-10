@@ -52,8 +52,6 @@ const Layout = ({ children }) => {
     dispatch({ type: window.localStorage.getItem("lang") || "ru" });
   }, []);
 
-  console.log(router.pathname.includes("/laboratories"));
-
   return (
     <>
       <header id="header">
