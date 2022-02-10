@@ -1,34 +1,32 @@
+import Content from "../../Localization/Content";
+import { useSelector } from "react-redux";
+
 function politics() {
-   return (
-      <section className="politics">
-         <div className="container">
-            <div className="politics__info-box">
-               <h2 className="politics__info-box__heading">Миссия и политика</h2>
+  const {
+    count: { lang },
+  } = useSelector(state => state);
 
-               <p className="politics__info-box__info">
-                  Интеграция и глобализация в мировое сообщество путём проведения интернациональных научно-исследовательских работ и создание инновационной экосистемы для максимальной реализации подземных богатств страны во имя развития человеческого капитала и улучшения жизни населения
-               </p>
+  const {
+    main: { politics_page },
+  } = Content[lang];
 
-               <p className="politics__info-box__info">
-                  Проведение гидрогеологических и инженерно - геологических работ для обоснования эффективных направлений и количественной оценки подземных(пресных, минеральных, термальных и промышленных) водных ресурсов, а также изучение инженерно - геологических и экзогенно - геологических процессов; разработка методов и осуществление наблюдения, контроля и прогноза изменений гидрогеологических и инженерно - геологических условий под влиянием техногенного воздействия;
-               </p>
+  return (
+    <section className="politics">
+      <div className="container">
+        <div className="politics__info-box">
+          <h2 className="politics__info-box__heading">{politics_page.heading}</h2>
 
-               <p className="politics__info-box__info">
-                  Разработка методов проведения геолого - экологических исследований и картографирования в районах интенсивного техногенеза.
-               </p>
+          <p className="politics__info-box__info">{politics_page.text1}</p>
 
-               <p className="politics__info-box__info">
-                  Ведение мониторинга подземных вод и государственных кадастров и государственного учета подземных вод
-               </p>
-            </div>
-         </div>
-      </section>
-   )
+          <p className="politics__info-box__info">{politics_page.text2}</p>
+
+          <p className="politics__info-box__info">{politics_page.text3}</p>
+
+          <p className="politics__info-box__info">{politics_page.text4}</p>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default politics
-
-
-
-
-
+export default politics;

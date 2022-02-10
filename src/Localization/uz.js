@@ -72,17 +72,17 @@ const uz = {
       heading: "Institut haqida",
 
       text1: {
-        title: "RIVOJLANISH:",
+        title: "ISHLAB CHIQADI:",
         body: `Mijozlarni qiziqtirgan mavzular bo'yicha doimiy so'rovlar to'plami.`,
       },
 
       text2: {
-        title: "BAJARILMOQDA:",
+        title: "BAJARADI:",
         body: `Doimiy so'rovlar bo'yicha axborot ta'minoti; bir martalik qidiruvlar, maqsadli so'rovlar; XBA bo'yicha birlamchi manbalarga buyurtmalar, nashrlarning xorijiy tillardan tarjimalari, ilmiy-texnikaviy adabiyotlardan nusxa ko'chirish, yangi texnika va texnologiya sohasida ilmiy-texnik hujjatlarni ma'lumot qidirish, texnik hujjatlarni xarid qilish uchun buyurtmalar.`,
       },
 
       text3: {
-        title: "MUMKIN:",
+        title: "XUSUSIYATLAR:",
         body: `Gidrogeologiya, muhandislik geologiyasi, gidrogeofizika va boshqalar yo'nalishlari bo'yicha chuqurligi 12 - 15 yil bo'lgan ma'lumotnoma-axborot fondi, ilmiy-texnik hujjatlarning kartotekasi, IR, tarjimalari, manzillari.`,
       },
 
@@ -124,15 +124,15 @@ const uz = {
     },
 
     politics_page: {
-      heading: "Missiya va siyosat",
+      heading: "Vazifasi va siyosati",
       text1:
         "Inson kapitalini rivojlantirish va aholi turmushini yaxshilash yoʻlida xalqaro ilmiy-tadqiqot va ishlanmalar hamda mamlakat yer osti boyliklaridan maksimal darajada foydalanish uchun innovatsion ekotizimni yaratish orqali jahon hamjamiyatiga integratsiya va globallashuv.",
       text2:
-        "Er osti (chuchuk, mineral, termal va sanoat) suv resurslarining samarali yo'nalishlarini asoslash va miqdoriy baholash, shuningdek, muhandislik-geologik va ekzogen-geologik jarayonlarni o'rganish bo'yicha gidrogeologik va muhandislik-geologik ishlarni olib borish; texnogen ta'sir ta'sirida gidrogeologik va muhandislik-geologik sharoitlarning o'zgarishini kuzatish, nazorat qilish va prognozlash usullarini ishlab chiqish va amalga oshirish;",
+        "Yer osti (chuchuk, mineral, termal va sanoat) suv resurslarining samarali yo'nalishlarini asoslash va miqdoriy baholash, shuningdek, muhandislik-geologik va ekzogen-geologik jarayonlarni o'rganish bo'yicha gidrogeologik va muhandislik-geologik ishlarni olib borish; texnogen ta'sir ta'sirida gidrogeologik va muhandislik-geologik sharoitlarning o'zgarishini kuzatish, nazorat qilish va prognozlash usullarini ishlab chiqish va amalga oshirish;",
       text3:
         "Intensiv texnogenez hududlarida geologik-ekologik tadqiqotlar va xaritalash ishlarini olib borish usullarini ishlab chiqish.",
       text4:
-        "Er osti suvlari monitoringi va davlat kadastrini va yer osti suvlarining davlat hisobini yuritish",
+        "Yer osti suvlari monitoringi va davlat kadastrini va yer osti suvlarining davlat hisobini yuritish",
     },
 
     education_page: {
@@ -328,6 +328,44 @@ const uz = {
           // time: "8:00-11:00",
         },
       },
+    },
+
+    normative_page: {
+      heading: "Normativ baza",
+      lexuz: `Qonun hujjatlari maʼlumotlari milliy bazasi O‘zbekiston Respublikasi`,
+      resolutions: "O‘zbekiston Respublikasi Prezidentining Farmon va qarorlari",
+      ministers: "Vazirlar Mahkamasining qarorlari O‘zbekiston Respublikasi",
+      rules: "Normativ Qoidalar",
+    },
+
+    contacts_page: {
+      heading: "Kontaktlar",
+      office: "idora",
+      secretary: "Ilmiy kotib",
+      telegram: "Telegramdagi yangiliklar kanali",
+      location: "Manzil",
+    },
+
+    history_page: {
+      heading: "Tarix va yetakchilik",
+      text1: `1921 yil - Turkvodxoz, keyinroq Sredazvodxoz. Z.F.Gorizdro-Kulchitskaya (1925), N.F.Bezobrazova (1927) Gidrogeologiya bo‘limida sug‘orish tizimlarini tiklash bo‘yicha ishladilar, Chirchiq, Angren, Keles daryolari havzalarining gidrogeologik sharoitlariga umumiy tavsif berdilar. Bass o'rganish uchun. R. Zarafshonga leningradlik mutaxassislar A.N.Nikolaev, S.A.Butov, S.F.Mashkovtsev taklif qilingan (1925). 1924 yildan beri O.K.Lange boshchiligidagi gidrogeologlar guruhi doimiy ravishda ishlab kelmoqda. Tadqiqot natijalari "Irrigatsiya" jurnalining sonlarida va SAGU asarlarida nashr etilgan (Mujchinkin, 1924-1928; Reshetkin, 1927-1929; Arxangelskiy, 1928; Tolstixin, 1924-1928).`,
+      text2:
+        "1950-1960 yillarda gidrogeologiya va muhandislik-geologik tadqiqotlar X.M.Abdullaev, G.A.Mavlyanov, N.A.Kenesarin, X.T.Toʻlaganovlar nomlari bilan bogʻliq boʻlib, sanoat gidrogeolog va geologlardan yangi gʻoyalarni talab qildi. fan va ishlab chiqarishni rivojlantirish.Oʻzbekgidrogeologiya tresti (X.T.Toʻlaganov va boshqalar), GIDROINGEO instituti (G.A.Mavlyanov) tashkil etildi.Gidrogeologiya va muhandislik geologiyasi sohasida iqtisodiyot.",
+      title1: "“GIDROINGEO” Gidrogeologiya va muhandislik geologiyasi instituti",
+      text3:
+        "1959-yil 29-noyabrda Oʻzbekiston SSR Vazirlar Sovetining 737-sonli qarori bilan Oʻzbekiston SSR Fanlar akademiyasi tizimida tashkil etilgan.",
+      text4:
+        "1971 yil 4 iyundan boshlab Oʻzbekiston SSR Vazirlar Kengashining 250-son buyrugʻi bilan GIDROINGEO instituti “Oʻzbekgidrogeologiya” davlat gidrogeologiya korxonasi tarkibiga kiradi.",
+      text5:
+        "2000 yil 20 iyundan “Oʻzbekgidrogeologiya” davlat korxonasining 57-son buyrugʻi asosida “GIDROINGEO” Gidrogeologiya va muhandislik geologiyasi instituti uning shoʻba korxonasiga aylanadi.",
+      text6:
+        "“O‘zbekiston Respublikasi Davlat geologiya va mineral resurslar qo‘mitasining geologiya ishlarini tashkil etish va faoliyatini takomillashtirish chora-tadbirlari to‘g‘risida”gi PQ – 568-sonli qarori asosida va O‘zbekiston Respublikasi Davlat geologiya qo‘mitasining buyrug‘i asosida O‘zbekiston Respublikasi Geologiya va mineral resurslar bo‘yicha 2007 yil 25 yanvardagi 11-son qarori bilan Institut Davlat geologiya qo‘mitasining tarkibiy bo‘linmasi hisoblanadi.",
+      title2: "Gidrogeologiya va muhandislik geologiyasi instituti (GIDROINGEO)",
+      text7:
+        " oʻz faoliyati bilan Oʻrta Osiyo, Janubiy Qozogʻiston va Ozarbayjon (qurgʻoq zona) hududlarini qamrab olgan boʻlib, 19 ta laboratoriya va eksperimental metodik partiyaga ega 9 kafedradan iborat. , shundan: 3 nafar shifokor, 28 nafar fan nomzodi, kichik ilmiy xodim – 67 nafar, katta muhandis – 22 nafar, turli mutaxassislikdagi texnik va laborant – 110 nafar.",
+      title3: "Gidrogeologiya va muhandislik geologiyasi instituti (GIDROINGEO)",
+      text8:
+        "- yer osti suvlarining hosil bo'lish qonuniyatlarini o'rganish bo'yicha ilmiy-tadqiqot ishlarini olib boradi; xalq xo‘jaligida foydalanish uchun resurslar va sanoat sho‘rlarini aniqlash; sug'oriladigan dehqonchilik maydonlarining meliorativ gidrogeologiyasining asosiy masalalarini ishlab chiqish; lyoss jinslarning tarqalish qonuniyatlarini va ularning muhandislik-geologik xususiyatlarini o'rganish; gidrogeologik ishlarning usullari va usullarini takomillashtirish; ularning tejamkorligi va samaradorligini tahlil qilish; gidrogeologik va muhandislik-geologik tadqiqotlarni ilmiy asoslash; ishlab chiqarish tashkilotlari tomonidan xalq xo‘jaligi masalalarini tezkor hal etish bo‘yicha individual amaliy takliflar ishlab chiqish; qurgʻoqchil zona gidrogeologiyasi va muhandislik geologiyasi boʻyicha ilmiy-tadqiqot va tematik ishlarni muvofiqlashtirish.Yuqoridagi yoʻnalishlar boʻyicha institut tomonidan ishlar amalga oshirilib, nashr etilgan ishlar, simpoziumlar, yigʻilish va seminarlarda oʻz aksini topdi, ishlab chiqarish tashkilotlariga taqdim etilgan tavsiyalar.Ammo, umuman olganda, gidrogeologik va muhandislik-geologik tadqiqotlarda ilmiy-texnikaviy taraqqiyotni jadallashtirish bilan bog‘liq muammolarni hal etishda ortda qolmoqda.Xususan, geofizik usullar, aerodinamik usullar, gidrogeologik va muhandislik-geologik xaritalash usullari va qidiruv-qidiruv ishlari va geologiya-qidiruv ishlarini rivojlantirish bo‘yicha ilmiy ishlar. nazariy asoslari hali yetarli darajada rivojlanmagan.Bu hududlarda gidrogeologik va muhandislik-geologik tadqiqotlarning geologik va iqtisodiy samaradorligini oshirish uchun katta zaxiralar mavjud. fan va amaliyotning asosiy muammolaridagi bog‘lovchi bo‘g‘inlar tufayli.Texnik jihozlar yetarli emas.Institutda hozirgi zamon talablariga javob beradigan laboratoriya binosi mavjud emas.Texnik jihozlardan tashqari qo‘shimcha mutaxassislar (olim) kadrlarini jalb qilish zarur. , shuningdek, kuchli ishlab chiqarish va eksperimental baza bo'lib, ularsiz jamiyatimiz rivojlanishini, keyingi ilmiy-texnik taraqqiyotni kutib bo'lmaydi.",
     },
 
     history,

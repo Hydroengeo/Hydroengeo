@@ -69,20 +69,20 @@ const en = {
 
   main: {
     about_page: {
-      heading: "About the Institute",
+      heading: "About the institute",
 
       text1: {
-        title: "DEVELOPING:",
+        title: "DEVELOPS:",
         body: "A set of ongoing requests on topics of interest to customers.",
       },
 
       text2: {
-        title: "PERFORMED:",
+        title: "PERFORMS:",
         body: "Information support on permanent requests; one-time searches, targeted queries; orders for primary sources on the IBA, translations of publications from foreign languages, photocopying of scientific and technical literature, information searches for scientific and technical documentation in the field of new equipment and technology, orders for the purchase of technical documentation.",
       },
 
       text3: {
-        title: "POSSIBLE:",
+        title: "POSESSES :",
         body: "Reference and information fund with a depth of 12 - 15 years in the areas of hydrogeology, engineering geology, hydrogeophysics, etc., a card file of scientific and technical documentation, IR, translations, addresses.",
       },
 
@@ -327,6 +327,43 @@ const en = {
           // time: "8:00-11:00",
         },
       },
+    },
+
+    normative_page: {
+      heading: "Normative base",
+      lexuz: "National Legislation Database Republic of Uzbekistan",
+      resolutions:
+        "Decrees and Resolutions of the President of the Republic of Uzbekistan",
+      ministers: "Decrees of the Cabinet of Ministers Republic of Uzbekistan",
+      rules: "Regulations",
+    },
+
+    contacts_page: {
+      heading: "Contacts",
+      office: "office",
+      secretary: "Scientific Secretary",
+      telegram: "News channel in telegram",
+      location: "Location",
+    },
+
+    history_page: {
+      heading: "History and leadership",
+      text1:
+        "1921 - Turkvodkhoz, later Sredazvodkhoz. Z.F. Gorizdro-Kulchitskaya (1925), N.F. Bezobrazova (1927) worked on the restoration of irrigation systems in the Department of Hydrogeology, gave an overview description of the hydrogeological conditions of the basins of the Chirchik, Angren, Keles rivers. To study bass. R. Zarafshan invited Leningrad specialists A.N. Nikolaev, S.A. Butov, S.F. Mashkovtsev (1925). Since 1924, a group of hydrogeologists headed by O.K. Lange has been constantly working. The research results are published in issues of the Journal of Irrigation and in the works of SAGU (Muzhchinkin, 1924-1928; Reshetkin, 1927-1929; Arkhangelsky, 1928; Tolstikhin, 1924-1928).",
+      text2:
+        "In the period from 1950 to 1960, hydrogeological and engineering-geological studies are associated with the names of Kh.M. Abdullaev, G.A. Mavlyanov, N.A. Kenesarin, Kh.T. Tulyaganov. ) and industry demanded new ideas from hydrogeologists and geologists in the development of science and production. The Uzbekhydrogeology trust (Kh.T. Tulyaganov and others), the GIDROINGEO Institute (G.A. Mavlyanov) were organized. economy in the field of hydrogeology and engineering geology.",
+      title1: `The Institute of Hydrogeology and Engineering Geology "GIDROINGEO"`,
+      text3: `was founded on November 29, 1959 by Decree No. 737 of the Council of Ministers of the Uzbek SSR in the system of the Academy of Sciences of the Uzbek SSR.`,
+      text4: `Since June 4, 1971, by Order No. 250 of the Council of Ministers of the Uzbek SSR, the GIDROINGEO Institute is part of the State Hydrogeological Enterprise "Uzbekhydrogeology".`,
+      text5:
+        "From June 20, 2000, on the basis of order No. 57 of the State Enterprise “Uzbekhydrogeology”, the Institute of Hydrogeology and Engineering Geology “GIDROINGEO” becomes its subsidiary.",
+      text6: `On the basis of Decree No. PP - 568 "On measures to improve the organization of geological work and the activities of the State Committee of the Republic of Uzbekistan for Geology and Mineral Resources" and on the basis of the order of the State Committee of the Republic of Uzbekistan for Geology and Mineral Resources No. 11 dated January 25, 2007, the Institute is a structural subdivision of the State Committee for Geology.`,
+      title2: "The Institute of Hydrogeology and Engineering Geology (GIDROINGEO)",
+      text7:
+        " covers the territory of Central Asia, South Kazakhstan and Azerbaijan (arid zone) with its activities. It consists of 9 departments with 19 laboratories and an experimental methodological party. , of which: 3 doctors, 28 candidates of sciences, junior researchers - 67, senior engineers - 22, technicians of various specialties and laboratory assistants - 110.",
+      title3: "Institute of Hydrogeology and Engineering Geology (GIDROINGEO)",
+      text8:
+        "- conducts research work to study the patterns of formation of groundwater; identification of resources and industrial brines for their use in the national economy; development of the main issues of reclamation hydrogeology of irrigated agriculture areas; studying the patterns of distribution of loess rocks and their engineering and geological properties; improvement of methods and techniques of hydrogeological works; analysis of their economy and efficiency; scientific substantiation of hydrogeological and engineering-geological studies; development of individual practical proposals for the prompt solution of issues of the national economy by production organizations; coordination of research and thematic work on hydrogeology and engineering geology of the arid zone. In the above areas, the institute has done work, reflected in published works, symposiums, meetings and seminars, recommendations submitted to industrial organizations. However, in general, it lags behind in solving problems related to with the acceleration of scientific and technological progress in hydrogeological and engineering geological research. In particular, scientific work on geophysical methods, aerial methods, methods of hydrogeological and engineering geological mapping and prospecting and exploration work and the development of theoretical foundations have not yet received due development. In these areas contains large reserves for increasing the geological and economic efficiency of hydrogeological and engineering geological research. due to connecting links in major problems of science and practice. Insufficient technical equipment. The Institute does not have a laboratory facility that meets the requirements of modern times. In addition to technical equipment, it is necessary to attract additional personnel of specialists (scientists), as well as a powerful production and experimental base, without which development of our society, further scientific and technological progress cannot be expected",
     },
 
     history,

@@ -1,15 +1,24 @@
-import Image from "next/image";
 import Link from "next/link";
+import Content from "../../Localization/Content";
+import { useSelector } from "react-redux";
 
 const contacts = () => {
+  const {
+    count: { lang },
+  } = useSelector(state => state);
+
+  const {
+    main: { contacts_page },
+  } = Content[lang];
+
   return (
     <>
       <section id="contacts">
         <div className="small-container">
-          <h1 className="heading heading-top">Контакты</h1>
+          <h1 className="heading heading-top">{contacts_page.heading}</h1>
           <ul className="contacts__list">
             <div className="contacts__info">
-              <h1 className="heading">Контакты</h1>
+              <h1 className="heading">{contacts_page.heading}</h1>
 
               <div className="info-wrapper">
                 <p className="info__paragraph">100041 Узбекистан, Ташкент</p>
@@ -21,27 +30,27 @@ const contacts = () => {
                 <p className="info__paragraph">
                   GUhydrouz@umail.uz <br />
                   <Link href="/">
-                    <a>канцелярия</a>
+                    <a>{contacts_page.office}</a>
                   </Link>
                 </p>
 
                 <p className="info__paragraph">
                   gidroingeo_uz@umail.uz <br />
                   <Link href="/">
-                    <a>ученый секретарь</a>
+                    <a>{contacts_page.secretary}</a>
                   </Link>
                 </p>
 
                 <p className="info__paragraph">hydrouz@exat.uz</p>
 
                 <p className="info__paragraph">
-                  Новостной канал в телеграмме <br />
+                  {contacts_page.telegram} <br />
                   <Link href="/">
                     <a>t.me/hydroengeo</a>
                   </Link>
                 </p>
 
-                <p className="info__paragraph">Месторасположение</p>
+                <p className="info__paragraph">{contacts_page.location}</p>
               </div>
             </div>
             <div className="contacts__map-wrapper">

@@ -1,66 +1,59 @@
 import Link from "next/link";
 import Image from "next/image";
+import Content from "../../Localization/Content";
+import { useSelector } from "react-redux";
 
-import ScrollTop from '../../assets/images/ScrollTop.svg'
+import ScrollTop from "../../assets/images/ScrollTop.svg";
 
 function Cooperation() {
-   return (
-      <section className="cooperation">
-         <div className="container">
+  const {
+    count: { lang },
+  } = useSelector(state => state);
 
-            <div className="cooperation__info-box">
-               <h2 className="cooperation__info-box__heading">Сотрудничество</h2>
+  const {
+    main: { cooperation_page },
+  } = Content[lang];
 
-               <strong className="cooperation__info-box__title"> МЕЖДУНАРОДНЫЕ СВЯЗИ</strong>
+  return (
+    <section className="cooperation">
+      <div className="container">
+        <div className="cooperation__info-box">
+          <h2 className="cooperation__info-box__heading">{cooperation_page.heading}</h2>
 
-               <p className="cooperation__info-box__info">
-                  Интенсивно развиваются международные связи Института с внешним научным геологическим сообществом.
-               </p>
+          <strong className="cooperation__info-box__title">
+            {" "}
+            {cooperation_page.title}
+          </strong>
 
-               <p className="cooperation__info-box__info">
-                  В результате совместной работы с Институтом геологических наук и природных ресурсов Германии получены семь комплектов лицензионных программ ArcInfo для создания единой базы данных по опасных геологическим процессам и их картографированию в ГИС.
-               </p>
+          <p className="cooperation__info-box__info">{cooperation_page.text1}</p>
 
-               <p className="cooperation__info-box__info">
-                  Институт участвует в Межгосударственной программе Российской Федерации и Республике Узбекистан «Исследования Земли и космического пространства в мирных целях» и в Международном проекте «Геология, минерагения и оценка современного состояния Центральной Евразии».
-               </p>
+          <p className="cooperation__info-box__info">{cooperation_page.text2}</p>
 
-               <p className="cooperation__info-box__info">
-                  В настоящее время прорабатывается вопрос сотрудничества с Геологической Службой Финляндии (GTK) в сфере выполнения работ по созданию цифровой базы данных с использованием современных программных продуктов серии ГИС и архивно-библиотечных систем международного стандарта (типа LIBRIS).
-               </p>
+          <p className="cooperation__info-box__info">{cooperation_page.text3}</p>
 
-               <p className="cooperation__info-box__info">
-                  Ежегодно молодые специалисты выезжали на стажировку в Германию, США, Индию, Турцию, Японию и др. страны для повышения квалификации, обмена опытом и освоения новых знаний и технологий.
-               </p>
+          <p className="cooperation__info-box__info">{cooperation_page.text4}</p>
 
-               <p className="cooperation__info-box__info">
-                  Специалисты Института регулярно принимают активное участие в работе Международного Геологического Конгресса, который проводится каждые 4 года.
-               </p>
+          <p className="cooperation__info-box__info">{cooperation_page.text5}</p>
 
-               <p className="cooperation__info-box__info">
-                  В 2004 году во время участия в 32-ом Конгрессе во Флоренции (Италия), предложения участников Института о создании эколого-геологической карты мира были поддержаны мировым геологическим обществом и вошли в решение Конгресса.
-               </p>
+          <p className="cooperation__info-box__info">{cooperation_page.text6}</p>
 
-               <p className="cooperation__info-box__info">
-                  В 33-ем Международном Геологическом Конгрессе, который проходил в 2008 году в г.Осло (Норвегия) геологическая делегация из Узбекистана в составе 26 специалистов, в том числе молодых, принимала так же активное участие в Конгрессе по различным направлениям работы секций. В результате участия в работе Конгресса, геологическая молодёжь Узбекистана вошла в новообразованную Международную Сеть Молодых Учёных-Геологов (YES Network – Young Earth Scientist’s Network). Сотрудник Института ГИДРОИНГЕО в настоящее время является Национальным Представителем в YES от Узбекистана. Детальная информация расположена на сайте http://yes-uzbekistan.blogspot.com
-               </p>
+          <p className="cooperation__info-box__info">{cooperation_page.text7}</p>
 
-               <p className="cooperation__info-box__info">
-                  Планируется участие специалистов Института в 34-ом Международном Геологическом Конгрессе в 2012 году в г.Брисбан (Австралия).
-               </p>
+          <p className="cooperation__info-box__info">{cooperation_page.text8}</p>
 
-            </div>
+          <p className="cooperation__info-box__info">{cooperation_page.text9}</p>
+        </div>
 
-            <div className="cooperation__btn">
-               <Link href={'#header'}>
-                  <a className="cooperation__btn__link">
-                     <Image src={ScrollTop} alt="ScrollTop" width='80' height='80' />
-                  </a>
-               </Link>
-            </div>
-         </div>
-      </section>
-   )
+        <div className="cooperation__btn">
+          <Link href={"#header"}>
+            <a className="cooperation__btn__link">
+              <Image src={ScrollTop} alt="ScrollTop" width="80" height="80" />
+            </a>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Cooperation
+export default Cooperation;

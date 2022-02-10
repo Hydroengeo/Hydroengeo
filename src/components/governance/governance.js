@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Content from "../../Localization/Content";
+import { useSelector } from "react-redux";
 
 // Images
 import w1 from "../../assets/images/w1.jpg";
@@ -78,11 +80,19 @@ const workers = [
 ];
 
 const Governance = () => {
+  const {
+    count: { lang },
+  } = useSelector(state => state);
+
+  const {
+    header: { about_drop_down },
+  } = Content[lang];
+
   return (
     <>
       <section id="governance">
         <div className="inner_container">
-          <h1 className="heading">Руководство</h1>
+          <h1 className="heading">{about_drop_down.management}</h1>
 
           <ul className="workers">
             {workers.map(row => (
