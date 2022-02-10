@@ -8,6 +8,7 @@ import geoecology from "./pages/en/geoecology";
 import technical from "./pages/en/technical";
 import engineering from "./pages/en/engineering";
 import chemical from "./pages/en/chemical";
+import groundwater from "./pages/en/groundwater";
 
 const en = {
   header: {
@@ -176,11 +177,13 @@ const en = {
         item2: "study and use of hydro-mineral resources;",
         item3: "research in the field of ameliorative hydrogeology;",
         item4: "groundwater monitoring;",
-        item5: "study of the processes of pollution and depletion of water reserves;",
+        item5:
+          "study of the processes of pollution and depletion of water reserves;",
         item6: "research in the field of engineering geodynamics;",
         item7:
           "study of hydrogeological and engineering-geological conditions of mineral deposits;",
-        item8: "study of the ecological conditions of cities and industrial zones;",
+        item8:
+          "study of the ecological conditions of cities and industrial zones;",
         item9: "development of new technical means;",
         item10:
           "development of groundwater exploration technologies and their rational use;",
@@ -339,6 +342,7 @@ const en = {
     technical,
     engineering,
     chemical,
+    groundwater,
   },
 
   footer: {
