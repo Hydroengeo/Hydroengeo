@@ -8,6 +8,11 @@ import geoecology from "./pages/en/geoecology";
 import technical from "./pages/en/technical";
 import engineering from "./pages/en/engineering";
 import chemical from "./pages/en/chemical";
+import scientific from "./pages/en/scientific";
+import production from "./pages/en/production";
+import education from "./pages/en/education";
+import activity from "./pages/en/activity"
+
 
 const en = {
   header: {
@@ -376,6 +381,10 @@ const en = {
     technical,
     engineering,
     chemical,
+    scientific,
+    production,
+    education,
+    activity
   },
 
   footer: {

@@ -1,30 +1,46 @@
 import Image from "next/image";
+import Content from "../../Localization/Content";
+import { useDispatch, useSelector } from "react-redux";
+
 
 import firstImg from '../../assets/images/education1.jpg'
 import secondImg from '../../assets/images/education2.jpg'
 
 function education() {
+   const dispatch = useDispatch();
+   const {
+      count: { lang },
+   } = useSelector(state => state);
+
+   const {
+      main: { education: ed },
+   } = Content[lang];
+
    return (
       <section className="education">
          <div className="container">
             <div className="education__info-box">
-               <h2 className="education__info-box__heading">Образование</h2>
+               <h2 className="education__info-box__heading">{ed.heading}</h2>
 
                <p className="education__info-box__info">
-                  Каждый квартал, согласно утвержденного плана в институте организованы курсы повышения квалификации <br />
-                  специалистов по следующим направлениям:
+                  {ed.paragraph1}
                </p>
 
                <p className="education__info-box__info">
-                  графические пакеты семейств Corel DRAW и Adobe Photoshop; <br />
-                  геоинформационные графические базы данных — MapInfo и ArcGIS 10.3<br />
-                  По завершению выдаются дипломы об окончании соответствующих курсов.<br />
+                  {ed.paragraph2}
+                  <br />
+                  {ed.paragraph3}
+                  <br />
+                  {ed.paragraph4}
+                  <br />
                </p>
 
                <p className="education__info-box__info education__info-box__info--margin">
-                  Курсы проходят в специализированных классах, группами до 10 человек в виде теоретических и <br />
-                  практических занятий. На каждого учащегося компьютер предоставляется персонально. При проведении <br />
-                  курсов используются презентационные материалы, обучающие программы.
+                  {ed.paragraph5}
+                  <br />
+                  {ed.paragraph6}
+                  <br />
+                  {ed.paragraph7}
                </p>
 
                <div className="education__img-box">

@@ -132,3 +132,9 @@
         margin-left: 30px;
     }
 }
+
+@include media-max(595px){
+    .international__heading{
+        font-size: 32px !important;
+    }
+}

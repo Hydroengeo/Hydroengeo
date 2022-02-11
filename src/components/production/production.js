@@ -1,40 +1,52 @@
+import Content from "../../Localization/Content";
+import { useDispatch, useSelector } from "react-redux";
+
 function production() {
+   const dispatch = useDispatch();
+   const {
+      count: { lang },
+   } = useSelector(state => state);
+
+   const {
+      main: { production: pr },
+   } = Content[lang];
+
    return (
       <section className="production">
          <div className="container">
             <div className="production__info-box">
-               <h2 className="production__info-box__heading">Производственная деятельность</h2>
+               <h2 className="production__info-box__heading">{pr.heading}</h2>
 
-               <p className="production__info-box__info">Институт осуществляет:</p>
+               <p className="production__info-box__info">{pr.list_name}</p>
 
                <ul className="production__info-box__list">
-                  <li className="production__info-box__item">изучение и использование водных ресурсов;</li>
-                  <li className="production__info-box__item">изучение и использование гидроминеральных ресурсов;</li>
-                  <li className="production__info-box__item">исследования в области мелиоративной гидрогеологии;</li>
-                  <li className="production__info-box__item">мониторинг подземных вод;</li>
-                  <li className="production__info-box__item">изучение процессов загрязнения и истощения запасов вод;</li>
-                  <li className="production__info-box__item">исследования в области инженерной геодинамики;</li>
-                  <li className="production__info-box__item">изучение гидрогеологических и инженерно-геологических условий месторождений полезных ископаемых;</li>
-                  <li className="production__info-box__item">изучение экологических условий городов и промышленных зон;</li>
-                  <li className="production__info-box__item">разработку новых технических средств;</li>
-                  <li className="production__info-box__item">разработку технологий разведки подземных вод и их рациональное использование;</li>
-                  <li className="production__info-box__item">разработку технологий искусственного пополнения запасов пресных подземных вод и защита их от загрязнения;</li>
-                  <li className="production__info-box__item">разработку технологий переработки гидроминерального сырья и их использование;</li>
-                  <li className="production__info-box__item">определение физико-механических свойств горных пород;</li>
-                  <li className="production__info-box__item">ведение топогеодезических работ и выпуск карт;</li>
-                  <li className="production__info-box__item">строительство и капитальный ремонт;</li>
-                  <li className="production__info-box__item">оказание платных услуг юридическим и физическим лицам;</li>
-                  <li className="production__info-box__item">производство удобрений для сельского хозяйства;</li>
-                  <li className="production__info-box__item">выращивание сельскохозяйственных продуктов;</li>
-                  <li className="production__info-box__item">розлив минеральных и питьевых вод;</li>
-                  <li className="production__info-box__item">издание монографий, сборников, рекомендаций, инструкций, статей, рекламных статей и других публикаций;</li>
-                  <li className="production__info-box__item">сотрудничество с организациями, учреждениями, предприятиями и ведомствами Узбекистана и зарубежных стран;</li>
-                  <li className="production__info-box__item">подготовка кадров научных сотрудников через докторантуру, аспирантуру и соискательство;</li>
-                  <li className="production__info-box__item">обучение на курсах повышения квалификации;</li>
-                  <li className="production__info-box__item">открытие филиалов учебных кафедр и обучения студентов ВУЗов.</li>
+                  <li className="production__info-box__item">{pr.list_item1}</li>
+                  <li className="production__info-box__item">{pr.list_item2}</li>
+                  <li className="production__info-box__item">{pr.list_item3}</li>
+                  <li className="production__info-box__item">{pr.list_item4}</li>
+                  <li className="production__info-box__item">{pr.list_item5}</li>
+                  <li className="production__info-box__item">{pr.list_item6}</li>
+                  <li className="production__info-box__item">{pr.list_item7}</li>
+                  <li className="production__info-box__item">{pr.list_item8}</li>
+                  <li className="production__info-box__item">{pr.list_item9}</li>
+                  <li className="production__info-box__item">{pr.list_item10}</li>
+                  <li className="production__info-box__item">{pr.list_item11}</li>
+                  <li className="production__info-box__item">{pr.list_item12}</li>
+                  <li className="production__info-box__item">{pr.list_item13}</li>
+                  <li className="production__info-box__item">{pr.list_item14}</li>
+                  <li className="production__info-box__item">{pr.list_item15}</li>
+                  <li className="production__info-box__item">{pr.list_item16}</li>
+                  <li className="production__info-box__item">{pr.list_item17}</li>
+                  <li className="production__info-box__item">{pr.list_item18}</li>
+                  <li className="production__info-box__item">{pr.list_item19}</li>
+                  <li className="production__info-box__item">{pr.list_item20}</li>
+                  <li className="production__info-box__item">{pr.list_item21}</li>
+                  <li className="production__info-box__item">{pr.list_item22}</li>
+                  <li className="production__info-box__item">{pr.list_item23}</li>
+                  <li className="production__info-box__item">{pr.list_item24}</li>
                </ul>
 
-               <p className="production__info-box__info">Отдельными видами деятельности Институт может заниматься на основании лицензий</p>
+               <p className="production__info-box__info">{pr.paragraph}</p>
             </div>
          </div>
       </section>

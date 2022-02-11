@@ -2,6 +2,15 @@
   margin: 0;
 }
 
+.scientific__list{
+  display: block;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  padding-left: 40px;
+  list-style-type: disc;
+}
+
 .scientific__info-box {
   display: block;
   width: 100%;
@@ -34,6 +43,10 @@
   &__info + &__info {
     margin: 0;
     margin-top: 25px;
+  }
+
+  &--margin{
+    margin-bottom: 40px;
   }
 }
 

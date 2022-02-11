@@ -26,7 +26,7 @@
     }
 
     .home-news__box {
-        display: flex !important; 
+        display: flex; 
         // justify-content: space-between;
         margin-bottom: 100px;
     }
@@ -121,3 +121,25 @@
     }
 }
 
+@include media-max(580px){
+    .home-news__item {
+        display: block !important;
+    }
+    
+    .home-news__box-time{
+        width: 25%;
+    }
+}
+
+@include media-max(700px){
+    .home-news__box{
+        display: block !important;
+    }
+    
+    .home-news__item {
+        display: flex;
+        width: 100% !important;
+        max-width: 700px !important;
+        margin-bottom: 40px;
+    }
+}

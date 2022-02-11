@@ -1,35 +1,33 @@
+import Content from "../../Localization/Content";
+import { useDispatch, useSelector } from "react-redux";
+
+
 function activity() {
+  const dispatch = useDispatch();
+  const {
+    count: { lang },
+  } = useSelector(state => state);
+
+  const {
+    main: { activity: ac },
+  } = Content[lang];
+
   return (
     <section className="activity">
       <div className="container">
         <div className="activity__info-box">
-          <h2 className="activity__info-box__heading">Деятельность</h2>
-
-          {/* <p className="activity__info-box__info">
-                  <strong>Деятельность</strong>
-               </p> */}
+          <h2 className="activity__info-box__heading">{ac.heading}</h2>
 
           <p className="activity__info-box__info">
-            ГП «Институт ГИДРОИНГЕО» организован в 1960 г. и является структурным
-            подразделением Государственного комитета Республики Узбекистан по геологии и
-            минеральным ресурсам. Институт проводит научно — исследовательские и опытно
-            конструкторские работы в области гидрогеологии, инженерной геологии и
-            геоэкологии, направленных на обеспечение населения Республики гарантированными
-            источниками подземных вод, предупреждения развития опасно геологических
-            процессов, рационального использования природных и минеральных ресурсов и
-            улучшения экологической обстановк
+            {ac.paragraph1}
           </p>
 
           <p className="activity__info-box__info">
-            В институте функционирует 8 лабораторий, в том числе 4 научного, 4
-            методического и 1 технологического профиля, отдел научно-технической
-            информации, институт старших научных сотрудников-соискателей, курсы повышения
-            квалификации и издательская группа.
+            {ac.paragraph2}
           </p>
 
           <p className="activity__info-box__info">
-            Работают 181 сотрудник, в том числе 5 докторов наук,22 кандидата наук и 112
-            специалиста с высшим образованием.
+            {ac.paragraph3}
           </p>
         </div>
       </div>

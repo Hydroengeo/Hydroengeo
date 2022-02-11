@@ -8,6 +8,12 @@ import geoecology from "./pages/uz/geoecology";
 import technical from "./pages/uz/technical";
 import engineering from "./pages/uz/engineering";
 import chemical from "./pages/uz/chemical";
+import scientific from "./pages/uz/scientific";
+import production from "./pages/uz/production";
+import education from "./pages/uz/education";
+import activity from "./pages/uz/activity"
+
+
 
 const uz = {
   header: {
@@ -378,6 +384,10 @@ const uz = {
     technical,
     engineering,
     chemical,
+    scientific,
+    education,
+    production,
+    activity,
   },
 
   footer: {

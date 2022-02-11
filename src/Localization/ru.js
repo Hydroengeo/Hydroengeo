@@ -8,6 +8,13 @@ import geoecology from "./pages/ru/geoecology";
 import technical from "./pages/ru/technical";
 import engineering from "./pages/ru/engineering";
 import chemical from "./pages/ru/chemical";
+import scientific from "./pages/ru/scientific";
+import production from "./pages/ru/production";
+import education from "./pages/ru/education";
+import activity from "./pages/ru/activity"
+
+
+
 
 const ru = {
   header: {
@@ -381,6 +388,10 @@ const ru = {
     technical,
     engineering,
     chemical,
+    scientific,
+    production,
+    education,
+    activity,
   },
 
   footer: {
