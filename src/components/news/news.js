@@ -41,12 +41,12 @@ function News() {
                 <SwiperSlide className="news__slider__item" key={e.news_id}>
                   <div className="news__slider__item__img">
                     <Image
-                      src={`https://hydroengeo.herokuapp.com/${e.news_main_img}`}
+                      src={`${e.news_main_img}`}
                       alt={e.news_heading}
                       width="1100"
                       height="700"
                       loader={() =>
-                        `https://hydroengeo.herokuapp.com/${e.news_main_img}`
+                        `${e.news_main_img}`
                       }
                     />
 
@@ -83,9 +83,9 @@ function News() {
                   >
                     <div className="news__item-img">
                       <Image
-                        src={`https://hydroengeo.herokuapp.com/${e.news_main_img}`}
+                        src={`${e.news_main_img}`}
                         loader={() =>
-                          `https://hydroengeo.herokuapp.com/${e.news_main_img}`
+                          `${e.news_main_img}`
                         }
                         alt={e.news_heading}
                         width={600}

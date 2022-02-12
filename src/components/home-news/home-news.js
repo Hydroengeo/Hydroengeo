@@ -28,10 +28,10 @@ function HomeNews() {
                   <div className="home-news__box">
                     <div className="home-news__box-img">
                       <Image
-                        src={`https://hydroengeo.herokuapp.com/${dat.news_main_img}`}
+                        src={`${dat.news_main_img}`}
                         alt={dat.news_heading}
                         loader={() =>
-                          `https://hydroengeo.herokuapp.com/${dat.news_main_img}`
+                          `${dat.news_main_img}`
                         }
                         width={710}
                         height={400}
@@ -58,9 +58,9 @@ function HomeNews() {
                     <li className="home-news__item" data-set-id={e.news_id}>
                       <div className="home-news__item-img">
                         <Image
-                          src={`https://hydroengeo.herokuapp.com/${e.news_main_img}`}
+                          src={`${e.news_main_img}`}
                           loader={() =>
-                            `https://hydroengeo.herokuapp.com/${e.news_main_img}`
+                            `${e.news_main_img}`
                           }
                           alt={dat.news_heading}
                           width={300}

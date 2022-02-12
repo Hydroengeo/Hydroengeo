@@ -9,6 +9,7 @@ import technical from "./pages/ru/technical";
 import engineering from "./pages/ru/engineering";
 import chemical from "./pages/ru/chemical";
 import groundwater from "./pages/ru/groundwater";
+import resources from "./pages/ru/resources";
 
 const ru = {
   header: {
@@ -346,6 +347,7 @@ const ru = {
     technical,
     engineering,
     chemical,
+    resources,
     groundwater,
   },
 

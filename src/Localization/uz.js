@@ -9,7 +9,7 @@ import technical from "./pages/uz/technical";
 import engineering from "./pages/uz/engineering";
 import chemical from "./pages/uz/chemical";
 import groundwater from "./pages/uz/groundwater";
-
+import resources from "./pages/uz/resources";
 const uz = {
   header: {
     home: "Asosiy",
@@ -349,6 +349,7 @@ const uz = {
     technical,
     engineering,
     chemical,
+    resources,
     groundwater,
   },
 
