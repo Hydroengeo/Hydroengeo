@@ -50,7 +50,7 @@ function HomeNews() {
             </>
           )}
 
-          <ul className="home-news__list">
+          <ul className="home-news__list a">
             {data.length &&
               data.map(e => (
                 <Link key={e.news_id} href={`new/${e.news_id}`}>
