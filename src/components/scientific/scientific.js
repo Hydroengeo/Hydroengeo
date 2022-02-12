@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import Content from "../../Localization/Content";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 import ScrollTop from "../../assets/images/ScrollTop.svg";
 
-function scientific() {
-  const dispatch = useDispatch();
+function Scientific() {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -21,149 +20,97 @@ function scientific() {
         <div className="scientific__info-box">
           <h2 className="scientific__info-box__heading">{sc.heading}</h2>
           <p className="scientific__info-box__info">
-            <strong>
-              {sc.heading}
-            </strong>
+            <strong>{sc.heading}</strong>
           </p>
 
-          <p className="scientific__info-box__info">
-            {sc.list1_name}
-          </p>
+          <p className="scientific__info-box__info">{sc.list1_name}</p>
 
           <ul className="scientific__list">
             <li className="">
-              <p className="scientific__info-box__info">
-                {sc.list1_item1}
-              </p>
+              <p className="scientific__info-box__info">{sc.list1_item1}</p>
             </li>
             <li className="">
-              <p className="scientific__info-box__info">
-                {sc.list1_item2}
-              </p>
+              <p className="scientific__info-box__info">{sc.list1_item2}</p>
             </li>
             <li className="">
-              <p className="scientific__info-box__info">
-                {sc.list1_item3}
-              </p>
+              <p className="scientific__info-box__info">{sc.list1_item3}</p>
             </li>
             <li className="">
-              <p className="scientific__info-box__info">
-                {sc.list1_item4}
-              </p>
+              <p className="scientific__info-box__info">{sc.list1_item4}</p>
             </li>
             <li className="">
-              <p className="scientific__info-box__info">
-                {sc.list1_item5}
-              </p>
+              <p className="scientific__info-box__info">{sc.list1_item5}</p>
             </li>
             <li className="">
-              <p className="scientific__info-box__info">
-                {sc.list1_item6}
-              </p>
+              <p className="scientific__info-box__info">{sc.list1_item6}</p>
             </li>
             <li className="">
-              <p className="scientific__info-box__info">
-                {sc.list1_item7}
-              </p>
+              <p className="scientific__info-box__info">{sc.list1_item7}</p>
             </li>
             <li className="">
-              <p className="scientific__info-box__info">
-                {sc.list1_item8}
-              </p>
+              <p className="scientific__info-box__info">{sc.list1_item8}</p>
             </li>
             <li className="">
-              <p className="scientific__info-box__info">
-                {sc.list1_item6}
-              </p>
+              <p className="scientific__info-box__info">{sc.list1_item6}</p>
             </li>
           </ul>
 
-          <p className="scientific__info-box__info">
-            {sc.list2_name}
-          </p>
+          <p className="scientific__info-box__info">{sc.list2_name}</p>
 
           <ul className="scientific__list">
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list2_item1}
-              </p>
+              <p className="scientific__info-box__info">{sc.list2_item1}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list2_item2}
-              </p>
+              <p className="scientific__info-box__info">{sc.list2_item2}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list2_item3}
-              </p>
+              <p className="scientific__info-box__info">{sc.list2_item3}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list2_item4}
-              </p>
+              <p className="scientific__info-box__info">{sc.list2_item4}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list2_item5}
-              </p>
+              <p className="scientific__info-box__info">{sc.list2_item5}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list2_item6}
-              </p>
+              <p className="scientific__info-box__info">{sc.list2_item6}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list2_item7}
-              </p>
+              <p className="scientific__info-box__info">{sc.list2_item7}</p>
             </li>
           </ul>
 
-          <p className="scientific__info-box__info scientific__info-box__info--margin">{sc.paragraph1}</p>
+          <p className="scientific__info-box__info scientific__info-box__info--margin">
+            {sc.paragraph1}
+          </p>
 
           <p className="scientific__info-box__info">{sc.list3_name}</p>
 
           <ul className="scientific__list">
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list3_item1}
-              </p>
+              <p className="scientific__info-box__info">{sc.list3_item1}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list3_item2}
-              </p>
+              <p className="scientific__info-box__info">{sc.list3_item2}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list3_item3}
-              </p>
+              <p className="scientific__info-box__info">{sc.list3_item3}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list3_item4}
-              </p>
+              <p className="scientific__info-box__info">{sc.list3_item4}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list3_item5}
-              </p>
+              <p className="scientific__info-box__info">{sc.list3_item5}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list3_item6}
-              </p>
+              <p className="scientific__info-box__info">{sc.list3_item6}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list3_item7}
-              </p>
+              <p className="scientific__info-box__info">{sc.list3_item7}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list3_item8}
-              </p>
+              <p className="scientific__info-box__info">{sc.list3_item8}</p>
             </li>
           </ul>
 
@@ -171,79 +118,49 @@ function scientific() {
 
           <ul className="scientific__list">
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item1}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item1}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item2}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item2}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item3}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item3}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item4}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item4}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item5}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item5}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item6}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item6}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item7}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item7}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item8}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item8}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item9}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item9}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item10}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item10}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item11}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item11}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item12}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item12}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item13}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item13}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item14}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item14}</p>
             </li>
             <li>
-              <p className="scientific__info-box__info">
-                {sc.list4_item15}
-              </p>
+              <p className="scientific__info-box__info">{sc.list4_item15}</p>
             </li>
           </ul>
         </div>
@@ -260,4 +177,4 @@ function scientific() {
   );
 }
 
-export default scientific;
+export default Scientific;

@@ -1,9 +1,7 @@
 import Content from "../../Localization/Content";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
-
-function activity() {
-  const dispatch = useDispatch();
+function Activity() {
   const {
     count: { lang },
   } = useSelector(state => state);
@@ -18,21 +16,15 @@ function activity() {
         <div className="activity__info-box">
           <h2 className="activity__info-box__heading">{ac.heading}</h2>
 
-          <p className="activity__info-box__info">
-            {ac.paragraph1}
-          </p>
+          <p className="activity__info-box__info">{ac.paragraph1}</p>
 
-          <p className="activity__info-box__info">
-            {ac.paragraph2}
-          </p>
+          <p className="activity__info-box__info">{ac.paragraph2}</p>
 
-          <p className="activity__info-box__info">
-            {ac.paragraph3}
-          </p>
+          <p className="activity__info-box__info">{ac.paragraph3}</p>
         </div>
       </div>
     </section>
   );
 }
 
-export default activity;
+export default Activity;
