@@ -94,7 +94,7 @@ function News() {
                     </div>
 
                     <div className="">
-                      <p className="news__box-time">{e.news_data}</p>
+                      <p className="news__box-time у">{e.news_data}</p>
                       <h3 className="news__box-heading">{e.news_heading}</h3>
                       <p className="news__box-title">{e.news_title}</p>
                     </div>
