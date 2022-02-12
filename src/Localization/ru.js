@@ -11,10 +11,8 @@ import chemical from "./pages/ru/chemical";
 import scientific from "./pages/ru/scientific";
 import production from "./pages/ru/production";
 import education from "./pages/ru/education";
-import activity from "./pages/ru/activity"
-
-
-
+import activity from "./pages/ru/activity";
+import functions from "./pages/ru/functions";
 
 const ru = {
   header: {
@@ -42,6 +40,7 @@ const ru = {
 
     centers_laboratories: "ЦЕНТРЫ И ЛАБОРАТОРИИ",
     laboratories_drop_down: {
+      functions: "Функции центров",
       research: "Исследование ресурсов и запасов подземных вод",
       research_drop_down: {
         hydromineral: "Гидроминеральные ресурсы",
@@ -392,6 +391,7 @@ const ru = {
     production,
     education,
     activity,
+    functions,
   },
 
   footer: {

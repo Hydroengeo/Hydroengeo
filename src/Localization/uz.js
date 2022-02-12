@@ -11,9 +11,8 @@ import chemical from "./pages/uz/chemical";
 import scientific from "./pages/uz/scientific";
 import production from "./pages/uz/production";
 import education from "./pages/uz/education";
-import activity from "./pages/uz/activity"
-
-
+import activity from "./pages/uz/activity";
+import functions from "./pages/uz/functions";
 
 const uz = {
   header: {
@@ -41,6 +40,7 @@ const uz = {
 
     centers_laboratories: "MARKAZ VA LABORATORIYALAR",
     laboratories_drop_down: {
+      functions: "Markazlarning vazifalari",
       research: "Er osti suv resurslari va zahiralarini tadqiq qilish",
       research_drop_down: {
         hydromineral: "Gidromineral resurslar",
@@ -388,6 +388,7 @@ const uz = {
     education,
     production,
     activity,
+    functions,
   },
 
   footer: {

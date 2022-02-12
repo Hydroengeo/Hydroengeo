@@ -429,6 +429,13 @@ const Layout = ({ children }) => {
                   </button>
 
                   <ul ref={dropdwn3} className="navbar-item__dropdown  dropdown3--active">
+                    <li className="navbar__dropdown-item">
+                      <Link href="/laboratories/functions">
+                        <a className="navbar__dropdown-link">
+                          {header.laboratories_drop_down.functions}
+                        </a>
+                      </Link>
+                    </li>
                     <li
                       className={`navbar__dropdown-item ${
                         activeClass1 ? "navbar__dropdown-item--active" : ""

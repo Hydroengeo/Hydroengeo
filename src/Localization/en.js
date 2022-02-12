@@ -11,8 +11,8 @@ import chemical from "./pages/en/chemical";
 import scientific from "./pages/en/scientific";
 import production from "./pages/en/production";
 import education from "./pages/en/education";
-import activity from "./pages/en/activity"
-
+import activity from "./pages/en/activity";
+import functions from "./pages/en/functions";
 
 const en = {
   header: {
@@ -40,6 +40,7 @@ const en = {
 
     centers_laboratories: "CENTERS AND LABORATORIES",
     laboratories_drop_down: {
+      functions: "Functions of the centers",
       research: "Research of groundwater resources and reserves",
       research_drop_down: {
         hydromineral: "Hydromineral resources",
@@ -384,7 +385,8 @@ const en = {
     scientific,
     production,
     education,
-    activity
+    activity,
+    functions,
   },
 
   footer: {
