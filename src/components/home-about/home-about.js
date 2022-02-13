@@ -20,10 +20,12 @@ function HomeAbout() {
       .then(res => res.json())
       .then(data => {
         if (data) {
-          setdata(data.data[0]);
+          setdata(data.data);
         }
       });
   }, []);
+
+  console.log(data);
 
   const dispatch = useDispatch();
   const {
@@ -83,43 +85,46 @@ function HomeAbout() {
       <section className="home-about__list--section">
         <div className="container">
           <ul className="home-about__list">
-            <li className="home-about__item">
-              <div className="home-about__item__box">
-                <Image src={Employees} alt="Employees" width={64} height={64} />
-                {/* <span className="home-about__span">{data.staff_name}</span> */}
-              </div>
+            {data &&
+              (<>
+                <li className="home-about__item">
+                  <div className="home-about__item__box">
+                    <Image src={Employees} alt="Employees" width={64} height={64} />
+                    <span className="home-about__span">{data?.staff_name}</span>
+                  </div>
 
-              <p className="home-about__item__info">Сотрудников</p>
-            </li>
-            <li className="home-about__item">
-              <div className="home-about__item__box">
-                <Image src={PhDstudents} alt="PhD students" width={64} height={64} />
-                {/* <span className="home-about__span">{data.doctor_name}</span> */}
-              </div>
+                  <p className="home-about__item__info">Сотрудников</p>
+                </li>
+                <li className="home-about__item">
+                  <div className="home-about__item__box">
+                    <Image src={PhDstudents} alt="PhD students" width={64} height={64} />
+                    <span className="home-about__span">{data?.doctor_name}</span>
+                  </div>
 
-              <p className="home-about__item__info">Докторанты</p>
-            </li>
-            <li className="home-about__item">
-              <div className="home-about__item__box">
-                <Image
-                  src={Candidates}
-                  alt="Candidates of Sciences"
-                  width={64}
-                  height={64}
-                />
-                {/* <span className="home-about__span">{data.redoctors_name}</span> */}
-              </div>
+                  <p className="home-about__item__info">Докторанты</p>
+                </li>
+                <li className="home-about__item">
+                  <div className="home-about__item__box">
+                    <Image
+                      src={Candidates}
+                      alt="Candidates of Sciences"
+                      width={64}
+                      height={64}
+                    />
+                    <span className="home-about__span">{data.redoctors_name}</span>
+                  </div>
 
-              <p className="home-about__item__info">Кандидатов наук</p>
-            </li>
-            <li className="home-about__item">
-              <div className="home-about__item__box">
-                <Image src={PhDs} alt="PhDs" width={64} height={64} />
-                {/* <span className="home-about__span">{data.scientist_name}</span> */}
-              </div>
+                  <p className="home-about__item__info">Кандидатов наук</p>
+                </li>
+                <li className="home-about__item">
+                  <div className="home-about__item__box">
+                    <Image src={PhDs} alt="PhDs" width={64} height={64} />
+                    <span className="home-about__span">{data.scientist_name}</span>
+                  </div>
 
-              <p className="home-about__item__info">Доктора наук</p>
-            </li>
+                  <p className="home-about__item__info">Доктора наук</p>
+                </li></>)
+            }
           </ul>
         </div>
       </section>

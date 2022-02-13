@@ -58,6 +58,16 @@ main {
   flex-grow: 1;
 }
 
+.loader_block {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+
+.loader_none {
+  display: none;
+}
 
 ////
 
@@ -386,8 +396,7 @@ main {
   height: 100%;
   border: 1px solid hsl(0, 0%, 20%);
   border-radius: 2px;
-  transition: 250ms ease-in-out box-shadow, 250ms ease-in-out background,
-    250ms ease-in-out border;
+  transition: 250ms ease-in-out box-shadow, 250ms ease-in-out background, 250ms ease-in-out border;
 }
 /* ckeditor5-list/theme/todolist.css */
 .ck-content .todo-list .todo-list__label > input::after {
@@ -402,8 +411,7 @@ main {
   height: calc(var(--ck-todo-list-checkmark-size) / 2.6);
   border-style: solid;
   border-color: transparent;
-  border-width: 0 calc(var(--ck-todo-list-checkmark-size) / 8)
-    calc(var(--ck-todo-list-checkmark-size) / 8) 0;
+  border-width: 0 calc(var(--ck-todo-list-checkmark-size) / 8) calc(var(--ck-todo-list-checkmark-size) / 8) 0;
   transform: rotate(45deg);
 }
 /* ckeditor5-list/theme/todolist.css */

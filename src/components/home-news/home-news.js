@@ -2,15 +2,24 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+import loading from '../../assets/images/loader.svg'
+
 function HomeNews() {
   const [data, setData] = useState([]);
   const [dat, setDat] = useState([]);
+  const [loader, setLoader] = useState('loader_block');
 
   useEffect(() => {
     fetch("https://hydroengeo.herokuapp.com/introNews")
       .then(res => res.json())
       .then(data => {
-        setDat(data.data.reverse()[0]), setData(data.data.slice(1, 5));
+        if (data.data) {
+          setDat(data.data.reverse()[0]), 
+          setData(data.data.slice(1, 5)),
+          setLoader('loader_none')
+        }else{
+          setLoader('loader_block')
+        }
       });
   }, []);
 
@@ -21,34 +30,41 @@ function HomeNews() {
           <h1 className="home-news__heading">Новости</h1>
           <div className="border-box"></div>
 
-          {dat && (
-            <>
-              <Link href={`new/${dat.news_id}`}>
-                <a>
-                  <div className="home-news__box">
-                    <div className="home-news__box-img">
-                      <Image
-                        src={`https://hydroengeo.herokuapp.com/${dat.news_main_img}`}
-                        alt={dat.news_heading}
-                        loader={() =>
-                          `https://hydroengeo.herokuapp.com/${dat.news_main_img}`
-                        }
-                        width={710}
-                        height={400}
-                      />
-                    </div>
 
-                    <div className="">
-                      <p className="home-news__box-time">{dat.news_data}</p>
-                      <span className=""></span>
-                      <h2 className="home-news__box-heading">{dat.news_heading}</h2>
-                      <p className="home-news__box-title">{dat.news_title}</p>
+          <div className={loader}>
+            <Image src={loading} alt="loader" width={1000} height={1000} />
+          </div>
+
+          {dat.news_main_img
+            && (
+
+              <>
+                <Link href={`new/${dat.news_id}`}>
+                  <a>
+                    <div className="home-news__box">
+                      <div className="home-news__box-img">
+                        <Image
+                          src={dat?.news_main_img}
+                          alt={dat?.news_heading}
+                          loader={() =>
+                            (dat?.news_main_img)
+                          }
+                          width={710}
+                          height={400}
+                        />
+                      </div>
+
+                      <div className="">
+                        <p className="home-news__box-time">{dat.news_data}</p>
+                        <span className=""></span>
+                        <h2 className="home-news__box-heading">{dat.news_heading}</h2>
+                        <p className="home-news__box-title">{dat.news_title}</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </Link>
-            </>
-          )}
+                  </a>
+                </Link>
+              </>
+            )}
 
           <ul className="home-news__list">
             {data.length &&
@@ -58,9 +74,9 @@ function HomeNews() {
                     <li className="home-news__item" data-set-id={e.news_id}>
                       <div className="home-news__item-img">
                         <Image
-                          src={`https://hydroengeo.herokuapp.com/${e.news_main_img}`}
+                          src={e.news_main_img}
                           loader={() =>
-                            `https://hydroengeo.herokuapp.com/${e.news_main_img}`
+                            e.news_main_img
                           }
                           alt={dat.news_heading}
                           width={300}

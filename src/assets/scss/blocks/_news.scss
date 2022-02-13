@@ -3,7 +3,6 @@
         display: flex;
         width: 100% !important;
         max-width: 1600px !important;
-        justify-content: space-between;
     }
 
     .news__slider__item__img {
@@ -168,5 +167,25 @@
 @include media-max(980px) {
     .news__item {
         display: block !important;
+    }
+}
+
+@include media-max(635px) {
+    .controllers {
+        margin-left: 70% !important;
+    }
+}
+
+@include media-max(435px) {
+    .controllers {
+        margin-left: 70% !important;
+    }
+}
+
+
+@include media-max(425px) {
+    .controllers {
+        margin: 0 auto!important;
+        margin-bottom: 20px !important;
     }
 }

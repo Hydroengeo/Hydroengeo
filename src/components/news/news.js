@@ -7,22 +7,35 @@ import { useEffect, useState } from "react";
 import "swiper/css";
 
 import ScrollTop from "../../assets/images/ScrollTop.svg";
+import loading from '../../assets/images/loader.svg'
+
 
 function News() {
   const [data, setData] = useState([]);
   const [dat, setDat] = useState([]);
+  const [loader, setLoader] = useState('loader_block');
+
 
   useEffect(() => {
     fetch("https://hydroengeo.herokuapp.com/introNews")
       .then(res => res.json())
       .then(data => {
-        setData(data.data.reverse()), setDat(data.data.slice(0, 5));
+        if (data.data) {
+          setData(data.data.reverse())
+          setDat(data.data.slice(0, 5))
+          setLoader('loader_none')
+        }
       });
   }, []);
 
   return (
     <section className="news">
       <div className="container">
+
+        <div className={loader}>
+          <Image src={loading} alt="loader" width={1000} height={1000} />
+        </div>
+
         <div className="">
           <Swiper
             className="news__slider"
@@ -36,16 +49,16 @@ function News() {
             onSwiper={swiper => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
           >
-            {dat &&
+            {dat  &&
               dat.map(e => (
                 <SwiperSlide className="news__slider__item" key={e.news_id}>
                   <div className="news__slider__item__img">
                     <Image
-                      src={`https://hydroengeo.herokuapp.com/${e.news_main_img}`}
+                      src={e.news_main_img}
                       alt={e.news_heading}
                       width="1100"
                       height="700"
-                      loader={() => `https://hydroengeo.herokuapp.com/${e.news_main_img}`}
+                      loader={() => e.news_main_img}
                     />
 
                     <h2 className="news__slider__item__heading">{e.news_heading}</h2>
@@ -75,9 +88,9 @@ function News() {
                   <li className="news__item" data-set-id={e.news_id} key={e.news_id}>
                     <div className="news__item-img">
                       <Image
-                        src={`https://hydroengeo.herokuapp.com/${e.news_main_img}`}
+                        src={e.news_main_img}
                         loader={() =>
-                          `https://hydroengeo.herokuapp.com/${e.news_main_img}`
+                          e.news_main_img
                         }
                         alt={e.news_heading}
                         width={600}
