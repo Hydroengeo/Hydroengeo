@@ -1,12 +1,16 @@
 const education = {
-   heading: "Образование",
-   paragraph1: "Каждый квартал, согласно утвержденного плана в институте организованы курсы повышения квалификации специалистов по следующим направлениям:",
-   paragraph2: "графические пакеты семейств Corel DRAW и Adobe Photoshop;",
-   paragraph3: "геоинформационные графические базы данных — MapInfo и ArcGIS 10.3",
-   paragraph4: "По завершению выдаются дипломы об окончании соответствующих курсов.",
-   paragraph5: "Курсы проходят в специализированных классах, группами до 10 человек в виде теоретических и ",
-   paragraph6: " практических занятий. На каждого учащегося компьютер предоставляется персонально. При проведении",
-   paragraph7: "курсов используются презентационные материалы, обучающие программы.",
-}
+  heading: "Ta'lim",
+  paragraph1:
+    "Institutda har chorakda tasdiqlangan rejaga asosan quyidagi yo‘nalishlar bo‘yicha mutaxassislar malakasini oshirish kurslari tashkil etiladi:",
+  paragraph2: "CorelDRAW va Adobe Photoshop oilalarining grafik paketlari;",
+  paragraph3: "geografik ma'lumotlar bazalari - MapInfo va ArcGIS 10.3",
+  paragraph4:
+    "O'qishni tugatgandan so'ng, tegishli kurslarni tugatganligi to'g'risida sertifikatlar beriladi.",
+  paragraph5:
+    "Kurslar ixtisoslashtirilgan sinflarda, 10 kishigacha bo'lgan guruhlarda nazariy va",
+  paragraph6:
+    " amaliy darslar. Har bir talaba uchun alohida kompyuter beriladi. O'tkazishda",
+  paragraph7: "kurslarda taqdimot materiallari, o'quv dasturlari qo'llaniladi.",
+};
 
-export default education
+export default education;

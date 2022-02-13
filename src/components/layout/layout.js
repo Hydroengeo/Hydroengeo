@@ -212,8 +212,9 @@ const Layout = ({ children }) => {
                 <li className="navbar__item">
                   <Link href="/">
                     <a
-                      className={`navbar__item-link ${router.pathname == "/" ? "navbar__item-link--active" : ""
-                        }`}
+                      className={`navbar__item-link ${
+                        router.pathname == "/" ? "navbar__item-link--active" : ""
+                      }`}
                     >
                       {header.home}
                     </a>
@@ -436,8 +437,9 @@ const Layout = ({ children }) => {
                       </Link>
                     </li>
                     <li
-                      className={`navbar__dropdown-item ${activeClass1 ? "navbar__dropdown-item--active" : ""
-                        }`}
+                      className={`navbar__dropdown-item ${
+                        activeClass1 ? "navbar__dropdown-item--active" : ""
+                      }`}
                     >
                       <button
                         className="navbar__dropdown-link"
@@ -458,8 +460,9 @@ const Layout = ({ children }) => {
                     </li>
 
                     <li
-                      className={`navbar__dropdown-item ${activeClass2 ? "navbar__dropdown-item--active" : ""
-                        }`}
+                      className={`navbar__dropdown-item ${
+                        activeClass2 ? "navbar__dropdown-item--active" : ""
+                      }`}
                     >
                       <button
                         className="navbar__dropdown-link "
@@ -481,8 +484,9 @@ const Layout = ({ children }) => {
                     </li>
 
                     <li
-                      className={`navbar__dropdown-item ${activeClass3 ? "navbar__dropdown-item--active" : ""
-                        }`}
+                      className={`navbar__dropdown-item ${
+                        activeClass3 ? "navbar__dropdown-item--active" : ""
+                      }`}
                     >
                       <button
                         className="navbar__dropdown-link"
@@ -553,10 +557,11 @@ const Layout = ({ children }) => {
                 <li className="navbar__item">
                   <Link href="/normatives">
                     <a
-                      className={`navbar__item-link ${router.pathname == "/normatives"
-                        ? "navbar__item-link--active"
-                        : ""
-                        }`}
+                      className={`navbar__item-link ${
+                        router.pathname == "/normatives"
+                          ? "navbar__item-link--active"
+                          : ""
+                      }`}
                     >
                       {header.normative}
                     </a>
@@ -565,8 +570,9 @@ const Layout = ({ children }) => {
                 <li className="navbar__item">
                   <Link href="/contacts">
                     <a
-                      className={`navbar__item-link ${router.pathname == "/contacts" ? "navbar__item-link--active" : ""
-                        }`}
+                      className={`navbar__item-link ${
+                        router.pathname == "/contacts" ? "navbar__item-link--active" : ""
+                      }`}
                     >
                       {header.contacts}
                     </a>
@@ -587,9 +593,8 @@ const Layout = ({ children }) => {
             <ul className="left-box__list-top">
               <li className="left-box__item-top">
                 <div className="logo-box">
-
                   <Link href="/">
-                    <a >
+                    <a>
                       <Image
                         className="logo"
                         src={Logo}

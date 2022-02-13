@@ -25,8 +25,6 @@ function HomeAbout() {
       });
   }, []);
 
-  console.log(data);
-
   const dispatch = useDispatch();
   const {
     count: { lang },
@@ -85,8 +83,8 @@ function HomeAbout() {
       <section className="home-about__list--section">
         <div className="container">
           <ul className="home-about__list">
-            {data &&
-              (<>
+            {data && (
+              <>
                 <li className="home-about__item">
                   <div className="home-about__item__box">
                     <Image src={Employees} alt="Employees" width={64} height={64} />
@@ -123,8 +121,9 @@ function HomeAbout() {
                   </div>
 
                   <p className="home-about__item__info">Доктора наук</p>
-                </li></>)
-            }
+                </li>
+              </>
+            )}
           </ul>
         </div>
       </section>
