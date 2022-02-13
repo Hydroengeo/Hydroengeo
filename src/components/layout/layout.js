@@ -25,6 +25,7 @@ import telegram from "../../assets/images/telegram.svg";
 import ScrollTop from "../../assets/images/ScrollTop.svg";
 
 const Layout = ({ children }) => {
+  const langValue = useRef();
   const router = useRouter();
   const dispatch = useDispatch();
   const {
@@ -48,8 +49,14 @@ const Layout = ({ children }) => {
 
   const [hamOpen, setHamOpen] = useState(false);
 
-  useEffect(() => {
+  function getLang() {
     dispatch({ type: window.localStorage.getItem("lang") || "ru" });
+  }
+
+  langValue.current = getLang;
+
+  useEffect(() => {
+    langValue.current();
   }, []);
 
   return (
