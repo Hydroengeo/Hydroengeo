@@ -5,6 +5,8 @@ import Content from "../../Localization/Content";
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/router";
 
+import SearchResults from "../../consts/routes";
+
 // Components
 import InnerDropdown1 from "../innerDropdown1/innerDropdown";
 import InnerDropdown2 from "../innerDropdown2/innerDropdown";
@@ -41,6 +43,7 @@ const Layout = ({ children }) => {
   const dwnImg1 = useRef(null);
   const dwnImg2 = useRef(null);
   const dwnImg3 = useRef(null);
+  const searchBar = useRef();
 
   const [activeClass1, setActiveClass1] = useState(false);
   const [activeClass2, setActiveClass2] = useState(false);
@@ -184,7 +187,22 @@ const Layout = ({ children }) => {
                 }
               }}
             >
-              <form className="search-form">
+              <form
+                ref={searchBar}
+                onSubmit={evt => {
+                  evt.preventDefault();
+                  let result = SearchResults.find(
+                    row =>
+                      row.value.toLowerCase() ===
+                      evt.target.childNodes[0].value.toLowerCase()
+                  );
+
+                  if (result) {
+                    router.push(`${result.redirect}`);
+                  }
+                }}
+                className="search-form"
+              >
                 <input className="search-input" type="text" placeholder="Поиск" />
               </form>
 
@@ -278,6 +296,22 @@ const Layout = ({ children }) => {
                       <Link href="/about/structura">
                         <a className="navbar__dropdown-link">
                           {header.about_drop_down.structure}
+                        </a>
+                      </Link>
+                    </li>
+
+                    <li className="navbar__dropdown-item">
+                      <Link href="/about/charter">
+                        <a className="navbar__dropdown-link">
+                          {header.about_drop_down.charter}
+                        </a>
+                      </Link>
+                    </li>
+
+                    <li className="navbar__dropdown-item">
+                      <Link href="/about/financial">
+                        <a className="navbar__dropdown-link">
+                          {header.about_drop_down.indicators}
                         </a>
                       </Link>
                     </li>
