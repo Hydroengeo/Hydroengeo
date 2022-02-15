@@ -16,7 +16,7 @@ function HomeAbout() {
   const [data, setdata] = useState();
 
   useEffect(() => {
-    fetch("https://hydroengeo.herokuapp.com/staff")
+    fetch("http://134.209.253.99:4000/staff")
       .then(res => res.json())
       .then(data => {
         if (data) {

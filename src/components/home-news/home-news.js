@@ -10,7 +10,7 @@ function HomeNews() {
   const [loader, setLoader] = useState("loader_block");
 
   useEffect(() => {
-    fetch("https://hydroengeo.herokuapp.com/introNews")
+    fetch("http://134.209.253.99:4000/introNews")
       .then(res => res.json())
       .then(data => {
         if (data.data) {
